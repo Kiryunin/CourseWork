@@ -1,21 +1,51 @@
 .sidebar{
-    padding: 0 0 67.5px 0;
     display: flex;
-    width: 65%;
+    flex-direction: column;
+    width: 80%;
     height: 500px;
     position: sticky;
     top: 0;
-    overflow: auto;
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 15px;
 }
 .list{
-    padding: 15px 15px 15px 15px;
+    padding:0 15px 0 15px;
+    border-top: 15px solid black;
+    border-bottom: 15px solid black;
     border-radius: 15px;
     background: black;
+    width: 90%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    overflow: auto;
+}
+.list__title-item{
+    padding: 25px 0 0 25px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.list__title-item:last-child{
+    padding: 25px 0 25px 25px;
+}
+.list__item{
+    padding: 10px 0;
+    /* list-style-type: none; */
+    font-weight: 400;
+    font-size: 16px;
     color: white;
 }
 .sidebar__title{
+    text-align: center;
     font-size: 30px;
     font-weight: 600;
-    padding-bottom: 30px;
+    padding:30px 0 30px 0;
+}
+
+/* paga html */
+
+.list_page-html-height{
+    height: 620px;
+}
+.sidebar_padding-bottom{
+    padding-bottom: 230px;
 }
