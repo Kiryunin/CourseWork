@@ -1,0 +1,8 @@
+.container-background{
+    background-color: white;
+}
+.container{
+    display: flex;
+    padding: 67.5px 150px 0 67.5px;
+    gap: 67.5px;
+}

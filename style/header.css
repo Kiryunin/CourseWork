@@ -1,3 +1,4 @@
+/* home page */
 .header-wrapper{
     display: flex;
     flex-direction: row;
@@ -31,3 +32,14 @@
 .header__nav-item:hover{
     transform: scale(1.2);
 }
+
+/* end home page */
+
+
+/* HTMl */
+
+.header__nav-item_border-bottom{
+    border-bottom: 1px solid white;
+}
+
+/* END HTMl */

@@ -2,6 +2,7 @@
     background-color: black;
 }
 *{
+    scroll-behavior: smooth;
     /* border: 1px solid white; */
     font-family: 'Montserrat';
     line-height: 25px;

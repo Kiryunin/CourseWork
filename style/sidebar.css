@@ -1,7 +1,12 @@
 .sidebar{
+    padding: 0 0 67.5px 0;
     display: flex;
     width: 65%;
-    padding: 67.5px 0 67.5px 0;
+    height: 500px;
+    position: sticky;
+    top: 0;
+    overflow: auto;
+    border-radius: 0 0 15px 15px;
 }
 .list{
     padding: 15px 15px 15px 15px;

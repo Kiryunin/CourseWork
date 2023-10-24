@@ -1,13 +1,5 @@
-.main-background{
-    background-color: white;
-}
-.main{
-    display: flex;
-    padding: 0 150px 0 67.5px;
-    gap: 67.5px;
-}
 .main-content{
-    padding: 67.5px 0 67.5px 0;
+    padding: 0 0 67.5px 0;
 }
 .info-title{
     margin: 0;
