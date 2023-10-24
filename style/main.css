@@ -1,0 +1,25 @@
+.main-background{
+    background-color: white;
+}
+.main{
+    display: flex;
+    padding: 0 150px 0 67.5px;
+    gap: 67.5px;
+}
+.main-content{
+    padding: 67.5px 0 67.5px 0;
+}
+.info-title{
+    margin: 0;
+    padding-bottom: 55px;
+    font-size: 33px;
+}
+.info-paragraph_first{
+    margin-top: 0;
+}
+.info-paragraph_last{
+    margin-bottom: 0;
+}
+.info-title_top-padding{
+    padding-top: 67.5px;
+}

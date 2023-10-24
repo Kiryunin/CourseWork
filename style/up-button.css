@@ -1,0 +1,11 @@
+.up-button-wrapper{
+    padding: 0 0 67.5px 0;
+    display: flex;
+    justify-content: center;
+}
+.up-button__image{
+    transition: .6s ease;
+}
+.up-button__image:hover{
+    transform: scale(1.2);
+}

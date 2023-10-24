@@ -1,0 +1,16 @@
+.sidebar{
+    display: flex;
+    width: 65%;
+    padding: 67.5px 0 67.5px 0;
+}
+.list{
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px;
+    background: black;
+    color: white;
+}
+.sidebar__title{
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}

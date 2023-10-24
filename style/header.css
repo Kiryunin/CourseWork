@@ -1,0 +1,33 @@
+.header-wrapper{
+    display: flex;
+    flex-direction: row;
+    padding: 0 250px;
+    background: black;
+}
+.header__logo{  
+    display: flex;
+    align-items: center;
+}
+.header__logo-image{
+    width: 35px;
+    height: 35px;
+    transition: .6s ease;
+}
+.header__logo-image:hover{
+    transform: scale(1.2);
+}
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    width: 100%;
+}
+.header__nav-item{
+    color: white;
+    transition: .6s ease;
+}
+.header__nav-item:hover{
+    transform: scale(1.2);
+}
