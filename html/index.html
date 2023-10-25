@@ -37,20 +37,34 @@
 <!---------------------------------------- SIDEBAR ---------------------------------------->
     <div class="container-background">
         <div class="container">
-            <aside class="sidebar">
+            <aside class="sidebar sidebar_page">
+                <div class="sidebar__title">НАВИГАЦИЯ:</div>
                     <div class="sidebar__wrapper">
-                        <div class="sidebar__title">НАВИГАЦИЯ:</div>
                         <ul class="list">
-                            <ul class="list__title-item">1 ВОПРОС
-                                <a class="link" href="#up-button"><li class="list__item">Актуальна ли web-разработка?</li></a>
+                            <ul class="list__title-item">
+                                <a class="link" href="#up-button"><li class="list__item">1 ВОПРОС - актуальна ли web-разработка?</li></a>
                             </ul>
-                            <ul class="list__title-item">2 ВОПРОС
-                                <a class="link" href="#second-question"><li class="list__item">Сколько зарабатывают Web-разработчики?</li></a>
+                            <ul class="list__title-item">
+                                <a class="link" href="#second-question"><li class="list__item">2 ВОПРОС - сколько зарабатывают Web-разработчики?</li></a>
                             </ul>
-                            <ul class="list__title-item">3 ВОПРОС
-                                <a class="link" href="#third-question"><li class="list__item">3 ВОПРОС - Где учиться web-разработке?</li></a>
+                            <ul class="list__title-item">
+                                <a class="link" href="#third-question"><li class="list__item">3 ВОПРОС - где учиться web-разработке?</li></a>
                             </ul>
                         </ul>
+                    </div>
+                    <div class="navigation-buttons">
+                        <div class="navigation-buttons-wrapper">
+                            <a class="navigation-buttons__link navigation-buttons__link_margin-bottom" href="#up-button">
+                                <div class="navigation-button">
+                                    &#9650;
+                                </div>
+                            </a>
+                            <a class="navigation-buttons__link" href="#down-button">
+                                <div class="navigation-button">
+                                    &#9660;
+                                </div>
+                            </a>
+                        </div>
                     </div>
             </aside>
 <!---------------------------------------- END SIDEBAR ---------------------------------------->
@@ -82,7 +96,7 @@
                         <p class="info-paragraph info-paragraph_last">"Kirunin WebSchool" помогает студентам приобрести навыки, которые позволяют им конкурентноспособно войти в индустрию веб-разработки и стремиться к успешным карьерам с соответствующими уровнями заработка.</p>
                     </div>
                     <div class="main-content-wrapper">
-                        <div class="info-wrapper">
+                        <div id="third-question" class="info-wrapper">
                             <h2 class="info-title info-title_top-padding">3 ВОПРОС - Где учиться web-разработке?</h2>
                             <p class="info-paragraph info-paragraph_first">Учеба в "Kirunin WebSchool" - ваш путь к успешной карьере в веб-разработке, и есть несколько убедительных причин, почему стоит выбрать нашу школу:</p>
                             <p class="info-paragraph">1. Актуальное образование: Мы предоставляем студентам актуальные и востребованные навыки в веб-разработке. Наши программы обучения базируются на современных технологиях и требованиях рынка труда.</p>
@@ -94,14 +108,11 @@
                     </div>
             </section>
         </div>
-        <div class="up-button-wrapper">
-            <a href="#up-button"><img class="up-button__image" src="../image/up button.png" alt="up button"></a>
-        </div>
     </div>
 <!---------------------------------------- END MAIN ---------------------------------------->
 
 <!---------------------------------------- FOOTER ---------------------------------------->
-    <footer id="third-question" class="footer">
+    <footer id="down-button" class="footer">
         <div class="footer-wrapper">
             <div>Кирюнин Кирилл © 2023</div>
             <div>

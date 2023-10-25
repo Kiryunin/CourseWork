@@ -3,6 +3,7 @@
 }
 *{
     scroll-behavior: smooth;
+    /* border: 1px solid black; */
     font-family: 'Montserrat';
     line-height: 25px;
     font-weight: 400;
@@ -18,5 +19,5 @@
     font-size: 25px;
 }
 .border-bottom{
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
 }
