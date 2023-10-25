@@ -1,5 +1,5 @@
 .sidebar{
-    padding-bottom: 280px;
+    /* padding-bottom: 280px; */
     display: flex;
     flex-direction: column;
     width: 60%;
@@ -30,7 +30,6 @@
 }
 .list__item{
     padding: 10px 0;
-    /* list-style-type: none; */
     font-weight: 400;
     font-size: 16px;
     color: white;
@@ -45,10 +44,10 @@
 /* paga html */
 
 .list_page-html-height{
-    height: 500px;
+    height: 450px;
 }
 .sidebar_page-html{
-    /* padding-bottom: 280px; */
+    padding-bottom: 215px;
     width: 80%;
 }
 .navigation-buttons-wrapper{
@@ -65,8 +64,8 @@
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    width: 90px;
-    height: 90px;
+    width: 75px;
+    height: 75px;
     border-radius: 50px;
     background: black;
     color: white;

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
-    <link rel="shortcut icon" href="../image/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../style/normalize.css">
     <link rel="stylesheet" href="../style/common-styles.css">
     <link rel="stylesheet" href="../style/header.css">
@@ -118,22 +117,22 @@
                         <h2 id="html-tags" class="info-title">HTML теги</h2>
                         <p>HTML теги - это специальные команды для браузера. Они говорят ему, что, к примеру, следует считать заголовком страницы, а что абзацем.
                         Теги строятся по такому принципу: уголок &#60;, потом имя тега, а потом уголок 	&#62;. Имя тега может состоять из английских букв и цифр. Примеры тегов:</p>
-                        <p><span class="info-paragraph_code">&#60;h1&#62; &#60p&#62; &#60;b&#62;.</span></p>
+                        <p><span class="info-paragraph_code-html">&#60;h1&#62; &#60p&#62; &#60;b&#62;.</span></p>
                         <p> Теги обычно пишутся парами - открывающий тег и соответствующий ему закрывающий. Разница между открывающим и закрывающим тегами в том, что в закрывающем теге после уголка &#60; стоит слеш /.</p>
-                        <p> К примеру, <span class="info-paragraph_code">&#60;p&#62;</span> - так я открыл тег, а так - <span class="info-paragraph_code">&#60;/p&#62;</span> - я его закрыл. Все, что попадает между открывающим и закрывающим тегами, подпадает под воздействие нашего тега.</p>
-                        <p>Бывают теги, которые не нужно закрывать, например, <span class="info-paragraph_code">&#60;br&#62;</span> или <span class="info-paragraph_code">&#60;img&#62;</span>.</p>
+                        <p> К примеру, <span class="info-paragraph_code-html">&#60;p&#62;</span> - так я открыл тег, а так - <span class="info-paragraph_code-html">&#60;/p&#62;</span> - я его закрыл. Все, что попадает между открывающим и закрывающим тегами, подпадает под воздействие нашего тега.</p>
+                        <p>Бывают теги, которые не нужно закрывать, например, <span class="info-paragraph_code-html">&#60;br&#62;</span> или <span class="info-paragraph_code-html">&#60;img&#62;</span>.</p>
                         <h2 id="attributes" class="info-title">Атрибуты в HTML тегах</h2>
-                        <p>В тегах также могут размещаться атрибуты - специальные команды, которые расширяют действие тега. Атрибуты размещаются внутри открывающего тега в таком формате:</p><p><span class="info-paragraph_code">&#60;атрибут1="значение"</p> атрибут2="значение"&#62;</span> Кавычки могут быть любыми - одинарными или двойными, допустимо их вообще не ставить, если значение атрибута состоит из одного слова (но это не желательно).</p>
+                        <p>В тегах также могут размещаться атрибуты - специальные команды, которые расширяют действие тега. Атрибуты размещаются внутри открывающего тега в таком формате:</p><p><span class="info-paragraph_code-html">&#60;атрибут1="значение"</p> атрибут2="значение"&#62;</span> Кавычки могут быть любыми - одинарными или двойными, допустимо их вообще не ставить, если значение атрибута состоит из одного слова (но это не желательно).</p>
                         <h2 id="styles" class="info-title">Стили HTML тегов</h2>
                         <p>HTML тегам можно менять стили: цвета, размеры, шрифты, фон, а также позицию на экране. Для этого используется язык CSS, который расширяет возможности языка HTML.</p>
                         <p>Получается, что с помощью HTML тегов создается структура сайта, а с помощью CSS стилей эта структура украшается и размещается по нужным местам.</p>
                         <p>Совместное использование HTML и CSS называется версткой страниц. Это мы и будем изучать в данном учебнике.</p>
                         <h2 id="basic-structure" class="info-title">Основная структура страницы HTML</h2>
-                        <p>Страница сайта - это обычный текстовый файл с расширением .html. Внутри этого файла и хранится текст HTML страницы вместе с тегами. Этот файл обязательно должен иметь следующие теги: тег <span class="info-paragraph_code">&#60;html&#62;</span>, который должен содержать в себе текст всего сайта (все, что написано вне этого тега, браузером будет проигнорировано), а внутри него должны быть еще два тега: тег <span class="info-paragraph_code">&#60;head&#62;</span> для служебного содержимого страницы и тег <span class="info-paragraph_code">&#60;body&#62;</span> - до текста, который и виден на экране браузера.</p>
-                        <p>В служебное содержимое, которое располагается внутри тега <span class="info-paragraph_code">&#60;head&#62;</span>, входит много различных вещей, но пока нам нужны только две из них. Это тег <span class="info-paragraph_code">&#60;title&#62;</span>, задающий название страницы, которое будет видно во вкладке браузера, и тег <span class="info-paragraph_code">&#60;meta&#62;</span>, который задает кодировку страницы (она ставится в атрибуте charset и обычно имеет значение utf-8).</p>
-                        <p>Кроме того, перед тегом <span class="info-paragraph_code">&#60;html&#62;</span> обычно пишется конструкция doctype, которая указывает версию языка HTML, на которой сделан сайт. Актуальная сейчас версия языка имеет номер пять и доктайп для нее должен выглядеть так - vvvvvvv.
+                        <p>Страница сайта - это обычный текстовый файл с расширением .html. Внутри этого файла и хранится текст HTML страницы вместе с тегами. Этот файл обязательно должен иметь следующие теги: тег <span class="info-paragraph_code-html">&#60;html&#62;</span>, который должен содержать в себе текст всего сайта (все, что написано вне этого тега, браузером будет проигнорировано), а внутри него должны быть еще два тега: тег <span class="info-paragraph_code-html">&#60;head&#62;</span> для служебного содержимого страницы и тег <span class="info-paragraph_code-html">&#60;body&#62;</span> - до текста, который и виден на экране браузера.</p>
+                        <p>В служебное содержимое, которое располагается внутри тега <span class="info-paragraph_code-html">&#60;head&#62;</span>, входит много различных вещей, но пока нам нужны только две из них. Это тег <span class="info-paragraph_code-html">&#60;title&#62;</span>, задающий название страницы, которое будет видно во вкладке браузера, и тег <span class="info-paragraph_code-html">&#60;meta&#62;</span>, который задает кодировку страницы (она ставится в атрибуте charset и обычно имеет значение utf-8).</p>
+                        <p>Кроме того, перед тегом <span class="info-paragraph_code-html">&#60;html&#62;</span> обычно пишется конструкция doctype, которая указывает версию языка HTML, на которой сделан сайт. Актуальная сейчас версия языка имеет номер пять и доктайп для нее должен выглядеть так - vvvvvvv.
                         Итак, давайте посмотрим на основную структуру страницы:</p>
-                        <div class="info-block_code">
+                        <div class="info-block_code-html">
                         &#60;!DOCTYPE html&#62;<br>
                         &#60;html&#62;<br>
                         &#60;head&#62;<br>
@@ -145,17 +144,17 @@
                         </div>
                         <h2 id="paragraph-tags" class="info-title">Теги для абзацев</h2>
                         <p>Одним из основных элементов страницы являются абзацы. Их можно сравнить с абзацами в книге - каждый абзац начинается с новой строки и имеет так называемую красную строку (это когда первая строка текста абзаца немного отступает вправо). По умолчанию красной строки нет, но ее легко сделать (об этом чуть позже).
-                        Абзац создается с помощью тега <span class="info-paragraph_code">&#60;p&#62;</span> таким образом:</p>
-                        <div class="info-block_code">
+                        Абзац создается с помощью тега <span class="info-paragraph_code-html">&#60;p&#62;</span> таким образом:</p>
+                        <div class="info-block_code-html">
                             &#60;p&#62;<span class="info-block-text_code"> This is a paragraph.</span>&#60;/p&#62;<br>
                             &#60;p&#62;<span class="info-block-text_code">That is one more paragraph</span>&#60;/p&#62;<br>
                             &#60;p&#62;<span class="info-block-text_code">And one more paragraph</span>&#60;/p&#62;<br>
                         </div>
                         <h2 id="title-tags" class="info-title">Теги для заголовков страницы</h2>
                         <p>Кроме абзацев важное значение на странице имеют заголовки. Их также можно сравнить с заголовками из книги - каждая глава имеет свой заголовок (название этой главы) и разбита на параграфы, которые тоже имеют свои заголовки. Ну, а основной текст страницы располагается в абзацах.</p>
-                        <p>Заголовки создаются с помощью тегов <span class="info-paragraph_code">&#60;h1&#62;</span>, <span class="info-paragraph_code">&#60;h2&#62;</span>, <span class="info-paragraph_code">&#60;h3&#62;</span>, <span class="info-paragraph_code">&#60;h4&#62;</span>, <span class="info-paragraph_code">&#60;h5&#62;</span>, <span class="info-paragraph_code">&#60;h6&#62;</span>. Они имеют разную степень важности. В заголовке h1 следует располагать название всей HTML страницы, в h2 - название блоков страницы, в h3 - название подблоков и так далее.
+                        <p>Заголовки создаются с помощью тегов <span class="info-paragraph_code-html">&#60;h1&#62;</span>, <span class="info-paragraph_code-html">&#60;h2&#62;</span>, <span class="info-paragraph_code-html">&#60;h3&#62;</span>, <span class="info-paragraph_code-html">&#60;h4&#62;</span>, <span class="info-paragraph_code-html">&#60;h5&#62;</span>, <span class="info-paragraph_code-html">&#60;h6&#62;</span>. Они имеют разную степень важности. В заголовке h1 следует располагать название всей HTML страницы, в h2 - название блоков страницы, в h3 - название подблоков и так далее.
                         Все заголовки по умолчанию жирные и имеют разный размер (это можно поменять через CSS, но об этом позже). Для примера сделаем заголовки всех уровней:</p>
-                        <div class="info-block_code">
+                        <div class="info-block_code-html">
                             &#60;h1&#62;<span class="info-block-text_code">Heading h1</span>&#60;h1&#62;<br>
                             &#60;h2&#62;<span class="info-block-text_code">Heading h2</span>&#60;h2&#62;<br>
                             &#60;h3&#62;<span class="info-block-text_code">Heading h3</span>&#60;h3&#62;<br>
@@ -164,19 +163,19 @@
                             &#60;h6&#62;<span class="info-block-text_code">Heading h6</span>&#60;h6&#62;<br>
                         </div>
                         <h2 id="title-tags-bold" class="info-title">Теги для выделения текста жирным</h2>
-                        <p>Вы уже знаете, что заголовки по умолчанию жирные. Однако, можно сделать жирным и обычный текст - достаточно взять его в тег <span class="info-paragraph_code">&#60;b&#62;</span>. Смотрите пример:</p>
-                        <div class="info-block_code">
+                        <p>Вы уже знаете, что заголовки по умолчанию жирные. Однако, можно сделать жирным и обычный текст - достаточно взять его в тег <span class="info-paragraph_code-html">&#60;b&#62;</span>. Смотрите пример:</p>
+                        <div class="info-block_code-html">
                             &#60;p&#62;<span class="info-block-text_code">This is regular text and this is</span>&#60;b&#62;<span class="info-block-text_code">bold</span>&#60;/b&#62;&#60;/p&#62;<br>
                         </div>
                         <h2 id="title-tags-italic" class="info-title">Теги для выделения текста курсивом</h2>
-                        <p>Кроме жирного можно сделать также и курсив с помощью тега <span class="info-paragraph_code">&#60;i&#62;</span>:</p>
-                        <div class="info-block_code">
+                        <p>Кроме жирного можно сделать также и курсив с помощью тега <span class="info-paragraph_code-html">&#60;i&#62;</span>:</p>
+                        <div class="info-block_code-html">
                             &#60;p&#62;<span class="info-block-text_code">This is regular text and this is</span>&#60;i&#62;<span class="info-block-text_code">italic</span>&#60;/i&#62;&#60;/p&#62;<br>
                         </div>
                         <h2 id="list-html" class="info-title">Cписки в HTML</h2>
                         <p>Наряду с абзацами и заголовками существует еще один важный элемент страницы - это списки. Такие элементы наверняка знакомы всем пользователям интернета. Они представляют собой перечисление чего-либо (список) по пунктам.</p>
-                        <p>Списки, созданные через тег <span class="info-paragraph_code">&#60;ul&#62;</span>, называются неупорядоченными. Такое название им дано потому, что возле каждого пункта списка обычно стоит закрашенный кружок (он называется маркер списка). Внутри списка обязательно должны идти теги <span class="info-paragraph_code">&#60;li&#62;</span>. Тег ul задает сам список, а в теги li следует размещать пункты списка (то есть одному li соответствует один маркер списка). Смотрите пример:</p>
-                        <div class="info-block_code">
+                        <p>Списки, созданные через тег <span class="info-paragraph_code-html">&#60;ul&#62;</span>, называются неупорядоченными. Такое название им дано потому, что возле каждого пункта списка обычно стоит закрашенный кружок (он называется маркер списка). Внутри списка обязательно должны идти теги <span class="info-paragraph_code-html">&#60;li&#62;</span>. Тег ul задает сам список, а в теги li следует размещать пункты списка (то есть одному li соответствует один маркер списка). Смотрите пример:</p>
+                        <div class="info-block_code-html">
                             &#60;ul&#62;<br>
                             &#60;li&#62;<span class="info-block-text_code">text</span>&#60;li&#62;<br>
                             &#60;li&#62;<span class="info-block-text_code">text</span>&#60;li&#62;<br>
@@ -186,9 +185,9 @@
                         </div>
                         <h2 id="referencing" class="info-title">Работа со ссылками в HTML</h2>
                         <p>Сейчас мы будем разбираться со ссылками. Ссылки являются теми элементами, которые делают из интернета интернет. Нажимая на ссылки, мы можем переходить с одной страницы сайта на другую. Если бы их не было - интернет был бы просто набором страниц, никак не связанных друг с другом.</p>
-                        <p>Ссылка создается с помощью тега <span class="info-paragraph_code">&#60;a&#62;</span>. В этом теге обязательно должен быть атрибут href, в который следует записывать адрес той страницы, на которую ведет ссылка.
+                        <p>Ссылка создается с помощью тега <span class="info-paragraph_code-html">&#60;a&#62;</span>. В этом теге обязательно должен быть атрибут href, в который следует записывать адрес той страницы, на которую ведет ссылка.
                         Давайте для примера сделаем ссылку на гугл. Для этого нужно открыть этот сайт в браузере, скопировать адрес страницы из адресной строки и вставить в атрибут href ссылки:</p>
-                        <div class="info-block_code">
+                        <div class="info-block_code-html">
                             &#60;a href="https://www.google.com"&#62;<span class="info-block-text_code">link</span>&#60;a&#62;
                         </div>
                         <h2 id="internal-links" class="info-title">Внутренние ссылки в HTML</h2>
@@ -196,17 +195,17 @@
                         <p>В таком случае копировать их адреса из адресной строки нельзя. Дело в том, что такие адреса будут содержать полный путь к вашей странице от корневого диска вашего компьютера, и при переносе в другую папку такие ссылки просто сломаются.</p>
                         <p>Для страниц своего сайта следует практиковать другой подход. Изучим его на примере. Пусть в корневой папке вашего сайта расположен файл index.html и файл page.html. Свяжем эти файлы ссылками. Для этого в атрибуте href ссылок следует просто написать имена этих файлов (с их расширением). Давайте сделаем это.
                         На странице index.html сделаем ссылку на страницу page.html:</p>
-                         <div class="info-block_code">
+                         <div class="info-block_code-html">
                             &#60;h1&#62;<span class="info-block-text_code">Index</span>&#60;/h1&#62;&#60;a href="page.html"&#62;<span class="info-block-text_code">link on Page</span>&#60;/a&#62;
                         </div>
                         <p>А на странице page.html сделаем ссылку на страницу index.html:</p>
-                        <div class="info-block_code">
+                        <div class="info-block_code-html">
                             &#60;h1&#62;<span class="info-block-text_code">Page</span>&#60;/h1&#62;&#60;a href="index.html"&#62;<span class="info-block-text_code">link on Index</span>&#60;/a&#62;
                         </div>
-                        <h2 id="image-manipulation" class="info-title">Работа с изображениями в HTML</h2>
-                        <p>Давайте теперь разберемся с тем, как разместить изображение на странице вашего сайта. Для этого предназначен тег <span class="info-paragraph_code">&#60;img&#62;</span>, имеющий обязательный атрибут src, в котором следует задавать путь к файлу картинки. При этом сам тег не требует закрывающего тега.</p>
+                        <h2 id="image-manipulation-html" class="info-title">Работа с изображениями в HTML</h2>
+                        <p>Давайте теперь разберемся с тем, как разместить изображение на странице вашего сайта. Для этого предназначен тег <span class="info-paragraph_code-html">&#60;img&#62;</span>, имеющий обязательный атрибут src, в котором следует задавать путь к файлу картинки. При этом сам тег не требует закрывающего тега.</p>
                         <p>Давайте посмотрим на примере. Пусть в корневой папке нашего сайта находится файл smile.png с картинкой. Давайте выведем ее на странице нашего сайта:</p>
-                        <div class="info-block_code">
+                        <div class="info-block_code-html">
                             &#60;img src="smile.png"&#62;
                         </div>
                         <h2 id="table-manipulation" class="info-title">Работа с таблицами в HTML</h2>
@@ -214,7 +213,7 @@
                         <p>В HTML таблицы создаются по похожему принципу. Там тоже есть столбцы и строки с ячейками, однако HTML код таблиц при первом взгляде может показаться непривычным: таблицы создаются по рядам - сначала первый ряд, потом второй и так далее.</p>
                         <p>Код таблицы имеет жесткую структуру: главным является тег table, внутри которого должны лежать теги tr, которые создают ряды таблицы, а внутри них - теги td, которые создают ячейки. Тег table может иметь атрибут border, который задает границу таблице и ее ячейкам.</p>
                         <p>Давайте для примера сделаем таблицу с тремя рядами и тремя ячейками в каждом ряду:</p>
-                        <div class="info-block_code">
+                        <div class="info-block_code-html">
                             &#60;table border="1"&#62;<br>
                             <span class="info-block-text_code"> &#60;!--Это будет первый ряд таблицы:--&#62;</span><br>
                             &#60;tr&#62;<br>
@@ -239,8 +238,8 @@
                 </div>
                 <div class="theme-buttons">
                     <div class="theme-buttons-wrapper">
-                        <a class="theme-buttons__link" href="about-the-school.html"><button class="theme-button">&#8592; О школе</button></a>
-                        <a class="theme-buttons__link" href="HTML.html"><button class="theme-button">CSS &#8594;</button></a>
+                        <a class="theme-buttons__link" href="about-the-school.html"><button class="theme-button">О школе</button></a>
+                        <a class="theme-buttons__link" href="CSS.html"><button class="theme-button">CSS</button></a>
                     </div>
                 </div>
             </section>
@@ -259,20 +258,5 @@
         </div>
     </footer>
 <!---------------------------------------- END FOOTER ---------------------------------------->
-<script src="s"></script>
 </body>
 </html>
-
-
-<!-- <span class="info-paragraph_code">
-</span>
-&#60;zamenit&#62;
-<div class="info-block_code">
-&#60;zamenit&#62;<span class="info-block-text_code">text</span>&#60;zamenit&#62;<br>
-&#60;zamenit&#62;<span class="info-block-text_code">text</span>&#60;zamenit&#62;<br>
-&#60;zamenit&#62;<span class="info-block-text_code">text</span>&#60;zamenit&#62;
-</div> -->
-
- <!-- <div class="up-button-wrapper">
-    <a href="#up-button"><img class="up-button__image" src="../image/up button.png" alt="up button"></a>
-</div> -->

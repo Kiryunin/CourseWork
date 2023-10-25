@@ -3,9 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS</title>
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="stylesheet" href="../style/common-styles.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/container.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/sidebar.css">
+    <link rel="stylesheet" href="../style/up-button.css">
+    <link rel="stylesheet" href="../style/footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500&family=Montserrat:ital,wght@0,400;0,600;0,900;1,900&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<body id="up-button" class="body_background">
+<!---------------------------------------- HEADER ---------------------------------------->
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="header__nav">
+                <div><a href="index.html"><img class="header__logo-image" src="../image/logo.png" alt="logo"></a></div>
+                <div class="header__nav-item"><a class="link" href="about-the-school.html">О школе</a></div>
+                <div class="header__nav-item"><a class="link" href="/html/HTML.html">HTML</a></div>
+                <div class="header__nav-item border-bottom"><a class="link" href="CSS.html">CSS</a></div>
+                <div class="header__nav-item"><a class="link" href="block-model.html">Блочная модель</a></div>
+                <div class="header__nav-item"><a class="link" href="flexbox.html">Flexbox</a></div>
+            </div>
+        </div>
+    </header>
+<!---------------------------------------- END HEADER ---------------------------------------->
+ 
+<!---------------------------------------- SIDEBAR ---------------------------------------->
+    <div class="container-background">
+        <div class="container">
+            <aside class="sidebar sidebar_page-html">
+                <div class="sidebar__title">НАВИГАЦИЯ:</div>
+                    <div class="sidebar__wrapper">
+                        <ul class="list list_page-html-height">
+                            <ul class="list__title-item">
+                                <a class="link" href="#fundamental"><li class="list__item">Основы работы с языком CSS</li></a>
+                            </ul>
+                            <ul class="list__title-item">
+                                <a class="link" href="#hand"><li class="list__item">Как работать с CSS</li></a>
+                            </ul>
+                            <ul class="list__title-item">
+                                <a class="link" href="#colors"><li class="list__item">Любые цвета в CSS</li></a>
+                            </ul>
+                            <ul class="list__title-item">
+                                <a class="link" href="#text-alignment"><li class="list__item">Выравнивание текста в CSS</li></a>
+                            </ul>
+                            <ul class="list__title-item">
+                                <a class="link" href="#text-bold"><li class="list__item">Жирность текста в CSS</li></a>
+                            </ul>
+                            <ul class="list__title-item">
+                                <a class="link" href="#text-italic"><li class="list__item">Курсив в CSS</li></a>
+                            </ul>
+                            <ul class="list__title-item">
+                                <a class="link" href="#text-size"><li class="list__item">Размер шрифта в CSS</li></a>
+                            </ul>
+                            <ul class="list__title-item">
+                                <a class="link" href="#text-family"><li class="list__item">Тип шрифта в CSS</li></a>
+                            </ul>
+                            <ul class="list__title-item">
+                                <a class="link" href="#text-height"><li class="list__item">Межстрочный интервал в CSS</li></a>
+                            </ul>
+                            <ul class="list__title-item">
+                                <a class="link" href="#text-effect"><li class="list__item">Эффекты текста в CSS</li></a>
+                            </ul>
+                            <ul class="list__title-item">
+                                <a class="link" href="#text-effect-close"><li class="list__item">Отмена эффектов для текста в CSS</li></a>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="navigation-buttons">
+                        <div class="navigation-buttons-wrapper">
+                            <a class="navigation-buttons__link navigation-buttons__link_margin-bottom" href="#up-button">
+                                <div class="navigation-button">
+                                    &#9650;
+                                </div>
+                            </a>
+                            <a class="navigation-buttons__link" href="#down-button">
+                                <div class="navigation-button">
+                                    &#9660;
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            </aside>
+<!---------------------------------------- END SIDEBAR ---------------------------------------->
+
+<!---------------------------------------- MAIN ---------------------------------------->
+            <section class="main-content">
+                <div class="main-content-wrapper">
+                    <div class="info-wrapper">
+                        <h2 id="fundamental" class="info-title">Основы работы с языком</h2>
+                        <p>Мы с вами уже разобрали основные теги языка HTML и теперь пришло время навести красоту. Хотелось бы иметь возможность менять цвет текста, его размер, фон и многое другое. Это делается с помощью языка CSS.</p>
+                        <p>Как правило, CSS команды (стили) хранятся в отдельном файле, который подключается специальным тегом ко всем HTML страницам нашего сайта.
+                        Преимущество такого подхода в том, что CSS файл один, а HTML файлов может быть любое количество, хоть тысяча. Если мы сделаем изменение в одном месте CSS файла, например, покрасим все абзацы в красный цвет, то эти изменения применятся на всей тысяче HTML страниц, к которым подключен наш CSS файл. Очень удобно и быстро.</p>
+                        <p>Файл со стилями должен иметь расширение .css. Чтобы подключить такой файл к HTML странице, в теге head следует написать такую конструкцию:</p>
+                        <div class="info-block_code-html">
+                        &#60;link rel="stylesheet" href="fileName.css"&#62;
+                        </div>
+                        <p>В следующем примере к нашему HTML файлу подключается CSS файл styles.css:</p>
+                        <div class="info-block_code-html">
+                        &#60;!DOCTYPE html&#62;<br>
+                        &#60;html&#62;<br>
+                        &#60;head&#62;<br>
+                        &#60;meta charset="utf-8"&#62;<br>
+                        &#60;title&#62;<span class="info-block-text_code">This is the title</span>&#60;title&#62;<br>
+                        &#60;link rel="stylesheet" href="styles.css"&#62;<br>
+                        &#60;/head&#62;<br>
+                        &#60;body&#62;<br>
+                        &#60;p&#62;<span class="info-block-text_code">This is a paragraph with text.</span>&#60;/p&#62;<br>
+                        &#60;/body&#62;<br>
+                        &#60;/html&#62;<br>
+                        </div>
+                        <h2 id="hand" class="info-title">Как работать с CSS</h2>
+                        <p>Каждому тегу в HTML соответствует так называемый селектор CSS. К примеру, тегу &#60;p&#62; соответствует CSS селектор p, с помощью которого мы можем обратиться ко всем абзацам HTML страницы и, например, покрасить их всех одновременно в красный цвет.</p>
+                        <p>После селектора следует ставить фигурные скобки, внутри которых следует писать CSS свойства. Свойства и задают цвет, размер шрифта и другие интересные вещи. Их следует писать в таком формате: имя свойства, потом двоеточие, потом значение этого свойства (например, свойство - это цвет, а "красный" - это значение). Потом нужно поставить точку с запятой и можно писать следующее свойство.</p>
+                        <p>Давайте, например, покрасим все абзацы в красный цвет:</p>
+                        <div class="info-block_code-html">
+                        &#60;zamenit&#62;<span class="info-block-text_code">text</span>&#60;zamenit&#62;
+                        </div>
+                        <div class="info-block_code-css">
+                        p { font-family: Arial; }
+                        </div>
+                        <h2 id="colors" class="info-title">Любые цвета в CSS</h2>
+                        <p>В предыдущих уроках вы увидели, как можно задать цвет ключевым словом. Ключевых слов, однако, немного, и с их помощью нельзя сделать все возможные оттенки всех цветов. Для этого существует еще два способа задания цветов. Через rgb и через решетку #.</p>
+                        <p>Смотрите пример задания цвета через rgb:</p>
+                        <div class="info-block_code-css">
+                        p { color: rgb(255, 236, 114); }
+                        </div>
+                        <p>Смотрите пример задания цвета через #:</p>
+                        <div class="info-block_code-css">
+                        p { color: #ff0000; }
+                        </div>
+                        <p>Для того, чтобы получить нужный цвет, используются специальные программы. Вот пример онлайн генератора цвета: <a class="link_main" href="https://colorscheme.ru">colorscheme.ru</a>, а вот пример программы, позволяющей замерять цвет: <a class="link_main" href="http://colorcop.net">colorcop.net</a>.</p>
+                        <h2 id="text-alignment" class="info-title">Выравнивание текста в CSS</h2>
+                        <p>Сейчас мы научимся выравнивать текст. Для этого используется свойство text-align. Текст можно выравнять по левому краю (значение left), по правому (значение right), по центру (значение center) и одновременно и по обоим краям (значение <span class="info-paragraph_code-css">justify</span>).</p>
+                        <h2 id="text-bold" class="info-title">Жирность текста в CSS</h2>
+                        <p>В данном уроке мы изучим свойство <span class="info-paragraph_code-css">font-weight</span>, которое позволяет сделать текст жирным или наоборот - отменить жирность (к примеру, для заголовков, которые жирные по умолчанию). Чтобы сделать текст жирным, следует указать значение <span class="info-paragraph_code-css">bold</span>, а чтобы отменить жирность - значение <span class="info-paragraph_code-css">normal</span>.</p>
+                        <p>Это свойство работает аналогично тегу b, который мы уже разобрали. Разница в том, что через CSS управлять жирностью гораздо удобнее - можно, например, заставить все абзацы стать жирными, а все заголовки - нежирными, сделав всего пару записей в CSS файле.</p>
+                        <p>Если бы я делал жирный через тег <span class="info-paragraph_code-html">b</span> - мне пришлось бы содержимое каждого абзаца обернуть в этот тег, а это было бы очень затратным по времени (а если я потом захочу убрать жирность абзацам - мне придется убирать все эти теги, представьте, сколько это лишней, бесполезной работы).</p>
+                        <p>В следующем примере мы сделаем все абзацы жирными, а все заголовки <span class="info-paragraph_code-html">h2</span> - нежирными:</p>
+                        <div class="info-block_code-html">
+                        &#60;h2&#62;<span class="info-block-text_code">Title</span>&#60;/h2&#62;&#60;p&#62;<span class="info-block-text_code">This is a paragraph with text.</span>&#60;/p&#62;
+                        </div>
+                        <div class="info-block_code-css">
+                        h2 { font-weight: normal; } p { font-weight: bold; }
+                        </div>
+                        <h2 id="text-italic" class="info-title">Курсив в CSS</h2>
+                        <p>Свойство <span class="info-paragraph_code-css">font-style</span> позволяет сделать текст курсивным или наоборот - отменить курсив. Чтобы сделать текст курсивом, следует добавить значение <span class="info-paragraph_code-css">italic</span>, а чтобы отменить курсив - значение <span class="info-paragraph_code-css">normal</span>. Смотрите пример:</p>
+                        <div class="info-block_code-html">
+                        &#60;p&#62;<span class="info-block-text_code">This is a paragraph with text.</span>&#60;/p&#62;
+                        </div>
+                        <div class="info-block_code-css">
+                        p { font-style: italic; }
+                        </div>
+                        <h2 id="text-size" class="info-title">Размер шрифта в CSS</h2>
+                        <p>Давайте научимся менять размер шрифта. Для этого предназначено свойство <span class="info-paragraph_code-css">font-size</span>, принимающее значение в пикселях.</p>
+                        <p>Давайте зададим тексту абзаца шрифт в 30 пикселей:</p>
+                        <div>
+                        <div class="info-block_code-html">
+                        &#60;p&#62;<span class="info-block-text_code">This is a paragraph with text.</span>&#60;/p&#62;
+                        </div>
+                        <div class="info-block_code-css">
+                        p { font-size: 30px; }
+                        </div>
+                        <h2 id="text-family" class="info-title">Тип шрифта в CSS</h2>
+                        <p>Свойство <span class="info-paragraph_code-css">font-family</span> позволяет задать семейство шрифта. Наиболее распространенные шрифты: Times New Roman (стоит по умолчанию), Arial, Georgia, Verdana, Trebuchet MS, Impact, Arial Black, Comic Sans MS, Courier New.</p>
+                        <p>Поставим для всех абзацев шрифт Arial:</p>
+                        <div class="info-block_code-html">
+                        &#60;p&#62;<span class="info-block-text_code">This is a paragraph with text.</span>&#60;/p&#62;
+                        </div>
+                        <div class="info-block_code-css">
+                        p { font-family: Arial; }
+                        </div>
+                        <h2 id="text-height" class="info-title">Межстрочный интервал в CSS</h2>
+                        <p>Давайте теперь научимся задавать межстрочный интервал тексту. Под межстрочным интервалом подразумевается расстояние между линиями текста, то есть белый промежуток между ними. Для этого предназначено свойство <span class="info-paragraph_code-css">line-height</span>, задающее высоту линии текста.</p>
+                        <p>При использовании свойства <span class="info-paragraph_code-css">line-height</span> вас может ожидать некоторый подвох: это свойство не задает промежуток между строками текста, как могло бы показаться, а задает высоту линии текста.</p>
+                        <p>Это значит, что реальный видимый промежуток между строками будет вычисляться так: <span class="info-paragraph_code-css">line-height</span> - <span class="info-paragraph_code-css">font-size</span> = видимое расстояние между строками текста.
+                        В следующем примере расстояние между строками текста будет 50px - 20px = 30px:</p>
+                        </div>
+                        <div class="info-block_code-html">
+                        &#60;p&#62;<span class="info-block-text_code">long text...</span>&#60;/p&#62;
+                        </div>
+                        <div class="info-block_code-css">
+                        p { font-size: 20px; line-height: 50px; text-align: justify; width: 400px; }
+                        </div>
+                        <h2 id="text-effect" class="info-title">Эффекты текста в CSS</h2>
+                        <p>Свойство <span class="info-paragraph_code-css">text-decoration</span> позволяет задавать некоторые эффекты для текста: подчеркивание, перечеркивание, линию сверху, а также отменять такие эффекты, если какой-либо тег имеет их по умолчанию. Чаще всего это свойство используются для отмены подчеркивания ссылок (они по умолчанию подчеркнуты).
+                        В следующих уроках мы подробно рассмотрим значения свойства <span class="info-paragraph_code-css">text-decoration</span>.</p>
+                        <h2 id="text-effect-close" class="info-title">Отмена эффектов для текста в CSS</h2>
+                        <p>Значение none отменяет все эффекты. Обычно используется для отмены подчеркивания ссылок.</p>
+                        <p>Смотрите пример:</p>
+                        <div class="info-block_code-html">
+                            &#60;a href=""&#62;link&#60;/a&#62;
+                        </div>
+                        <div class="info-block_code-css">
+                        a { text-decoration: none; }
+                        </div>
+                    </div>
+                    <div class="theme-buttons">
+                        <div class="theme-buttons-wrapper">
+                            <a class="theme-buttons__link" href="HTML.html"><button class="theme-button">HTML</button></a>
+                            <a class="theme-buttons__link" href="block-model.html"><button class="theme-button">Блочная модель</button></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+<!---------------------------------------- END MAIN ---------------------------------------->
+
+<!---------------------------------------- FOOTER ---------------------------------------->
+    <footer id="down-button" class="footer">
+        <div class="footer-wrapper">
+            <div>Кирюнин Кирилл © 2023</div>
+            <div>
+                <a target="_blank" href="https://t.me/cirios"><img class="footer__image" src="../image/telegram.svg" alt="telegram"></a>
+                <a target="_blank" href="https://vk.com/kirunin1"><img class="footer__image" src="../image/vk.svg" alt="vk"></a>
+            </div>
+        </div>
+    </footer>
+<!---------------------------------------- END FOOTER ---------------------------------------->
 </body>
 </html>
