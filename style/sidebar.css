@@ -8,8 +8,11 @@
     position: sticky;
     top: 80px;
 }
-.sidebar__wrapper_small{
-    top: 148px;
+.sidebar_index{
+    top: 143px;
+}
+.sidebar_about-the-school{
+    top: 125px;
 }
 .list{
     padding: 0 15px 0 30px;
