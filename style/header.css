@@ -32,11 +32,6 @@
 .header__nav-item:hover{
     transform: scale(1.2);
 }
-
-/* end home page */
-
-
-/* HTMl */
-
-
-/* END HTMl */
+.active_page{
+    border-bottom: 1px solid white;
+}
