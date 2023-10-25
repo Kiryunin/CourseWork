@@ -15,7 +15,7 @@
     transition: .6s ease;
 }
 .header__logo-image:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .header__nav{
     display: flex;
