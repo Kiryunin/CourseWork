@@ -40,21 +40,21 @@
                 <div class="sidebar__wrapper">
                     <div class="sidebar__title">НАВИГАЦИЯ:</div>
                     <ul class="list">
-                        <a class="link" href="#"><li class="list__item">Четыре значения в свойстве margin в CSS</li></a>
-                        <a class="link" href="#"><li class="list__item">Три значения в свойстве margin в CSS</li></a>
-                        <a class="link" href="#"><li class="list__item">Несколько значений в свойстве padding в CSS</li></a>
-                        <a class="link" href="#"><li class="list__item">Работа с отступами padding в CSS</li></a>
-                        <a class="link" href="#"><li class="list__item">Особенности блочных элементов в CSS</li></a>
-                        <a class="link" href="#"><li class="list__item">Ширина и высота блочного элемента в CSS</li></a>
-                        <a class="link" href="#"><li class="list__item">Несколько блочных элементов рядом в CSS</li></a>
-                        <a class="link" href="#"><li class="list__item">Особенности строчных элементов в CSS</li></a>
-                        <a class="link" href="#"><li class="list__item">Ширина и высота строчного элемента в CSS</li></a>
-                        <a class="link" href="#"><li class="list__item">Несколько строчных элементов рядом в CSS</li></a>
-                        <a class="link" href="#"><li class="list__item">Особенности строчно-блочных элементов в CSS</li></a>
-                        <a class="link" href="#"><li class="list__item">Центрирование строчно-блочных элементов в CSS</li></a>
-                        <a class="link" href="#"><li class="list__item">Флекс элементы в CSS</li></a>
-                        <a class="link" href="#"><li class="list__item">Строчно-блочный родитель флекс элементов в CSS</li></a>
-                        <a class="link" href="#"><li class="list__item">Выравнивание flex элементов в CSS</li></a>
+                        <a class="link" href="#four-margin-values"><li class="list__item">Четыре значения в свойстве margin в CSS</li></a>
+                        <a class="link" href="#three-margin-values"><li class="list__item">Три значения в свойстве margin в CSS</li></a>
+                        <a class="link" href="#multiple-padding-values"><li class="list__item">Несколько значений в свойстве padding в CSS</li></a>
+                        <a class="link" href="#work-padding"><li class="list__item">Работа с отступами padding в CSS</li></a>
+                        <a class="link" href="#features-block"><li class="list__item">Особенности блочных элементов в CSS</li></a>
+                        <a class="link" href="#width-height-block"><li class="list__item">Ширина и высота блочного элемента в CSS</li></a>
+                        <a class="link" href="#multiple-block"><li class="list__item">Несколько блочных элементов рядом в CSS</li></a>
+                        <a class="link" href="#features-row"><li class="list__item">Особенности строчных элементов в CSS</li></a>
+                        <a class="link" href="#width-height-row"><li class="list__item">Ширина и высота строчного элемента в CSS</li></a>
+                        <a class="link" href="#multiple-row"><li class="list__item">Несколько строчных элементов рядом в CSS</li></a>
+                        <a class="link" href="#features-row-block"><li class="list__item">Особенности строчно-блочных элементов в CSS</li></a>
+                        <a class="link" href="#center-row-block"><li class="list__item">Центрирование строчно-блочных элементов в CSS</li></a>
+                        <a class="link" href="#flex-element"><li class="list__item">Флекс элементы в CSS</li></a>
+                        <a class="link" href="#row-block-parent"><li class="list__item">Строчно-блочный родитель флекс элементов в CSS</li></a>
+                        <a class="link" href="#alignment-flex"><li class="list__item">Выравнивание flex элементов в CSS</li></a>
                     </ul>
                     <div class="navigation-buttons">
                         <div class="navigation-buttons-wrapper">
@@ -78,18 +78,134 @@
             <section class="main-content">
                 <div class="main-content-wrapper">
                     <div class="info-wrapper">
-                        <h2 id="fundamental" class="info-title">Основы работы с языком</h2>
-                        <p>Сейчас мы будем разбираться со свойством margin, которое задает отступы между элементами сайта. Давайте посмотрим, как это выглядит на практике.</p>
-                        <p>Для начала приведу вам два вложенных друг в друга блока без margin (они слипнутся и мы увидим двойную границу):</p>
+                        <h2 id="four-margin-values" class="info-title info-title_first-paragraph">Четыре значения в свойстве margin в CSS</h2>
+                        <p>Сейчас мы будем разбираться со свойством <span class="info-paragraph_code-css">margin</span>, которое задает отступы между элементами сайта. Давайте посмотрим, как это выглядит на практике.</p>
+                        <p>Для начала приведу вам два вложенных друг в друга блока без <span class="info-paragraph_code-css">margin</span> (они слипнутся и мы увидим двойную границу):</p>
                         <div class="info-block_code-html">
-                            
+                            &#60;div id="parent"&#62;<br>
+                            &#60;div id="child"&#62;
+                            &#60;/div&#62;<br>&#60;/div&#62;
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quidem dolores deserunt quo repellat inventore dolorum laboriosam, architecto vel, nihil quae voluptas, porro nobis magni. Officia veritatis sequi, quisquam, asperiores iure necessitatibus praesentium corrupti veniam eos blanditiis nihil, tenetur harum! Corrupti tenetur voluptas dolorum eveniet consectetur pariatur odio adipisci consequuntur quod, natus in nesciunt eos necessitatibus maiores illum aliquam sint perferendis culpa reiciendis eius obcaecati amet! Distinctio repudiandae et ratione veniam praesentium id laborum aliquid tenetur mollitia debitis excepturi recusandae ad, ipsum nobis dolores consectetur eum. Accusamus architecto at quod dicta nihil atque vel ex molestiae, quam accusantium similique eveniet ab, nulla magni dolore libero? Natus dolores neque inventore quos soluta corporis aspernatur amet, ipsa qui iusto optio! In voluptas commodi, saepe autem soluta provident, esse culpa beatae quisquam itaque exercitationem recusandae vero doloremque delectus nostrum. Tempora, quia quae asperiores reiciendis beatae atque repellendus, iste perferendis, nam incidunt ex vitae sit officia doloremque eius ducimus impedit sint? Tenetur ipsa dolores recusandae provident maiores alias quam odio, non laudantium eligendi officiis deserunt illo. Dolorem, voluptatum animi unde aliquid vel sint? Dolorem quaerat fugit nobis consectetur ut! Nisi dignissimos recusandae modi rem molestias tempora, mollitia porro rerum nulla accusantium eligendi ipsa optio repellendus, qui facere odit et at numquam culpa. Sequi alias voluptate doloribus quaerat illo corporis nemo ratione aperiam. Quam excepturi sapiente quaerat ullam quisquam iure? Eius, voluptates beatae ullam repellat numquam minima similique sed iure temporibus explicabo itaque, adipisci quod et velit tempora debitis ex? Dolorem nihil corrupti unde sunt saepe quo. Praesentium amet autem velit reprehenderit fugiat eius ad rerum. Doloribus provident repudiandae sunt, labore error excepturi eum facere molestias quis iste dicta blanditiis, exercitationem distinctio necessitatibus! Pariatur reiciendis minus dolor nulla officia. Qui, doloremque. Rem dolorum repellendus sint corporis. Magnam harum dolore molestiae itaque non ea optio consequuntur ipsa corporis nostrum rem veniam, accusamus facilis sint eaque! At ad, facilis id dolor eligendi quas autem ex? Sunt quam, repellendus tempore ipsa omnis laudantium esse excepturi praesentium optio perspiciatis, incidunt unde sapiente, maxime adipisci eius cumque quae exercitationem. Autem vero iste quaerat blanditiis illo. Quo, sequi cum aperiam voluptates nesciunt nam doloremque quasi earum suscipit ipsa veritatis obcaecati cumque doloribus ab quod similique vitae, repellendus laudantium necessitatibus eligendi, consequuntur provident. Velit, quas. Tempora expedita totam harum porro. Eligendi, praesentium voluptatibus! Quidem dicta explicabo sunt laborum et impedit itaque nam, odio, consequatur unde repudiandae delectus repellat vero neque, fugit atque modi. Accusamus sit quos praesentium ullam non vitae iure asperiores, blanditiis incidunt! Animi accusantium placeat fuga voluptatem, praesentium quis totam et cupiditate magni aspernatur maxime omnis autem hic unde nam ab delectus rerum ad ullam nihil quidem laudantium? Eaque ad porro voluptatum itaque ex. Assumenda ullam, provident laboriosam voluptatem quod perspiciatis, praesentium a fuga deleniti, exercitationem eos aliquam aut quibusdam ex eligendi dicta impedit ea corporis velit quas hic perferendis beatae dolor? Inventore officiis aperiam ea. Cum fuga laboriosam accusantium sit incidunt qui consectetur mollitia ut, sed, non nostrum reiciendis similique dolorem quam nisi. Nostrum commodi, aliquam consectetur voluptates provident delectus quidem fugit inventore asperiores molestiae accusantium temporibus ipsam quasi. Iure veniam perferendis voluptatem quisquam enim minima aliquid, quam pariatur quaerat eius cum voluptate officiis blanditiis, dolores nostrum expedita ipsa, consectetur quo ex voluptas dolor qui! Nam corporis, officiis nisi ipsam neque qui. Nesciunt omnis vero odio voluptatem vitae voluptatibus animi fugit pariatur consequatur, quia saepe, natus ea placeat delectus consequuntur. Quibusdam quam nostrum, alias laboriosam quo id ea corrupti cupiditate illo unde commodi at ipsam ipsa maiores quaerat quae. Velit vitae ducimus, numquam minima dolorum quod id aspernatur tempora nostrum sed nulla vel repellat omnis inventore eius hic fugit assumenda quas molestias? Non, maxime eligendi. Excepturi necessitatibus vitae, inventore nam corrupti quae ipsum quia maxime ratione fugit, libero ut voluptatem. Eligendi ratione velit laudantium earum consequatur esse doloremque repellendus sed tempore explicabo doloribus, adipisci blanditiis dolor! Accusamus omnis corrupti magni error repellendus iure odio, illo quaerat suscipit repellat, est doloribus velit minus esse ipsam quisquam ducimus commodi dicta labore. Quae nemo vel laboriosam porro deserunt corporis dolorem alias quia accusamus tempore! Illum obcaecati natus nostrum veniam laboriosam repudiandae tempore vero eveniet, porro repellendus ullam excepturi quisquam error. Nemo, dignissimos ratione. Tempora, odit aliquam. Impedit, delectus eaque! Modi aspernatur praesentium animi! Totam quam eaque a nobis ratione magni facilis autem, culpa consectetur. Adipisci, ratione repellendus amet ipsam accusamus hic temporibus ut corporis perspiciatis consequuntur molestias praesentium aliquid consequatur possimus nam maxime tempore sed quam odio? Vel quia consectetur quam sapiente aliquam nemo asperiores quaerat! Quisquam beatae aliquam nihil, eius porro explicabo laboriosam impedit quidem natus at. Nostrum, voluptatum consequuntur! Iste non beatae quidem quos ut tempora expedita aliquam repellat provident, quis repudiandae cupiditate voluptate rerum eius. Quis modi soluta cupiditate quisquam iure voluptatem temporibus debitis accusantium consequuntur, quasi officiis dignissimos natus quo corrupti voluptatum reprehenderit voluptates fuga inventore totam dolorum nihil eius quibusdam possimus nesciunt? Dolor ut mollitia ratione fuga odit eveniet, omnis iure deleniti nostrum voluptatem, hic itaque ex deserunt temporibus dignissimos vel, distinctio rerum placeat reiciendis commodi est? Nihil minus possimus doloribus voluptatum consectetur blanditiis iste? Excepturi, quisquam culpa. Cumque officiis tempora praesentium reprehenderit debitis aut similique, dignissimos explicabo excepturi saepe sed corporis dicta quod non. Eligendi a consectetur minus numquam, assumenda quibusdam quo recusandae vitae ad praesentium veritatis consequuntur deleniti quam totam voluptatum accusantium, impedit similique tenetur inventore harum error delectus, doloribus atque! Ducimus tenetur, beatae consequuntur cumque facere quos aliquam sed, labore non veniam dignissimos culpa provident nesciunt doloremque, cum tempora quidem magni nemo? Praesentium illum sequi iusto, ipsum quo consequatur consequuntur ratione laborum velit nobis inventore. Enim distinctio itaque accusantium fuga aliquam rerum. Ad sed vitae nisi optio! Aut cum laudantium assumenda quod delectus temporibus placeat esse ipsum, expedita modi! Veniam quod error recusandae odit maxime, provident itaque dolorum quisquam nemo dolor modi. Voluptate ab itaque iste dignissimos, temporibus ipsum ratione ad cupiditate ex repellat dolorum distinctio, eum, possimus minima fugit rem corporis minus beatae consectetur vero laudantium facere totam deleniti? Eligendi minus maiores quasi ipsa reiciendis fuga dolorem facere neque? Porro dignissimos quo officiis.</p>
+                        <div class="info-block_code-css">
+                            #parent { width: 300px; border: 1px solid red; } <br>
+                            #child { height: 100px; border: 1px solid green; }  
+                        </div>
+                        <h2 id="three-margin-values" class="info-title">Три значения в свойстве margin в CSS</h2>
+                        <p>Ну, и наконец, если передать свойству <span class="info-paragraph_code-css">margin</span> три значения, то первое будет задавать отступ сверху, третье - отступ снизу, а второе - одновременно отступ слева и справа.
+                        Давайте посмотрим пример:</p>
+                        <div class="info-block_code-html">
+                            &#60;div id="parent"&#62;<br>
+                            &#60;div id="child"&#62;
+                            &#60;/div&#62;<br>&#60;/div&#62;
+                        </div>
+                        <div class="info-block_code-css">
+                            #parent { width: 300px; border: 1px solid red; } <br>
+                            #child { height: 100px; border: 1px solid green; margin: 10px 20px 30px; }
+                        </div>
+                        <h2 id="multiple-padding-values" class="info-title">Несколько значений в свойстве padding в CSS</h2>
+                        <p>В свойство <span class="info-paragraph_code-css">padding</span> можно передать два, три или четыре параметра. В этих случаях он работает аналогично свойству <span class="info-paragraph_code-css">margin</span>.</p>
+                        <h2 id="work-padding" class="info-title">Работа с отступами padding в CSS</h2>
+                        <p>Пусть некоторому элементу мы задали ширину 100px. В CSS это отнюдь не означает, что элемент действительно будет шириной в 100px. Дело в том, что добавление <span class="info-paragraph_code-css">padding</span> расширяет элемент и он становится больше, чем указано в свойстве <span class="info-paragraph_code-css">width</span>.<br>
+                        Давайте посмотрим на примере. Сделаем два блока, которым зададим ширину 100 пикселей. При этом второму блоку зададим <span class="info-paragraph_code-css">padding</span>, а первому - нет. В результате второй блок будет больше на размер отступа:</p>
+                        <div class="info-block_code-html">
+                            &#60;div id="elem1"&#62;<br>
+                            &#60;/div&#62;&#60;div id="elem2"&#62;<br>
+                            &#60;/div&#62;
+                        </div>
+                        <div class="info-block_code-css">
+                            #elem1 { width: 100px; height: 100px; background: #f1f1f1; margin-bottom: 20px; } <br>
+                            #elem2 { padding: 25px; /* задаем отступы */ width: 100px; height: 100px; background:#f1f1f1; }
+                        </div>
+                        <h2 id="features-block" class="info-title">Особенности блочных элементов в CSS</h2>
+                        <p>В следующих уроках мы рассмотрим теги, которые при отображении на экране являются блочными. К таким тегам относятся, к примеру, теги <span class="info-paragraph_code-html">div</span>, с которыми мы будем работать далее.</p>
+                        <h2 id="width-height-block" class="info-title">Ширина и высота блочного элемента в CSS</h2>
+                        <p>Блочному элементу можно задать ширину и высоту:</p>
+                        <div class="info-block_code-html">
+                            &#60;div&#62;<span class="info-html-text">text</span>&#60;/div&#62;
+                        </div>
+                        <div class="info-block_code-css">
+                            div { width: 100px; height: 100px; border: 1px solid red; }
+                        </div>
+                        <h2 id="multiple-block" class="info-title">Несколько блочных элементов рядом в CSS</h2>
+                        <p>Если расположить несколько блочных элементов рядом, то каждый из них будет начинаться с новой строки:</p>
+                        <div class="info-block_code-html">
+                            &#60;div&#62;<span class="info-html-text">text</span>&#60;/div&#62;<br>
+                            &#60;div&#62;<span class="info-html-text">text</span>&#60;/div&#62;<br>
+                            &#60;div&#62;<span class="info-html-text">text</span>&#60;/div&#62;<br>
+                        </div>
+                        <div class="info-block_code-css">
+                            div { width: 100px; height: 100px; margin-bottom: 20px; border: 1px solid red; }
+                        </div>
+                        <h2 id="features-row" class="info-title">Особенности строчных элементов в CSS</h2>
+                        <p>Существуют теги, которые при отображении на экране являются строчными. К таким тегам относятся, к примеру, тег <span class="info-paragraph_code-html">span</span>. На примере этого тега давайте посмотрим на особенности строчных элементов в следующих уроках.</p>
+                        <h2 id="width-height-row" class="info-title">Ширина и высота строчного элемента в CSS</h2>
+                        <p>Ширина и высота строчного элемента всегда ограничены его текстом. Даже если задать свойства <span class="info-paragraph_code-css">width</span> и <span class="info-paragraph_code-css">height</span> - для строчного элемента они не сработают:</p>
+                        <div class="info-block_code-html">
+                            &#60;span&#62;<span class="info-html-text">text</span>&#60;/span&#62; 
+                        </div>
+                        <div class="info-block_code-css">
+                            span { width: 100px; height: 100px; border: 1px solid red; }
+                        </div>
+                        <h2 id="multiple-row" class="info-title">Несколько строчных элементов рядом в CSS</h2>
+                        <p>Если расположить несколько строчных элементов рядом, то они выстроятся в ряд:</p>
+                        <div class="info-block_code-html">
+                            &#60;span&#62;<span class="info-html-text">text</span>&#60;span&#62;<br>
+                            &#60;span&#62;<span class="info-html-text">text</span>&#60;span&#62;<br>  
+                            &#60;span&#62;<span class="info-html-text">text</span>&#60;span&#62;
+                        </div>
+                        <div class="info-block_code-css">
+                            span { border: 1px solid red; }
+                        </div>
+                        <h2 id="features-row-block" class="info-title">Особенности строчно-блочных элементов в CSS</h2>
+                        <p>Существуют теги, которые при отображении на экране являются строчно-блочными. Строчно-блочные элементы сочетают особенности блочных и строчных элементов.</p>
+                        <p>Вы пока знаете только один такой тег: <span class="info-paragraph_code-html">img</span>. Картинки, однако, не раскрывают все особенности этой модели, поэтому работу таких элементов посмотрим на примере тегов <span class="info-paragraph_code-html">span</span>, сменив им блочную модель, задав свойству <span class="info-paragraph_code-css">display</span> значение <span class="info-paragraph_code-css">inline-block</span>.</p>
+                        <h2 id="center-row-block" class="info-title">Центрирование строчно-блочных элементов в CSS</h2>
+                        <p>Для примера давайте поставим строчно-блочные элементы по центру:</p>
+                        <div class="info-block_code-html">
+                            &#60;div class="parent"&#62;<br>
+                            &#60;span class="child"&#62;<span class="info-html-text">text</span>&#60;/span&#62;<br>
+                            &#60;span class="child"&#62;<span class="info-html-text">text</span>&#60;/span&#62;<br>
+                            &#60;span class="child"&#62;<span class="info-html-text">text</span>&#60;/span&#62;<br>
+                            &#60;/div&#62;<br>
+                        </div>
+                        <div class="info-block_code-css">
+                            .parent { text-align: center; padding: 10px 0; border: 1px solid red; } <br>
+                            .child { display: inline-block; padding: 10px 20px; border: 1px solid green; }
+                        </div>
+                        <h2 id="flex-element" class="info-title">Флекс элементы в CSS</h2>
+                        <p>Кроме изученных нами типов блочных моделей есть еще одна - флекс элементы. Для того, чтобы получить такие элементы, нужно родителю этих элементов написать свойство <span class="info-paragraph_code-css">display</span> в значении <span class="info-paragraph_code-css">flex</span>. Сам родитель останется блочным элементом, а вот его потомки станут флекс элементами.</p>
+                        <p>Флекс элементы, подобно блочным могут иметь ширину и высоту, <span class="info-paragraph_code-css">margin</span> и <span class="info-paragraph_code-css">padding</span>. Однако, в отличие от блочных, по умолчанию флекс элементы выстраиваются в ряд внутри своего родителя.</p>
+                        <p>Давайте попробуем:</p>
+                        <div class="info-block_code-html">
+                            &#60;div class="parent"&#62;<br>
+                            &#60;div class="child"&#62;<span class="info-html-text">1</span>&#60;/div&#62;<br>
+                            &#60;div class="child"&#62;<span class="info-html-text">2</span>&#60;/div&#62;<br>
+                            &#60;div class="child"&#62;<span class="info-html-text">3</span>&#60;/div&#62;<br>&#60;/div&#62;<br>
+                        </div>
+                        <div class="info-paragraph_code-css">
+                            .parent { display: flex; width: 300px; height: 200px; border: 1px solid red; }<br>
+                            .child { width: 50px; height: 50px; border: 1px solid green; }
+                        </div>
+                        <h2 id="row-block-parent" class="info-title">Строчно-блочный родитель флекс элементов в CSS</h2>
+                        <p>Вместо значения <span class="info-paragraph_code-css">flex</span> для свойства <span class="info-paragraph_code-css">display</span> родителю можно поставить значение <span class="info-paragraph_code-css">inline-flex</span>. В этом случае этот родитель будет вести себя, как строчно-блочный элемент.</p>
+                        <p>Например, если не задать ширину родителя, то его ширина сформируется шириной потомков:</p>
+                        <div class="info-block_code-html">
+                            &#60;div class="parent"&#62;<br>
+                            &#60;div class="child"&#62;<span class="info-html-text">1</span>&#60;/div&#62;<br>
+                            &#60;div class="child"&#62;<span class="info-html-text">2</span>&#60;/div&#62;<br>
+                            &#60;div class="child"&#62;<span class="info-html-text">3</span>&#60;/div&#62;<br>&#60;/div&#62;<br>
+                        </div>
+                        <div class="info-paragraph_code-css">
+                            .parent { display: inline-flex; border: 1px solid red; }<br>
+                            .child { width: 50px; height: 50px; border: 1px solid green; }
+                        </div>
+                        <h2 id="alignment-flex" class="info-title">Выравнивание flex элементов в CSS</h2>
+                        <p>Для выравнивания флекс элементов используется специальное свойство <span class="info-paragraph_code-css">justify-content</span>. Оно принимает достаточно много значений, которые мы и изучим в следующих уроках.</p>
                     </div>
                     <div class="theme-buttons">
                         <div class="theme-buttons-wrapper">
-                            <a class="theme-buttons__link" href="HTML.html"><button class="theme-button">HTML</button></a>
-                            <a class="theme-buttons__link" href="block-model.html"><button class="theme-button">Блочная модель</button></a>
+                            <a class="theme-buttons__link" href="CSS.html"><button class="theme-button">CSS</button></a>
+                            <a class="theme-buttons__link" href="flexbox.html"><button class="theme-button">Flexbox</button></a>
                         </div>
                     </div>
                 </div>

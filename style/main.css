@@ -7,9 +7,13 @@
 }
 .info-title{
     margin: 0;
-    padding: 40px 0 40px 0;
+    padding: 110px 0 24px 0;
     font-size: 33px;
     font-weight: 600;
+    line-height: 30px;
+}
+.info-title_first-paragraph{
+    padding: 0px 0 24px 0;
 }
 .info-paragraph_last{
     margin-bottom: 0;
@@ -17,17 +21,20 @@
 .info-title_top-padding{
     padding-top: 67.5px;
 }
+.info-html-text{
+    color: black;
+}
 .info-paragraph_code-html{
     color: #9F2340;
     background: #E7E7E7;
     border-radius: 10px;
-    padding: 4px;
+    padding: 4px 8px 4px 8px;
 }
 .info-paragraph_code-css{
     color: #6f51e6;
     background: #E7E7E7;
     border-radius: 10px;
-    padding: 4px;
+    padding: 4px 8px 4px 8px;
 }
 .info-block_code-html{
     margin: 16px 0;
@@ -42,9 +49,6 @@
     color: #6f51e6;
     background: #E7E7E7;
     border-radius: 10px;
-}
-.info-block-text_code{
-    color: black;
 }
 .theme-buttons-wrapper{
     padding-top: 10px;

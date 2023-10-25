@@ -6,12 +6,22 @@
     display: flex;
     flex-direction: column;
     position: sticky;
-    top: 0px;
+    top: 75px;
 }
 .list{
     padding: 10px 15px 15px 30px;
     display: flex;
     flex-direction: column;
+    border-radius: 15px;
+    background: black;
+    overflow: auto;
+    height: 440px;
+}
+.list_small-sidebar{
+    padding: 10px 15px 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 15px;
     background: black;
     overflow: auto;
@@ -27,7 +37,7 @@
     text-align: center;
     font-size: 30px;
     font-weight: 600;
-    padding:40px 0 40px 0;
+    padding: 0 0 40px 0;
 }
 .navigation-buttons-wrapper{
     padding: 25px 0 0 0 ;

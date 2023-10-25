@@ -3,6 +3,6 @@
 }
 .container{
     display: flex;
-    padding: 27.5px 150px 67.5px 67.5px;
+    padding: 75px 150px 75px 67.5px;
     justify-content: space-between;
 }
