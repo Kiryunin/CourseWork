@@ -1,29 +1,24 @@
 .sidebar{
     flex-basis: 22.5%;
-    height: 100%;
-    position: sticky;
-    top: 0;
 }
-.sidebar-wrapper{
+.sidebar__wrapper{
+    height: auto;
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 0px;
 }
 .list{
-    border-top: 15px solid black;
-    border-bottom: 15px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 15px;
     background: black;
     overflow: auto;
-}
-.list__title-item{
-    padding: 25px 25px 0 25px;
-    font-weight: 600;
-    font-size: 16px;
-}
-.list__title-item:last-child{
-    padding: 25px 0 25px 25px;
+    height: 440px;
 }
 .list__item{
+    list-style: disc;
     padding: 10px 0;
     font-weight: 400;
     font-size: 16px;
@@ -35,15 +30,6 @@
     font-weight: 600;
     padding:40px 0 40px 0;
 }
-
-/* paga html */
-
-.list_page-html-height{
-    height: 450px;
-}
-/* .sidebar_page-html{
-    padding-bottom: 215px;
-} */
 .navigation-buttons-wrapper{
     padding: 25px 0 0 0 ;
     display: flex;
