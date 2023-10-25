@@ -1,27 +1,20 @@
 .sidebar{
-    /* padding-bottom: 280px; */
     display: flex;
     flex-direction: column;
-    width: 60%;
+    flex-basis: 22.5%;
     height: 500px;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
-    border-radius: 0 15px;
 }
 .list{
-    padding:0 15px 0 15px;
     border-top: 15px solid black;
     border-bottom: 15px solid black;
     border-radius: 15px;
     background: black;
-    width: 90%;
-    height: auto;
-    position: sticky;
-    top: 0;
     overflow: auto;
 }
 .list__title-item{
-    padding: 25px 0 0 25px;
+    padding: 25px 25px 0 25px;
     font-weight: 600;
     font-size: 16px;
 }
@@ -46,10 +39,9 @@
 .list_page-html-height{
     height: 450px;
 }
-.sidebar_page-html{
+/* .sidebar_page-html{
     padding-bottom: 215px;
-    width: 80%;
-}
+} */
 .navigation-buttons-wrapper{
     padding: 25px 0 0 0 ;
     display: flex;

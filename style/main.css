@@ -1,3 +1,6 @@
+.main-content{
+    flex-basis: 72.5%;
+}
 .link_main{
     text-decoration: underline ;
     color: #f89d1b;
