@@ -25,4 +25,5 @@
 .diploma:hover{
     transform: scale(1.03);
     background: #6f51e6;
+    color: black;
 }
