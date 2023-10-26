@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kirunin WebSchool</title>
+
+    <link rel="shortcut icon" href="../image/logo.svg" type="image/x-icon">
+
     <link rel="stylesheet" href="../style/normalize.css">
     <link rel="stylesheet" href="../style/common-styles.css">
     <link rel="stylesheet" href="../style/header.css">
@@ -17,12 +20,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
+<!-- <script>
+    // Обработчик события прокрутки страницы
+    window.addEventListener("scroll", function() {
+      // Получите текущую позицию прокрутки страницы
+      var scrollPosition = window.scrollY;
+  
+      // Получите все ссылки навигации
+      var navLinks = document.querySelectorAll("#navigation a");
+  
+      // Переберите все ссылки и проверьте, находится ли соответствующий раздел в видимой части страницы
+      navLinks.forEach(function(link) {
+        var sectionId = link.getAttribute("href").substring(1); // Извлечь идентификатор раздела
+        var section = document.getElementById(sectionId); // Получить элемент раздела
+  
+        if (section) {
+          var sectionTop = section.offsetTop;
+          var sectionBottom = section.offsetTop + section.offsetHeight;
+  
+          if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+            // Если раздел виден, измените стиль ссылки
+            link.style.color = "red"; // Пример: установите красный цвет
+          } else {
+            // Если раздел не виден, верните стиль по умолчанию
+            link.style.color = ""; // Удалите установленный цвет
+          }
+        }
+      });
+    });
+  </script> -->
+  
+  
 <body id="up-button" class="body_background">
 <!---------------------------------------- HEADER ---------------------------------------->
     <header class="header">
         <div class="header-wrapper">
             <div class="header__nav">
-                <div><a href="index.html"><img class="header__logo-image" src="../image/logo home page.svg" alt="logo"></a></div>
+                <a href="index.html"><div class="image-container-header">
+                    <div class="svg-image_index-page"></div>
+                </div></a>
                 <div class="header__nav-item"><a class="link" href="about-the-school.html">О школе</a></div>
                 <div class="header__nav-item"><a class="link" href="HTML.html">HTML</a></div>
                 <div class="header__nav-item"><a class="link" href="CSS.html">CSS</a></div>
@@ -39,7 +76,7 @@
             <aside class="sidebar sidebar__wrapper_small">
                 <div class="sidebar__wrapper sidebar_index">
                     <div class="sidebar__title">НАВИГАЦИЯ:</div>
-                    <ul class="list list_small">
+                    <ul id="navigation" class="list list_small">
                         <a class="link" href="#first-question"><li class="list__item">1 ВОПРОС - актуальна ли web-разработка?</li></a>
                         <a class="link" href="#second-question"><li class="list__item">2 ВОПРОС - сколько зарабатывают Web-разработчики?</li></a>
                         <a class="link" href="#third-question"><li class="list__item">3 ВОПРОС - где учиться web-разработке?</li></a>
@@ -90,7 +127,13 @@
                         <p class="info-paragraph">3. <b>Гибкий график</b>: Мы предлагаем формат онлайн-обучения. Это позволяет студентам выбирать оптимальное время.</p>
                         <p class="info-paragraph">4. <b>Сообщество и поддержка</b>: В "<b>Kirunin WebSchool</b>" вы будете частью активного сообщества студентов и профессионалов. Мы предоставляем поддержку, обмен опытом и помощь в развитии карьеры.</p>
                         <p class="info-paragraph info-paragraph_last">Если вы мечтаете о карьере в веб-разработке и ищете качественное образование, "<b>Kirunin WebSchool</b>" предоставляет вам все необходимое для достижения ваших целей. Мы готовы поддержать вас на вашем пути к успеху в этой захватывающей и перспективной области.</p>
-                        <p>lorem</p>
+                    </div>
+                    <!--  delete-->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quis minima a ad ducimus asperiores sunt facere nihil exercitationem totam eius eveniet, maxime quam veritatis laudantium at qui odit? Neque.</p>
+                    <div class="learn-more-buttons">
+                        <div class="learn-more-buttons-wrapper">
+                            <a class="learn-more-buttons__link" href="about-the-school.html"><button class="learn-more-button">Узнать больше</button></a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -102,13 +145,12 @@
     <footer id="down-button" class="footer">
         <div class="footer-wrapper">
             <div>Кирюнин Кирилл © 2023</div>
-            <div>
-                <a target="_blank" href="https://t.me/cirios"><img class="footer__image" src="../image/telegram.svg" alt="telegram"></a>
-                <a target="_blank" href="https://vk.com/kirunin1"><img class="footer__image" src="../image/vk.svg" alt="vk"></a>
+            <div class="images-container-footer">
+                <a href="https://t.me/cirios" target="_blank"><div class="svg-image-footer-telegram"></div></a>
+                <a href="https://vk.com/kirunin1" target="_blank"><div class="svg-image-footer-vk"></div></a>
             </div>
         </div>
     </footer>
 <!---------------------------------------- END FOOTER ---------------------------------------->
-<script src="s"></script>
 </body>
 </html>

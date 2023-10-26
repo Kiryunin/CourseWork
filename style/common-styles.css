@@ -1,6 +1,9 @@
 .body_background{
     background-color: black;
 }
+::-webkit-scrollbar {
+    width: 0;
+  }
 *{
     scroll-behavior: smooth;
     /* border: 1px solid black; */

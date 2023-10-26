@@ -15,9 +15,6 @@
 .info-title_first-paragraph{
     padding: 0px 0 24px 0;
 }
-.info-paragraph_last{
-    margin-bottom: 0;
-}
 .info-title_top-padding{
     padding-top: 67.5px;
 }
@@ -65,12 +62,36 @@
     width: 400px;
     height: 70px;
     background: #000;
+    border: none;
     color: white;
     font-size: 20px;
     border-radius: 50px;
     cursor: pointer;
-    transition: .6s ease;
+    transition: .3s ease;
 }
 .theme-button:hover{
-    transform: scale(1.03);
+    transform: scale(1.02);
+    background: #6f51e6;
+    color: black;
+}
+.learn-more-buttons-wrapper{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.learn-more-button{
+    width: 900px;
+    height: 70px;
+    border-radius: 50px;
+    background: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease;
+    font-size: 20px;
+}
+.learn-more-button:hover{
+    transform: scale(1.02);
+    background: #6f51e6;
+    color: black;
 }

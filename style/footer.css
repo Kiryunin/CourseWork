@@ -9,11 +9,34 @@
     justify-content: space-between;
     align-items: center;
 }
-.footer__image{
+
+
+
+.images-container-footer{
+    width: 12%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.svg-image-footer-telegram{
     width: 50px;
     height: 50px;
-    transition: .6s ease;
+    cursor: pointer;
+    background-image: url(../image/telegram.svg);
+    transition: .5s ease;
 }
-.footer__image:hover{
+.svg-image-footer-telegram:hover{
+    background-image: url(../image/telegram_hover.svg);
+    transform: scale(1.1);
+}
+.svg-image-footer-vk{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-image: url(../image/vk.svg);
+    transition: .5s ease;
+}
+.svg-image-footer-vk:hover{
+    background-image: url(../image/vk_hover.svg);
     transform: scale(1.1);
 }

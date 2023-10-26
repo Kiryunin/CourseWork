@@ -59,8 +59,10 @@
     border-radius: 50px;
     background: black;
     color: white;
-    transition: .6s ease;
+    transition: .3s ease;
 }
 .navigation-button:hover{
-    transform: scale(1.08);
+    transform: scale(1.06);
+    background: #6f51e6;
+    color: black;
 }

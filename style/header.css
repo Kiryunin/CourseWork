@@ -1,21 +1,8 @@
-/* home page */
 .header-wrapper{
     display: flex;
     flex-direction: row;
     padding: 0 250px;
     background: black;
-}
-.header__logo{  
-    display: flex;
-    align-items: center;
-}
-.header__logo-image{
-    width: 35px;
-    height: 35px;
-    transition: .6s ease;
-}
-.header__logo-image:hover{
-    transform: scale(1.1);
 }
 .header__nav{
     display: flex;
@@ -27,7 +14,7 @@
 }
 .header__nav-item{
     color: white;
-    transition: .6s ease;
+    transition: .4s ease;
 }
 .header__nav-item:hover{
     transform: scale(1.2);
@@ -35,3 +22,32 @@
 .active_page{
     border-bottom: 1px solid white;
 }
+.image-container-header{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.svg-image_index-page{
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    background-image: url(../image/logo\ home\ page.svg);
+    transition: .7s ease;
+}
+.svg-image_index-page:hover{
+    transform: scale(1.2);
+}
+.svg-image{
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    background-image: url(../image/logo.svg);
+    transition: .7s ease;
+}
+.svg-image:hover{
+    background-image: url(../image/logo\ home\ page.svg);
+    transform: rotate(360deg) scale(1.2);
+}
+/* rotate(360deg) */
