@@ -75,8 +75,61 @@
             <section class="main-content">
                 <div class="main-content-wrapper">
                     <div class="info-wrapper">
-                        <h2 id="four-margin-values" class="info-title info-title_first-paragraph">Размещение флекс элементов в перевернутом ряду в CSS</h2>
-                        
+                        <h2 id="" class="info-title info-title_first-paragraph">Размещение флекс элементов в перевернутом ряду в CSS</h2>
+                        <p>Сейчас мы начнем изучать продвинутые вещи для работы с флекс элементами. Для начала давайте рассмотрим специальное свойство <span class="info-paragraph_code-css">flex-direction</span>, которое регулирует то, как выстраиваются наши блоки. По умолчанию оно имеет значение <span class="info-paragraph_code-css">row</span>, поэтому элементы выстраиваются в ряд.</p>
+                        <h2 id="" class="info-title">Размещение флекс элементов в колонку в CSS</h2>
+                        <p>Если в свойстве <span class="info-paragraph_code-css">flex-direction</span> задать значение <span class="info-paragraph_code-css">column</span>, то элементы выстроятся в колонку:</p>
+                        <div class="info-block_code-html">
+                            &#60;div class="parent"&#62;<br>
+                            &#60;div class="child"&#62;<span class="info-html-text">1</span>&#60;/div&#62;<br>
+                            &#60;div class="child"&#62;<span class="info-html-text">2</span>&#60;/div&#62;<br>
+                            &#60;div class="child"&#62;<span class="info-html-text">3</span>&#60;/div&#62;<br>
+                            &#60;/div&#62;
+                        </div>
+                        <div class="info-block_code-css">
+                            .parent { display: flex; flex-direction: column; width: 300px; height: 200px; border: 1px solid red; }<br>
+                            .child { width: 50px; height: 50px; border: 1px solid green; }
+                        </div>
+                        <h2 id="" class="info-title">Переворачивание колонки с флекс элементами в CSS</h2>
+                        <p>Зададим теперь в свойстве <span class="info-paragraph_code-css">flex-direction</span> значение <span class="info-paragraph_code-css">column-reverse</span>. В этом случае колонка перевернется - элементы будут прижаты к низу. При этом первый элемент будет самым нижним:</p>
+                        <div class="info-block_code-html">
+                            &#60;div class="parent"&#62;<br>
+                            &#60;div class="child"&#62;<span class="info-html-text">1</span>&#60;/div&#62;<br>
+                            &#60;div class="child"&#62;<span class="info-html-text">2</span>&#60;/div&#62;<br>
+                            &#60;div class="child"&#62;<span class="info-html-text">3</span>&#60;/div&#62;<br>
+                            &#60;/div&#62;
+                        </div>
+                        <div class="info-block_code-css">
+                            .parent { display: flex; flex-direction: column-reverse; width: 300px; height: 200px; border: 1px solid red; }<br>
+                            .child { width: 50px; height: 50px; border: 1px solid green; }
+                        </div>
+                        <h2 id="" class="info-title">Главная и поперечная оси в флекс блоках в CSS</h2>
+                        <p>Про флексбоксы можно говорить в двух терминах: первое это - ряд или колонка, второе - в терминах осей. С рядами и колонками мы уже разобрались, давайте теперь разберемся с осями. Понимание осей нужно для того, чтобы выравнивать элементы по горизонтали или по вертикали.</p>
+                        <p>При работе с флекс элементами всегда существует главная ось и поперечная. Мы можем элементы выравнивать по главной оси и поперек главной оси. Главная ось может иметь 4 направления: слева направо, справа налево, сверху вниз и снизу вверх.
+                        Направление поперечной оси зависит от направления главной: если главная ось горизонтальна, то поперечная направлена сверху вниз, если главная ось вертикальна, то поперечная направлена слева направо. Других направлений поперечная ось иметь не может.</p>
+                        <p>Направление главной оси регулируется свойством <span class="info-paragraph_code-css">flex-direction</span class="info-paragraph_code-css">. Если данное свойство имеет значение <span class="info-paragraph_code-css">row</span> - главная ось направлена слева направо, если же значение <span class="info-paragraph_code-css">row-reverse</span>, то справа налево. Значение <span class="info-paragraph_code-css">column</span> направляет ось сверху вниз, а значение <span class="info-paragraph_code-css">column-reverse</span> - снизу вверх.</p>
+                        <h2 id="" class="info-title">Выравнивание флекс элементов по главной оси в CSS</h2>
+                        <p>Свойство <span class="info-paragraph_code-css">justify-content</span> позволяет выравнивать элементы по главной оси. Ранее вы уже проходили значения <span class="info-paragraph_code-css">center</span>, <span class="info-paragraph_code-css">space-between</span>, <span class="info-paragraph_code-css">space-around</span>, <span class="info-paragraph_code-css">space-evenly</span>. Давайте теперь изучим еще несколько значений.</p>
+                        <p>Значение <span class="info-paragraph_code-css">flex-start</span> прижимает элементы к началу главной оси, а значение <span class="info-paragraph_code-css">flex-end</span> - к концу. Давайте посмотрим на примерах.</p>
+                        <h2 id="" class="info-title">Выравнивание флекс блоков по поперечной оси в CSS</h2>
+                        <p>Давайте теперь будем выравнивать блоки и по поперечной оси. Выравнивание по этой оси задается свойством <span class="info-paragraph_code-css">align-items</span>. Значение <span class="info-paragraph_code-css">flex-start</span> прижимает элементы к началу оси, а значение <span class="info-paragraph_code-css">flex-end</span> - к концу.</p>
+                        <h2 id="" class="info-title">Выравнивание отдельного элемента в flex модели в CSS</h2>
+                        <p>Следующие свойства, которые мы изучим, задаются уже не родителю флекс-элементов, а самим элементам. Давайте рассмотрим свойство <span class="info-paragraph_code-css">aling-self</span>, которое выраванивает отдельный блок по поперечной оси.</p>
+                        <p>Пусть у нас есть флекс-блоки, выстроенные в ряд. Выровняем их по центру по вертикали, задав <span class="info-paragraph_code-css">align-items</span> в значении <span class="info-paragraph_code-css">center</span>, а второму элементу дадим дополнительный класс <span class="info-paragraph_code-html">elem</p> и для него зададим другое выравнивание, например, прижмем его к верхнему краю.</p>
+                        <p>Для этого нашему элементу с классом <span class="info-paragraph_code-html">elem</span> установим свойство <span class="info-paragraph_code-html">aling-self</span> в значение <span class="info-paragraph_code-html">flex-start</span class="info-paragraph_code-html">:</p>
+                        <div class="info-block_code-html">
+                            &#60;div class="parent"&#62;<br>
+                            &#60;div class="child">&#62;<span class="info-html-text">1</span>&#60;/div&#62;<br>
+                            &#60;div class="child elem">&#62;<span class="info-html-text">2</span>&#60;/div&#62;<br>
+                            &#60;div class="child">&#62;<span class="info-html-text">1</span>&#60;/div&#62;<br>
+                            &#60;div class="child">&#62;<span class="info-html-text">1</span>&#60;/div&#62;<br>
+                            &#60;div class="child">&#62;<span class="info-html-text">1</span>&#60;/div&#62;<br>
+                            &#60;/div&#62;
+                        </div>
+                        <div class="info-block_code-css">
+                            .parent { display: flex; align-items: center; width: 300px; height: 200px; border: 1px solid red; }<br>
+                            .child { width: 50px; height: 50px; border: 1px solid green; } .elem { align-self: flex-start; }
+                        </div>
                     </div>
                     <div class="theme-buttons">
                         <div class="theme-buttons-wrapper">
