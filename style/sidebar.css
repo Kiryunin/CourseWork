@@ -1,5 +1,6 @@
 .sidebar{
     flex-basis: 22.5%;
+    padding-right: 75px;
 }
 .sidebar__wrapper{
     height: auto;
