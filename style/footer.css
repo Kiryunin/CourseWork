@@ -1,17 +1,17 @@
 /* index.html */
 .footer{
+    height: 10vh;
+    display: flex;
+    align-items: center;
     background: black;
     color: white;
 }
 .footer-wrapper{
-    padding: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .images-container-footer{
-    width: 12%;
-    height: auto;
     display: flex;
     justify-content: space-between;
 }

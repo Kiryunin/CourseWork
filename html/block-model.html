@@ -9,226 +9,213 @@
 
     <link rel="stylesheet" href="../style/normalize.css">
     <link rel="stylesheet" href="../style/common-styles.css">
-    <link rel="stylesheet" href="../style/header.css">
     <link rel="stylesheet" href="../style/container.css">
-    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/header.css">
     <link rel="stylesheet" href="../style/sidebar.css">
-    <link rel="stylesheet" href="../style/up-button.css">
+    <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="../style/footer.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body id="up-button" class="body_background">
+<body id="button-up" class="color-outside-the-boundaries">
 <!---------------------------------------- HEADER ---------------------------------------->
-    <header class="header">
-        <div class="header-wrapper">
-            <div class="header__nav">
-                <a href="index.html"><div class="image-container-header">
-                    <div class="svg-image"></div>
-                </div></a>
-                <div class="header__nav-item"><a class="link" href="about-the-school.html">О школе</a></div>
-                <div class="header__nav-item"><a class="link" href="HTML.html">HTML</a></div>
-                <div class="header__nav-item"><a class="link" href="CSS.html">CSS</a></div>
-                <div class="header__nav-item active_page"><a class="link" href="block-model.html">Блочная модель</a></div>
-                <div class="header__nav-item"><a class="link" href="flexbox.html">Flexbox</a></div>
+    <div class="wrapper-background">
+        <header class="header">
+            <div class="container">
+                <div class="header__nav">
+                    <a href="index.html"><div class="image-container-header">
+                        <div class="svg-image"></div>
+                    </div></a>
+                    <div class="header__nav-item"><a class="link" href="about-the-school.html">О школе</a></div>
+                    <div class="header__nav-item"><a class="link" href="HTML.html">HTML</a></div>
+                    <div class="header__nav-item"><a class="link" href="CSS.html">CSS</a></div>
+                    <div class="header__nav-item active_page"><a class="link" href="block-model.html">Блочная модель</a></div>
+                    <div class="header__nav-item"><a class="link" href="flexbox.html">Flexbox</a></div>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 <!---------------------------------------- END HEADER ---------------------------------------->
  
 <!---------------------------------------- SIDEBAR ---------------------------------------->
-    <div class="container-background">
         <div class="container">
-            <aside class="sidebar">
-                <div class="sidebar__wrapper">
-                    <div class="sidebar__title">НАВИГАЦИЯ:</div>
-                    <ul class="list">
-                        <a class="link" href="#four-margin-values"><li class="list__item">Четыре значения в свойстве margin в CSS</li></a>
-                        <a class="link" href="#three-margin-values"><li class="list__item">Три значения в свойстве margin в CSS</li></a>
-                        <a class="link" href="#multiple-padding-values"><li class="list__item">Несколько значений в свойстве padding в CSS</li></a>
-                        <a class="link" href="#work-padding"><li class="list__item">Работа с отступами padding в CSS</li></a>
-                        <a class="link" href="#features-block"><li class="list__item">Особенности блочных элементов в CSS</li></a>
-                        <a class="link" href="#width-height-block"><li class="list__item">Ширина и высота блочного элемента в CSS</li></a>
-                        <a class="link" href="#multiple-block"><li class="list__item">Несколько блочных элементов рядом в CSS</li></a>
-                        <a class="link" href="#features-row"><li class="list__item">Особенности строчных элементов в CSS</li></a>
-                        <a class="link" href="#width-height-row"><li class="list__item">Ширина и высота строчного элемента в CSS</li></a>
-                        <a class="link" href="#multiple-row"><li class="list__item">Несколько строчных элементов рядом в CSS</li></a>
-                        <a class="link" href="#features-row-block"><li class="list__item">Особенности строчно-блочных элементов в CSS</li></a>
-                        <a class="link" href="#center-row-block"><li class="list__item">Центрирование строчно-блочных элементов в CSS</li></a>
-                        <a class="link" href="#flex-element"><li class="list__item">Флекс элементы в CSS</li></a>
-                        <a class="link" href="#row-block-parent"><li class="list__item">Строчно-блочный родитель флекс элементов в CSS</li></a>
-                        <a class="link" href="#alignment-flex"><li class="list__item">Выравнивание flex элементов в CSS</li></a>
-                    </ul>
-                    <div class="navigation-buttons">
-                        <div class="navigation-buttons-wrapper">
-                            <a class="navigation-buttons__link navigation-buttons__link_margin-bottom" href="#up-button">
-                                <div class="navigation-button">
-                                &#9650;
-                                </div>
-                            </a>
-                            <a class="navigation-buttons__link" href="#down-button">
-                                <div class="navigation-button">
-                                &#9660;
-                                </div>
-                            </a>
+            <div class="wrapper-sidebar-and-main">
+                <aside class="sidebar">
+                    <div class="sidebar__sticky-wrapper">
+                        <div class="sidebar__title">НАВИГАЦИЯ:</div>
+                        <ul class="list">
+                            <li class="list__item"><a class="link" href="#four-margin-values">Четыре значения в свойстве margin в CSS</a></li>
+                            <li class="list__item"><a class="link" href="#three-margin-values">Три значения в свойстве margin в CSS</a></li>
+                            <li class="list__item"><a class="link" href="#multiple-padding-values">Несколько значений в свойстве padding в CSS</a></li>
+                            <li class="list__item"><a class="link" href="#work-padding">Работа с отступами padding в CSS</a></li>
+                            <li class="list__item"><a class="link" href="#features-block">Особенности блочных элементов в CSS</a></li>
+                            <li class="list__item"><a class="link" href="#width-height-block">Ширина и высота блочного элемента в CSS</a></li>
+                            <li class="list__item"><a class="link" href="#multiple-block">Несколько блочных элементов рядом в CSS</a></li>
+                            <li class="list__item"><a class="link" href="#features-row">Особенности строчных элементов в CSS</a></li>
+                            <li class="list__item"><a class="link" href="#width-height-row">Ширина и высота строчного элемента в CSS</a></li>
+                            <li class="list__item"><a class="link" href="#multiple-row">Несколько строчных элементов рядом в CSS</a></li>
+                            <li class="list__item"><a class="link" href="#features-row-block">Особенности строчно-блочных элементов в CSS</a></li>
+                            <li class="list__item"><a class="link" href="#center-row-block">Центрирование строчно-блочных элементов в CSS</a></li>
+                            <li class="list__item"><a class="link" href="#flex-element">Флекс элементы в CSS</a></li>
+                            <li class="list__item"><a class="link" href="#row-block-parent">Строчно-блочный родитель флекс элементов в CSS</a></li>
+                            <li class="list__item"><a class="link" href="#alignment-flex">Выравнивание flex элементов в CSS</a></li>
+                        </ul>
+                        <div class="navigation-buttons">
+                            <a class="navigation-button__link" href="#button-up">&#9650;</a>
+                            <a class="navigation-button__link" href="#button-down">&#9660;</a>
                         </div>
                     </div>
-                </div>
-            </aside>
+                </aside>
 <!---------------------------------------- END SIDEBAR ---------------------------------------->
 
 <!---------------------------------------- MAIN ---------------------------------------->
-            <section class="main-content">
-                <div class="main-content-wrapper">
-                    <div class="info-wrapper">
-                        <h2 id="four-margin-values" class="info-title info-title_first-paragraph">Четыре значения в свойстве margin в CSS</h2>
-                        <p>Сейчас мы будем разбираться со свойством <span class="info-paragraph_code-css">margin</span>, которое задает отступы между элементами сайта. Давайте посмотрим, как это выглядит на практике.</p>
-                        <p>Для начала приведу вам два вложенных друг в друга блока без <span class="info-paragraph_code-css">margin</span> (они слипнутся и мы увидим двойную границу):</p>
-                        <div class="info-block_code-html">
-                            &#60;div id="parent"&#62;<br>
-                            &#60;div id="child"&#62;
-                            &#60;/div&#62;<br>&#60;/div&#62;
-                        </div>
-                        <div class="info-block_code-css">
-                            #parent { width: 300px; border: 1px solid red; } <br>
-                            #child { height: 100px; border: 1px solid green; }  
-                        </div>
-                        <h2 id="three-margin-values" class="info-title">Три значения в свойстве margin в CSS</h2>
-                        <p>Ну, и наконец, если передать свойству <span class="info-paragraph_code-css">margin</span> три значения, то первое будет задавать отступ сверху, третье - отступ снизу, а второе - одновременно отступ слева и справа.
-                        Давайте посмотрим пример:</p>
-                        <div class="info-block_code-html">
-                            &#60;div id="parent"&#62;<br>
-                            &#60;div id="child"&#62;
-                            &#60;/div&#62;<br>&#60;/div&#62;
-                        </div>
-                        <div class="info-block_code-css">
-                            #parent { width: 300px; border: 1px solid red; } <br>
-                            #child { height: 100px; border: 1px solid green; margin: 10px 20px 30px; }
-                        </div>
-                        <h2 id="multiple-padding-values" class="info-title">Несколько значений в свойстве padding в CSS</h2>
-                        <p>В свойство <span class="info-paragraph_code-css">padding</span> можно передать два, три или четыре параметра. В этих случаях он работает аналогично свойству <span class="info-paragraph_code-css">margin</span>.</p>
-                        <h2 id="work-padding" class="info-title">Работа с отступами padding в CSS</h2>
-                        <p>Пусть некоторому элементу мы задали ширину 100px. В CSS это отнюдь не означает, что элемент действительно будет шириной в 100px. Дело в том, что добавление <span class="info-paragraph_code-css">padding</span> расширяет элемент и он становится больше, чем указано в свойстве <span class="info-paragraph_code-css">width</span>.<br>
-                        Давайте посмотрим на примере. Сделаем два блока, которым зададим ширину 100 пикселей. При этом второму блоку зададим <span class="info-paragraph_code-css">padding</span>, а первому - нет. В результате второй блок будет больше на размер отступа:</p>
-                        <div class="info-block_code-html">
-                            &#60;div id="elem1"&#62;<br>
-                            &#60;/div&#62;&#60;div id="elem2"&#62;<br>
-                            &#60;/div&#62;
-                        </div>
-                        <div class="info-block_code-css">
-                            #elem1 { width: 100px; height: 100px; background: #f1f1f1; margin-bottom: 20px; } <br>
-                            #elem2 { padding: 25px; /* задаем отступы */ width: 100px; height: 100px; background:#f1f1f1; }
-                        </div>
-                        <h2 id="features-block" class="info-title">Особенности блочных элементов в CSS</h2>
-                        <p>В следующих уроках мы рассмотрим теги, которые при отображении на экране являются блочными. К таким тегам относятся, к примеру, теги <span class="info-paragraph_code-html">div</span>, с которыми мы будем работать далее.</p>
-                        <h2 id="width-height-block" class="info-title">Ширина и высота блочного элемента в CSS</h2>
-                        <p>Блочному элементу можно задать ширину и высоту:</p>
-                        <div class="info-block_code-html">
-                            &#60;div&#62;<span class="info-html-text">text</span>&#60;/div&#62;
-                        </div>
-                        <div class="info-block_code-css">
-                            div { width: 100px; height: 100px; border: 1px solid red; }
-                        </div>
-                        <h2 id="multiple-block" class="info-title">Несколько блочных элементов рядом в CSS</h2>
-                        <p>Если расположить несколько блочных элементов рядом, то каждый из них будет начинаться с новой строки:</p>
-                        <div class="info-block_code-html">
-                            &#60;div&#62;<span class="info-html-text">text</span>&#60;/div&#62;<br>
-                            &#60;div&#62;<span class="info-html-text">text</span>&#60;/div&#62;<br>
-                            &#60;div&#62;<span class="info-html-text">text</span>&#60;/div&#62;<br>
-                        </div>
-                        <div class="info-block_code-css">
-                            div { width: 100px; height: 100px; margin-bottom: 20px; border: 1px solid red; }
-                        </div>
-                        <h2 id="features-row" class="info-title">Особенности строчных элементов в CSS</h2>
-                        <p>Существуют теги, которые при отображении на экране являются строчными. К таким тегам относятся, к примеру, тег <span class="info-paragraph_code-html">span</span>. На примере этого тега давайте посмотрим на особенности строчных элементов в следующих уроках.</p>
-                        <h2 id="width-height-row" class="info-title">Ширина и высота строчного элемента в CSS</h2>
-                        <p>Ширина и высота строчного элемента всегда ограничены его текстом. Даже если задать свойства <span class="info-paragraph_code-css">width</span> и <span class="info-paragraph_code-css">height</span> - для строчного элемента они не сработают:</p>
-                        <div class="info-block_code-html">
-                            &#60;span&#62;<span class="info-html-text">text</span>&#60;/span&#62; 
-                        </div>
-                        <div class="info-block_code-css">
-                            span { width: 100px; height: 100px; border: 1px solid red; }
-                        </div>
-                        <h2 id="multiple-row" class="info-title">Несколько строчных элементов рядом в CSS</h2>
-                        <p>Если расположить несколько строчных элементов рядом, то они выстроятся в ряд:</p>
-                        <div class="info-block_code-html">
-                            &#60;span&#62;<span class="info-html-text">text</span>&#60;span&#62;<br>
-                            &#60;span&#62;<span class="info-html-text">text</span>&#60;span&#62;<br>  
-                            &#60;span&#62;<span class="info-html-text">text</span>&#60;span&#62;
-                        </div>
-                        <div class="info-block_code-css">
-                            span { border: 1px solid red; }
-                        </div>
-                        <h2 id="features-row-block" class="info-title">Особенности строчно-блочных элементов в CSS</h2>
-                        <p>Существуют теги, которые при отображении на экране являются строчно-блочными. Строчно-блочные элементы сочетают особенности блочных и строчных элементов.</p>
-                        <p>Вы пока знаете только один такой тег: <span class="info-paragraph_code-html">img</span>. Картинки, однако, не раскрывают все особенности этой модели, поэтому работу таких элементов посмотрим на примере тегов <span class="info-paragraph_code-html">span</span>, сменив им блочную модель, задав свойству <span class="info-paragraph_code-css">display</span> значение <span class="info-paragraph_code-css">inline-block</span>.</p>
-                        <h2 id="center-row-block" class="info-title">Центрирование строчно-блочных элементов в CSS</h2>
-                        <p>Для примера давайте поставим строчно-блочные элементы по центру:</p>
-                        <div class="info-block_code-html">
-                            &#60;div class="parent"&#62;<br>
-                            &#60;span class="child"&#62;<span class="info-html-text">text</span>&#60;/span&#62;<br>
-                            &#60;span class="child"&#62;<span class="info-html-text">text</span>&#60;/span&#62;<br>
-                            &#60;span class="child"&#62;<span class="info-html-text">text</span>&#60;/span&#62;<br>
-                            &#60;/div&#62;<br>
-                        </div>
-                        <div class="info-block_code-css">
-                            .parent { text-align: center; padding: 10px 0; border: 1px solid red; } <br>
-                            .child { display: inline-block; padding: 10px 20px; border: 1px solid green; }
-                        </div>
-                        <h2 id="flex-element" class="info-title">Флекс элементы в CSS</h2>
-                        <p>Кроме изученных нами типов блочных моделей есть еще одна - флекс элементы. Для того, чтобы получить такие элементы, нужно родителю этих элементов написать свойство <span class="info-paragraph_code-css">display</span> в значении <span class="info-paragraph_code-css">flex</span>. Сам родитель останется блочным элементом, а вот его потомки станут флекс элементами.</p>
-                        <p>Флекс элементы, подобно блочным могут иметь ширину и высоту, <span class="info-paragraph_code-css">margin</span> и <span class="info-paragraph_code-css">padding</span>. Однако, в отличие от блочных, по умолчанию флекс элементы выстраиваются в ряд внутри своего родителя.</p>
-                        <p>Давайте попробуем:</p>
-                        <div class="info-block_code-html">
-                            &#60;div class="parent"&#62;<br>
-                            &#60;div class="child"&#62;<span class="info-html-text">1</span>&#60;/div&#62;<br>
-                            &#60;div class="child"&#62;<span class="info-html-text">2</span>&#60;/div&#62;<br>
-                            &#60;div class="child"&#62;<span class="info-html-text">3</span>&#60;/div&#62;<br>&#60;/div&#62;<br>
-                        </div>
-                        <div class="info-paragraph_code-css">
-                            .parent { display: flex; width: 300px; height: 200px; border: 1px solid red; }<br>
-                            .child { width: 50px; height: 50px; border: 1px solid green; }
-                        </div>
-                        <h2 id="row-block-parent" class="info-title">Строчно-блочный родитель флекс элементов в CSS</h2>
-                        <p>Вместо значения <span class="info-paragraph_code-css">flex</span> для свойства <span class="info-paragraph_code-css">display</span> родителю можно поставить значение <span class="info-paragraph_code-css">inline-flex</span>. В этом случае этот родитель будет вести себя, как строчно-блочный элемент.</p>
-                        <p>Например, если не задать ширину родителя, то его ширина сформируется шириной потомков:</p>
-                        <div class="info-block_code-html">
-                            &#60;div class="parent"&#62;<br>
-                            &#60;div class="child"&#62;<span class="info-html-text">1</span>&#60;/div&#62;<br>
-                            &#60;div class="child"&#62;<span class="info-html-text">2</span>&#60;/div&#62;<br>
-                            &#60;div class="child"&#62;<span class="info-html-text">3</span>&#60;/div&#62;<br>&#60;/div&#62;<br>
-                        </div>
-                        <div class="info-paragraph_code-css">
-                            .parent { display: inline-flex; border: 1px solid red; }<br>
-                            .child { width: 50px; height: 50px; border: 1px solid green; }
-                        </div>
-                        <h2 id="alignment-flex" class="info-title">Выравнивание flex элементов в CSS</h2>
-                        <p>Для выравнивания флекс элементов используется специальное свойство <span class="info-paragraph_code-css">justify-content</span>. Оно принимает достаточно много значений, которые мы и изучим в следующих уроках.</p>
+                <section class="main">
+                    <h2 id="four-margin-values" class="info-title info-title_first-paragraph">Четыре значения в свойстве margin в CSS</h2>
+                    <p>Сейчас мы будем разбираться со свойством <span class="info-paragraph_code-css">margin</span>, которое задает отступы между элементами сайта. Давайте посмотрим, как это выглядит на практике.</p>
+                    <p>Для начала приведу вам два вложенных друг в друга блока без <span class="info-paragraph_code-css">margin</span> (они слипнутся и мы увидим двойную границу):</p>
+                    <div class="info-block_code-html">
+                        &#60;div id="parent"&#62;<br>
+                        &#60;div id="child"&#62;
+                        &#60;/div&#62;<br>&#60;/div&#62;
                     </div>
-                    <div class="theme-buttons">
-                        <div class="theme-buttons-wrapper">
-                            <a class="theme-buttons__link" href="CSS.html"><button class="theme-button">CSS</button></a>
-                            <a class="theme-buttons__link" href="flexbox.html"><button class="theme-button">Flexbox</button></a>
-                        </div>
+                    <div class="info-block_code-css">
+                        #parent { width: 300px; border: 1px solid red; } <br>
+                        #child { height: 100px; border: 1px solid green; }  
                     </div>
-                </div>
-            </section>
+                    <h2 id="three-margin-values" class="info-title">Три значения в свойстве margin в CSS</h2>
+                    <p>Ну, и наконец, если передать свойству <span class="info-paragraph_code-css">margin</span> три значения, то первое будет задавать отступ сверху, третье - отступ снизу, а второе - одновременно отступ слева и справа.
+                    Давайте посмотрим пример:</p>
+                    <div class="info-block_code-html">
+                        &#60;div id="parent"&#62;<br>
+                        &#60;div id="child"&#62;
+                        &#60;/div&#62;<br>&#60;/div&#62;
+                    </div>
+                    <div class="info-block_code-css">
+                        #parent { width: 300px; border: 1px solid red; } <br>
+                        #child { height: 100px; border: 1px solid green; margin: 10px 20px 30px; }
+                    </div>
+                    <h2 id="multiple-padding-values" class="info-title">Несколько значений в свойстве padding в CSS</h2>
+                    <p>В свойство <span class="info-paragraph_code-css">padding</span> можно передать два, три или четыре параметра. В этих случаях он работает аналогично свойству <span class="info-paragraph_code-css">margin</span>.</p>
+                    <h2 id="work-padding" class="info-title">Работа с отступами padding в CSS</h2>
+                    <p>Пусть некоторому элементу мы задали ширину 100px. В CSS это отнюдь не означает, что элемент действительно будет шириной в 100px. Дело в том, что добавление <span class="info-paragraph_code-css">padding</span> расширяет элемент и он становится больше, чем указано в свойстве <span class="info-paragraph_code-css">width</span>.<br>
+                    Давайте посмотрим на примере. Сделаем два блока, которым зададим ширину 100 пикселей. При этом второму блоку зададим <span class="info-paragraph_code-css">padding</span>, а первому - нет. В результате второй блок будет больше на размер отступа:</p>
+                    <div class="info-block_code-html">
+                        &#60;div id="elem1"&#62;<br>
+                        &#60;/div&#62;&#60;div id="elem2"&#62;<br>
+                        &#60;/div&#62;
+                    </div>
+                    <div class="info-block_code-css">
+                        #elem1 { width: 100px; height: 100px; background: #f1f1f1; margin-bottom: 20px; } <br>
+                        #elem2 { padding: 25px; /* задаем отступы */ width: 100px; height: 100px; background:#f1f1f1; }
+                    </div>
+                    <h2 id="features-block" class="info-title">Особенности блочных элементов в CSS</h2>
+                    <p>В следующих уроках мы рассмотрим теги, которые при отображении на экране являются блочными. К таким тегам относятся, к примеру, теги <span class="info-paragraph_code-html">div</span>, с которыми мы будем работать далее.</p>
+                    <h2 id="width-height-block" class="info-title">Ширина и высота блочного элемента в CSS</h2>
+                    <p>Блочному элементу можно задать ширину и высоту:</p>
+                    <div class="info-block_code-html">
+                        &#60;div&#62;<span class="info-html-text">text</span>&#60;/div&#62;
+                    </div>
+                    <div class="info-block_code-css">
+                        div { width: 100px; height: 100px; border: 1px solid red; }
+                    </div>
+                    <h2 id="multiple-block" class="info-title">Несколько блочных элементов рядом в CSS</h2>
+                    <p>Если расположить несколько блочных элементов рядом, то каждый из них будет начинаться с новой строки:</p>
+                    <div class="info-block_code-html">
+                        &#60;div&#62;<span class="info-html-text">text</span>&#60;/div&#62;<br>
+                        &#60;div&#62;<span class="info-html-text">text</span>&#60;/div&#62;<br>
+                        &#60;div&#62;<span class="info-html-text">text</span>&#60;/div&#62;<br>
+                    </div>
+                    <div class="info-block_code-css">
+                        div { width: 100px; height: 100px; margin-bottom: 20px; border: 1px solid red; }
+                    </div>
+                    <h2 id="features-row" class="info-title">Особенности строчных элементов в CSS</h2>
+                    <p>Существуют теги, которые при отображении на экране являются строчными. К таким тегам относятся, к примеру, тег <span class="info-paragraph_code-html">span</span>. На примере этого тега давайте посмотрим на особенности строчных элементов в следующих уроках.</p>
+                    <h2 id="width-height-row" class="info-title">Ширина и высота строчного элемента в CSS</h2>
+                    <p>Ширина и высота строчного элемента всегда ограничены его текстом. Даже если задать свойства <span class="info-paragraph_code-css">width</span> и <span class="info-paragraph_code-css">height</span> - для строчного элемента они не сработают:</p>
+                    <div class="info-block_code-html">
+                        &#60;span&#62;<span class="info-html-text">text</span>&#60;/span&#62; 
+                    </div>
+                    <div class="info-block_code-css">
+                        span { width: 100px; height: 100px; border: 1px solid red; }
+                    </div>
+                    <h2 id="multiple-row" class="info-title">Несколько строчных элементов рядом в CSS</h2>
+                    <p>Если расположить несколько строчных элементов рядом, то они выстроятся в ряд:</p>
+                    <div class="info-block_code-html">
+                        &#60;span&#62;<span class="info-html-text">text</span>&#60;span&#62;<br>
+                        &#60;span&#62;<span class="info-html-text">text</span>&#60;span&#62;<br>  
+                        &#60;span&#62;<span class="info-html-text">text</span>&#60;span&#62;
+                    </div>
+                    <div class="info-block_code-css">
+                        span { border: 1px solid red; }
+                    </div>
+                    <h2 id="features-row-block" class="info-title">Особенности строчно-блочных элементов в CSS</h2>
+                    <p>Существуют теги, которые при отображении на экране являются строчно-блочными. Строчно-блочные элементы сочетают особенности блочных и строчных элементов.</p>
+                    <p>Вы пока знаете только один такой тег: <span class="info-paragraph_code-html">img</span>. Картинки, однако, не раскрывают все особенности этой модели, поэтому работу таких элементов посмотрим на примере тегов <span class="info-paragraph_code-html">span</span>, сменив им блочную модель, задав свойству <span class="info-paragraph_code-css">display</span> значение <span class="info-paragraph_code-css">inline-block</span>.</p>
+                    <h2 id="center-row-block" class="info-title">Центрирование строчно-блочных элементов в CSS</h2>
+                    <p>Для примера давайте поставим строчно-блочные элементы по центру:</p>
+                    <div class="info-block_code-html">
+                        &#60;div class="parent"&#62;<br>
+                        &#60;span class="child"&#62;<span class="info-html-text">text</span>&#60;/span&#62;<br>
+                        &#60;span class="child"&#62;<span class="info-html-text">text</span>&#60;/span&#62;<br>
+                        &#60;span class="child"&#62;<span class="info-html-text">text</span>&#60;/span&#62;<br>
+                        &#60;/div&#62;<br>
+                    </div>
+                    <div class="info-block_code-css">
+                        .parent { text-align: center; padding: 10px 0; border: 1px solid red; } <br>
+                        .child { display: inline-block; padding: 10px 20px; border: 1px solid green; }
+                    </div>
+                    <h2 id="flex-element" class="info-title">Флекс элементы в CSS</h2>
+                    <p>Кроме изученных нами типов блочных моделей есть еще одна - флекс элементы. Для того, чтобы получить такие элементы, нужно родителю этих элементов написать свойство <span class="info-paragraph_code-css">display</span> в значении <span class="info-paragraph_code-css">flex</span>. Сам родитель останется блочным элементом, а вот его потомки станут флекс элементами.</p>
+                    <p>Флекс элементы, подобно блочным могут иметь ширину и высоту, <span class="info-paragraph_code-css">margin</span> и <span class="info-paragraph_code-css">padding</span>. Однако, в отличие от блочных, по умолчанию флекс элементы выстраиваются в ряд внутри своего родителя.</p>
+                    <p>Давайте попробуем:</p>
+                    <div class="info-block_code-html">
+                        &#60;div class="parent"&#62;<br>
+                        &#60;div class="child"&#62;<span class="info-html-text">1</span>&#60;/div&#62;<br>
+                        &#60;div class="child"&#62;<span class="info-html-text">2</span>&#60;/div&#62;<br>
+                        &#60;div class="child"&#62;<span class="info-html-text">3</span>&#60;/div&#62;<br>&#60;/div&#62;<br>
+                    </div>
+                    <div class="info-paragraph_code-css">
+                        .parent { display: flex; width: 300px; height: 200px; border: 1px solid red; }<br>
+                        .child { width: 50px; height: 50px; border: 1px solid green; }
+                    </div>
+                    <h2 id="row-block-parent" class="info-title">Строчно-блочный родитель флекс элементов в CSS</h2>
+                    <p>Вместо значения <span class="info-paragraph_code-css">flex</span> для свойства <span class="info-paragraph_code-css">display</span> родителю можно поставить значение <span class="info-paragraph_code-css">inline-flex</span>. В этом случае этот родитель будет вести себя, как строчно-блочный элемент.</p>
+                    <p>Например, если не задать ширину родителя, то его ширина сформируется шириной потомков:</p>
+                    <div class="info-block_code-html">
+                        &#60;div class="parent"&#62;<br>
+                        &#60;div class="child"&#62;<span class="info-html-text">1</span>&#60;/div&#62;<br>
+                        &#60;div class="child"&#62;<span class="info-html-text">2</span>&#60;/div&#62;<br>
+                        &#60;div class="child"&#62;<span class="info-html-text">3</span>&#60;/div&#62;<br>&#60;/div&#62;<br>
+                    </div>
+                    <div class="info-paragraph_code-css">
+                        .parent { display: inline-flex; border: 1px solid red; }<br>
+                        .child { width: 50px; height: 50px; border: 1px solid green; }
+                    </div>
+                    <h2 id="alignment-flex" class="info-title">Выравнивание flex элементов в CSS</h2>
+                    <p>Для выравнивания флекс элементов используется специальное свойство <span class="info-paragraph_code-css">justify-content</span>. Оно принимает достаточно много значений, которые мы и изучим в следующих уроках.</p>
+                    <div class="buttons-theme">
+                        <a class="buttons-theme__link" href="CSS.html">CSS</a>
+                        <a class="buttons-theme__link" href="flexbox.html">Flexbox</a>
+                    </div>
+                </section>
+            </div>
         </div>
-    </div>
 <!---------------------------------------- END MAIN ---------------------------------------->
 
 <!---------------------------------------- FOOTER ---------------------------------------->
-    <footer id="down-button" class="footer">
-        <div class="footer-wrapper">
-            <div>Кирюнин Кирилл © 2023</div>
-            <div class="images-container-footer">
-                <a href="https://t.me/cirios" target="_blank"><div class="svg-image-footer-telegram"></div></a>
-                <a href="https://vk.com/kirunin1" target="_blank"><div class="svg-image-footer-vk"></div></a>
+        <footer id="button-down" class="footer">
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div>Кирюнин Кирилл © 2023</div>
+                    <div class="images-container-footer">
+                        <a href="https://t.me/cirios" target="_blank"><div class="svg-image-footer-telegram"></div></a>
+                        <a href="https://vk.com/kirunin1" target="_blank"><div class="svg-image-footer-vk"></div></a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 <!---------------------------------------- END FOOTER ---------------------------------------->
 </body>
 </html>
