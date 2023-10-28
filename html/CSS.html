@@ -21,41 +21,39 @@
 </head>
 <body id="button-up" class="color-outside-the-boundaries">
 <!---------------------------------------- HEADER ---------------------------------------->
-    <div class="wrapper-background">
-        <header class="header">
-            <div class="container">
-                <div class="header__nav">
-                    <a href="index.html"><div class="image-container-header">
-                        <div class="svg-image"></div>
-                    </div></a>
-                    <div class="header__nav-item"><a class="link" href="about-the-school.html">О школе</a></div>
-                    <div class="header__nav-item"><a class="link" href="HTML.html">HTML</a></div>
-                    <div class="header__nav-item active_page"><a class="link" href="CSS.html">CSS</a></div>
-                    <div class="header__nav-item"><a class="link" href="block-model.html">Блочная модель</a></div>
-                    <div class="header__nav-item"><a class="link" href="flexbox.html">Flexbox</a></div>
-                </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__nav">
+                <a href="index.html"><div class="svg-image"></div></a>
+                <div class="header__nav-item"><a class="link" href="about-the-school.html">О школе</a></div>
+                <div class="header__nav-item"><a class="link" href="HTML.html">HTML</a></div>
+                <div class="header__nav-item active_page"><a class="link" href="CSS.html">CSS</a></div>
+                <div class="header__nav-item"><a class="link" href="block-model.html">Блочная модель</a></div>
+                <div class="header__nav-item"><a class="link" href="flexbox.html">Flexbox</a></div>
             </div>
-        </header>
+        </div>
+    </header>
 <!---------------------------------------- END HEADER ---------------------------------------->
- 
+
 <!---------------------------------------- SIDEBAR ---------------------------------------->
+    <div class="wrapper-background">
         <div class="container">
             <div class="wrapper-sidebar-and-main">
                 <aside class="sidebar">
                     <div class="sidebar__sticky-wrapper">
                         <div class="sidebar__title">НАВИГАЦИЯ:</div>
-                        <ul class="list">
-                            <li class="list__item"><a class="link" href="#fundamental">Основы работы с языком CSS</a></li>
-                            <li class="list__item"><a class="link" href="#hand">Как работать с CSS</a></li>
-                            <li class="list__item"><a class="link" href="#colors">Любые цвета в CSS</a></li>
-                            <li class="list__item"><a class="link" href="#text-alignment">Выравнивание текста в CSS</a></li>
-                            <li class="list__item"><a class="link" href="#text-bold">Жирность текста в CSS</a></li>
-                            <li class="list__item"><a class="link" href="#text-italic">Курсив в CSS</a></li>
-                            <li class="list__item"><a class="link" href="#text-size">Размер шрифта в CSS</a></li>
-                            <li class="list__item"><a class="link" href="#text-family">Тип шрифта в CSS</a></li>
-                            <li class="list__item"><a class="link" href="#text-height">Межстрочный интервал в CSS</a></li>
-                            <li class="list__item"><a class="link" href="#text-effect">Эффекты текста в CSS</a></li>
-                            <li class="list__item"><a class="link" href="#text-effect-close">Отмена эффектов для текста в CSS</a></li>
+                        <ul class="sidebar__list">
+                            <li class="sidebar__list-item"><a class="link" href="#fundamental">Основы работы с языком CSS</a></li>
+                            <li class="sidebar__list-item"><a class="link" href="#hand">Как работать с CSS</a></li>
+                            <li class="sidebar__list-item"><a class="link" href="#colors">Любые цвета в CSS</a></li>
+                            <li class="sidebar__list-item"><a class="link" href="#text-alignment">Выравнивание текста в CSS</a></li>
+                            <li class="sidebar__list-item"><a class="link" href="#text-bold">Жирность текста в CSS</a></li>
+                            <li class="sidebar__list-item"><a class="link" href="#text-italic">Курсив в CSS</a></li>
+                            <li class="sidebar__list-item"><a class="link" href="#text-size">Размер шрифта в CSS</a></li>
+                            <li class="sidebar__list-item"><a class="link" href="#text-family">Тип шрифта в CSS</a></li>
+                            <li class="sidebar__list-item"><a class="link" href="#text-height">Межстрочный интервал в CSS</a></li>
+                            <li class="sidebar__list-item"><a class="link" href="#text-effect">Эффекты текста в CSS</a></li>
+                            <li class="sidebar__list-item"><a class="link" href="#text-effect-close">Отмена эффектов для текста в CSS</a></li>
                         </ul>
                         <div class="navigation-buttons">
                             <a class="navigation-button__link" href="#button-up">&#9650;</a>
@@ -63,9 +61,9 @@
                         </div>
                     </div>
                 </aside>
-<!---------------------------------------- END SIDEBAR ---------------------------------------->
-
-<!---------------------------------------- MAIN ---------------------------------------->
+    <!---------------------------------------- END SIDEBAR ---------------------------------------->
+    
+    <!---------------------------------------- MAIN ---------------------------------------->
                 <section class="main">
                     <h2 id="fundamental" class="info-title info-title_first-paragraph">Основы работы с языком</h2>
                     <p>Мы с вами уже разобрали основные теги языка HTML и теперь пришло время навести красоту. Хотелось бы иметь возможность менять цвет текста, его размер, фон и многое другое. Это делается с помощью языка CSS.</p>
@@ -109,7 +107,7 @@
                     <div class="info-block_code-css">
                         p { color: #ff0000; }
                     </div>
-                    <p>Для того, чтобы получить нужный цвет, используются специальные программы. Вот пример онлайн генератора цвета: <a class="link_main" href="https://colorscheme.ru">colorscheme.ru</a>, а вот пример программы, позволяющей замерять цвет: <a class="link_main" href="http://colorcop.net">colorcop.net</a>.</p>
+                    <p>Для того, чтобы получить нужный цвет, используются специальные программы. Вот пример онлайн генератора цвета: <a class="main__link" href="https://colorscheme.ru">colorscheme.ru</a>, а вот пример программы, позволяющей замерять цвет: <a class="main__link" href="http://colorcop.net">colorcop.net</a>.</p>
                     <h2 id="text-alignment" class="info-title">Выравнивание текста в CSS</h2>
                     <p>Сейчас мы научимся выравнивать текст. Для этого используется свойство <span class="info-paragraph_code-css">text-align</span>. Текст можно выравнять по левому краю (значение <span class="info-paragraph_code-css">left</span>), по правому (значение <span class="info-paragraph_code-css">right</span>), по центру (значение <span class="info-paragraph_code-css">center</span>) и одновременно и по обоим краям (значение <span class="info-paragraph_code-css">justify</span>).</p>
                     <h2 id="text-bold" class="info-title">Жирность текста в CSS</h2>
@@ -182,21 +180,21 @@
                 </section>
             </div>
         </div>
+    </div>
 <!---------------------------------------- END MAIN ---------------------------------------->
 
 <!---------------------------------------- FOOTER ---------------------------------------->
-        <footer id="button-down" class="footer">
-            <div class="container">
-                <div class="footer-wrapper">
-                    <div>Кирюнин Кирилл © 2023</div>
-                    <div class="images-container-footer">
-                        <a href="https://t.me/cirios" target="_blank"><div class="svg-image-footer-telegram"></div></a>
-                        <a href="https://vk.com/kirunin1" target="_blank"><div class="svg-image-footer-vk"></div></a>
-                    </div>
+    <footer id="button-down" class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div>Кирюнин Кирилл © 2023</div>
+                <div class="images-container-footer">
+                    <a href="https://t.me/cirios" target="_blank"><div class="svg-image-footer-telegram"></div></a>
+                    <a href="https://vk.com/kirunin1" target="_blank"><div class="svg-image-footer-vk"></div></a>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 <!---------------------------------------- END FOOTER ---------------------------------------->
 </body>
 </html>

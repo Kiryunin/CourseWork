@@ -21,37 +21,35 @@
 </head>
 <body id="button-up" class="color-outside-the-boundaries">
 <!---------------------------------------- HEADER ---------------------------------------->
-    <div class="wrapper-background">
-        <header class="header">
-            <div class="container">
-                <div class="header__nav">
-                    <a href="index.html"><div class="image-container-header">
-                        <div class="svg-image"></div>
-                    </div></a>
-                    <div class="header__nav-item"><a class="link" href="about-the-school.html">О школе</a></div>
-                    <div class="header__nav-item"><a class="link" href="HTML.html">HTML</a></div>
-                    <div class="header__nav-item"><a class="link" href="CSS.html">CSS</a></div>
-                    <div class="header__nav-item"><a class="link" href="block-model.html">Блочная модель</a></div>
-                    <div class="header__nav-item active_page"><a class="link" href="flexbox.html">Flexbox</a></div>
-                </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__nav">
+                <a href="index.html"><div class="svg-image"></div></a>
+                <div class="header__nav-item"><a class="link" href="about-the-school.html">О школе</a></div>
+                <div class="header__nav-item"><a class="link" href="HTML.html">HTML</a></div>
+                <div class="header__nav-item"><a class="link" href="CSS.html">CSS</a></div>
+                <div class="header__nav-item"><a class="link" href="block-model.html">Блочная модель</a></div>
+                <div class="header__nav-item active_page"><a class="link" href="flexbox.html">Flexbox</a></div>
             </div>
-        </header>
+        </div>
+    </header>
 <!---------------------------------------- END HEADER ---------------------------------------->
- 
+
 <!---------------------------------------- SIDEBAR ---------------------------------------->
+    <div class="wrapper-background">
         <div class="container">
             <div class="wrapper-sidebar-and-main">
                 <aside class="sidebar">
                     <div class="sidebar__sticky-wrapper">
                         <div class="sidebar__title">НАВИГАЦИЯ:</div>
-                        <ul class="list">
-                            <li class="list__item"><a class="link" href="#placement-in-an-inverted-row">Размещение флекс элементов в перевернутом ряду в CSS</a></li>
-                            <li class="list__item"><a class="link" href="#placement-in-an-inverted-column">Размещение флекс элементов в колонку в CSS</a></li>
-                            <li class="list__item"><a class="link" href="#turning-the-column-over">Переворачивание колонки с флекс элементами в CSS</a></li>
-                            <li class="list__item"><a class="link" href="#main-and–transverse-axes">Главная и поперечная оси в флекс блоках в CSS</a></li>
-                            <li class="list__item"><a class="link" href="#aligning-flex-elements-to-the-main-axis">Выравнивание флекс элементов по главной оси в CSS</a></li>
-                            <li class="list__item"><a class="link" href="#alignment-of-flex-blocks-on-the-transverse-axis">Выравнивание флекс блоков по поперечной оси в CSS</a></li>
-                            <li class="list__item"><a class="link" href="#aligning-an-individual-element">Выравнивание отдельного элемента в flex модели в CSS</a></li>
+                        <ul class="sidebar__list">
+                            <li class="sidebar__list-item"><a class="link" href="#placement-in-an-inverted-row">Размещение флекс элементов в перевернутом ряду в CSS</a></li>
+                            <li class="sidebar__list-item"><a class="link" href="#placement-in-an-inverted-column">Размещение флекс элементов в колонку в CSS</a></li>
+                            <li class="sidebar__list-item"><a class="link" href="#turning-the-column-over">Переворачивание колонки с флекс элементами в CSS</a></li>
+                            <li class="sidebar__list-item"><a class="link" href="#main-and–transverse-axes">Главная и поперечная оси в флекс блоках в CSS</a></li>
+                            <li class="sidebar__list-item"><a class="link" href="#aligning-flex-elements-to-the-main-axis">Выравнивание флекс элементов по главной оси в CSS</a></li>
+                            <li class="sidebar__list-item"><a class="link" href="#alignment-of-flex-blocks-on-the-transverse-axis">Выравнивание флекс блоков по поперечной оси в CSS</a></li>
+                            <li class="sidebar__list-item"><a class="link" href="#aligning-an-individual-element">Выравнивание отдельного элемента в flex модели в CSS</a></li>
                         </ul>
                         <div class="navigation-buttons">
                             <a class="navigation-button__link" href="#button-up">&#9650;</a>
@@ -59,9 +57,9 @@
                         </div>
                     </div>
                 </aside>
-<!---------------------------------------- END SIDEBAR ---------------------------------------->
-
-<!---------------------------------------- MAIN ---------------------------------------->
+    <!---------------------------------------- END SIDEBAR ---------------------------------------->
+    
+    <!---------------------------------------- MAIN ---------------------------------------->
                 <section class="main">
                     <h2 id="placement-in-an-inverted-row" class="info-title info-title_first-paragraph">Размещение флекс элементов в перевернутом ряду в CSS</h2>
                     <p>Сейчас мы начнем изучать продвинутые вещи для работы с флекс элементами. Для начала давайте рассмотрим специальное свойство <span class="info-paragraph_code-css">flex-direction</span>, которое регулирует то, как выстраиваются наши блоки. По умолчанию оно имеет значение <span class="info-paragraph_code-css">row</span>, поэтому элементы выстраиваются в ряд.</p>
@@ -125,21 +123,21 @@
                 </section>
             </div>
         </div>
+    </div>
 <!---------------------------------------- END MAIN ---------------------------------------->
 
 <!---------------------------------------- FOOTER ---------------------------------------->
-        <footer id="button-down" class="footer">
-            <div class="container">
-                <div class="footer-wrapper">
-                    <div>Кирюнин Кирилл © 2023</div>
-                    <div class="images-container-footer">
-                        <a href="https://t.me/cirios" target="_blank"><div class="svg-image-footer-telegram"></div></a>
-                        <a href="https://vk.com/kirunin1" target="_blank"><div class="svg-image-footer-vk"></div></a>
-                    </div>
+    <footer id="button-down" class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div>Кирюнин Кирилл © 2023</div>
+                <div class="images-container-footer">
+                    <a href="https://t.me/cirios" target="_blank"><div class="svg-image-footer-telegram"></div></a>
+                    <a href="https://vk.com/kirunin1" target="_blank"><div class="svg-image-footer-vk"></div></a>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 <!---------------------------------------- END FOOTER ---------------------------------------->
 </body>
 </html>

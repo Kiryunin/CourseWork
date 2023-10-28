@@ -3,6 +3,7 @@
 }
 .wrapper-background{
     background: white;
+    border-radius: 15px;
 }
 .container{
     max-width: 1000px;
@@ -11,7 +12,7 @@
 }
 /* обертка sidebar и main */
 .wrapper-sidebar-and-main{
-    margin: 75px 0;
+    padding: 75px 15px;
     display: flex;
     gap: 75px;
 }

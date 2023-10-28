@@ -1,11 +1,6 @@
 /* index.html */
 .sidebar{
     flex-basis: 22.5%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    top: 80px;
 }
 .sidebar__sticky-wrapper{
     height: auto;
@@ -20,7 +15,7 @@
     font-weight: 600;
     padding: 0 0 40px 0;
 }
-.list{
+.sidebar__list{
     padding: 0 15px 0 30px;
     border-top: 15px solid black;
     border-bottom: 15px solid black;
@@ -31,10 +26,10 @@
     overflow: auto;
     height: 420px;
 }
-.list_small{
+.sidebar__list_small{
     height: auto;
 }
-.list__item{
+.sidebar__list-item{
     padding: 20px 0;
     font-weight: 400;
     font-size: 16px;
