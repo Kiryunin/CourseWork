@@ -1,19 +1,24 @@
+/* index.html */
 .sidebar{
     flex-basis: 22.5%;
-    padding-right: 75px;
-}
-.sidebar__wrapper{
     height: auto;
     display: flex;
     flex-direction: column;
     position: sticky;
     top: 80px;
 }
-.sidebar_index{
-    top: 143px;
+.sidebar__sticky-wrapper{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 80px;
 }
-.sidebar_about-the-school{
-    top: 125px;
+.sidebar__title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0 0 40px 0;
 }
 .list{
     padding: 0 15px 0 30px;
@@ -35,35 +40,33 @@
     font-size: 16px;
     color: white;
 }
-.sidebar__title{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    padding: 0 0 40px 0;
-}
-.navigation-buttons-wrapper{
-    padding: 25px 0 0 0 ;
+.navigation-buttons{
+    margin-top: 15px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 15px;
 }
-.navigation-buttons__link{
-    text-decoration: none;
-}
-.navigation-button{
+.navigation-button__link{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
-    width: 75px;
-    height: 75px;
-    border-radius: 50px;
-    background: black;
+    text-decoration: none;
+    background: #000;
     color: white;
+    width: 48%;
+    height: 50px;
+    border-radius: 15px;
     transition: .3s ease;
+    box-shadow: 0 5px 10px black;
 }
-.navigation-button:hover{
+.navigation-button__link:hover{
     transform: scale(1.06);
     background: #6f51e6;
-    color: black;
+    box-shadow: 0 10px 10px black;
+}
+/* end index.html */
+
+.sidebar_about-the-school{
+    top: 125px;
 }

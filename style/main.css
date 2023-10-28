@@ -1,9 +1,6 @@
-.main-content{
+/* inde.html */
+.main{
     flex-basis: 72.5%;
-}
-.link_main{
-    text-decoration: underline ;
-    color: #f89d1b;
 }
 .info-title{
     margin: 0;
@@ -15,9 +12,39 @@
 .info-title_first-paragraph{
     padding: 0px 0 24px 0;
 }
-.info-title_top-padding{
-    padding-top: 67.5px;
+
+/* НАЙТИ СТРАНИЦУ И ПОМЕНЯТЬ ТАМ КЛАСС НА ЭТОТ  */
+.main__link{ 
+    text-decoration: underline ;
+    color: #f89d1b;
 }
+/* НАЙТИ СТРАНИЦУ И ПОМЕНЯТЬ ТАМ КЛАСС НА ЭТОТ */
+
+.learn-more-button{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.learn-more-button__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: #000;
+    color: white;
+    width: 90%;
+    height: 50px;
+    border-radius: 15px;
+    transition: .5s ease;
+    box-shadow: 0 5px 10px black;
+}
+.learn-more-button__link:hover{
+    transform: scale(1.06);
+    background: #6f51e6;
+    box-shadow: 0 10px 10px black;
+}
+/* end index.html */
 .info-html-text{
     color: black;
 }
@@ -70,27 +97,6 @@
     transition: .3s ease;
 }
 .theme-button:hover{
-    transform: scale(1.02);
-    background: #6f51e6;
-    color: black;
-}
-.learn-more-buttons-wrapper{
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-}
-.learn-more-button{
-    width: 900px;
-    height: 70px;
-    border-radius: 50px;
-    background: black;
-    border: none;
-    color: white;
-    cursor: pointer;
-    transition: .3s ease;
-    font-size: 20px;
-}
-.learn-more-button:hover{
     transform: scale(1.02);
     background: #6f51e6;
     color: black;
