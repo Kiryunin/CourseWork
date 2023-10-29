@@ -1,10 +1,11 @@
 /* index.html */
 .header{
-    margin: 0 15px 0 15px;
+    padding: 0 15px 0 15px;
     height: 75px;
     display: flex;
     align-items: center;
     color: white;
+    background: #000;
 }
 .header__wrapper{
     margin: 0 auto;
@@ -14,7 +15,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 .svg-image_index-page{
     width: 42px;
@@ -52,5 +52,42 @@
 /* end about-the-school */
 
 /* adaptive menu */
-
+.header__toggle{
+    position: relative;
+    display: none;
+    width: 45%;
+}
+.header__toggle-button{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.header__toggle-menu{
+    width: 100%;
+    overflow: auto;
+    height: 400px;
+    position: absolute;
+    display: none;
+    background: black;
+    border-radius: 15px;
+}
+.header__toggle-menu_small{
+    height: auto;
+}
+.header__toggle-menu-link{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background: #6f51e6;
+    padding: 15px 5px;
+    display: block;
+}
+.header__toggle:hover .header__toggle-menu{
+    display: block;
+    box-shadow: 0 15px 15px black;
+}
 /* end adaptive menu */

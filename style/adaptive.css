@@ -11,14 +11,35 @@
         flex-basis: 100%;
     }
 }
+@media (max-width:550px){
+    .header__nav-logo{
+        display: none;
+    }
+    .info-title{
+        padding: 55px 0 12px 0;
+    }
+    .info-title_first-paragraph{
+        padding: 0 0 12px 0;
+    }
+    .wrapper-sidebar-and-main{
+        padding: 50px 15px;
+    }
+}
 @media (max-width:500px){
     .info-title{
         font-size: 25px;
     }
-    .header__nav-logo{
-        display: none;
-    }
 }
 @media (max-width:480px){
-   
+    .header{
+        position: sticky;
+        top: 0;
+        height: 60px;
+    }
+    .header__toggle{
+        display: block;
+    }
+    .header__nav-item{
+        display: none;
+    }
 }
