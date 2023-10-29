@@ -15,6 +15,9 @@
     display: flex;
     justify-content: space-between;
 }
+.footer__paragraph{
+    text-align: center;
+}
 .svg-image-footer-telegram{
     margin-right: 10px;
     width: 50px;
