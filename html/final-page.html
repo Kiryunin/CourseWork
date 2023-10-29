@@ -25,7 +25,7 @@
 <!---------------------------------------- HEADER ---------------------------------------->
     <header class="header">
         <div class="container">
-            <div class="header__nav">
+            <div class="header__nav header__nav_centering">
                 <a class="header__nav-logo" href="../index.html"><div class="svg-image"></div></a>
                 <div class="header__nav-item"><a class="link" href="about-the-school.html">О школе</a></div>
                 <div class="header__nav-item"><a class="link" href="HTML.html">HTML</a></div>
@@ -37,11 +37,12 @@
                 <div class="menu-container">
                     <button class="header__nav-menu-button" id="menuButton">Меню</button>
                     <ul class="header__nav-menu-list disp" id="menu">
-                        <li class="header__nav-menu-list-item"><a class="header__nav-menu-list-item-link" href="html/about-the-school.html">О школе</a></li>
-                        <li  class="header__nav-menu-list-item"><a class="header__nav-menu-list-item-link" href="html/HTML.html">HTML</a></li>
-                        <li  class="header__nav-menu-list-item"><a class="header__nav-menu-list-item-link"  href="html/CSS.html">CSS</a></li>
-                        <li class="header__nav-menu-list-item"><a class="header__nav-menu-list-item-link" href="html/block-model.html">Блочная модель</a></li>
-                        <li class="header__nav-menu-list-item"><a class="header__nav-menu-list-item-link" href="html/flexbox.html">Flexbox</a></li>
+                        <a class="header__nav-menu-list-item-link" href="../index.html"><li class="header__nav-menu-list-item">Домой</li></a>
+                        <a class="header__nav-menu-list-item-link" href="about-the-school.html"><li  class="header__nav-menu-list-item">О школе</li></a>
+                        <a class="header__nav-menu-list-item-link"  href="HTML.html"><li  class="header__nav-menu-list-item">HTML</li></a>
+                        <a class="header__nav-menu-list-item-link" href="CSS.html"><li class="header__nav-menu-list-item">CSS</li></a>
+                        <a class="header__nav-menu-list-item-link" href="block-model.html"><li class="header__nav-menu-list-item">Блочная модель</li></a>
+                        <a class="header__nav-menu-list-item-link" href="flexbox.html"><li class="header__nav-menu-list-item">Flexbox</li></a>
                     </ul>
                 </div>
                 <!-- adaptive -->
@@ -56,8 +57,8 @@
         <div class="container">
             <div class="wrapper-final-page">
                 <div class="greeting">
-                    <p>Поздравляем! Вы прошли курс "Web layout"!</p>
-                    <p>Скачайте ваш диплом о прохождении курса:</p>
+                    <p class="greeting__paragraph">Поздравляем! Вы прошли курс "Web layout"!</p>
+                    <p class="greeting__paragraph">Скачайте ваш диплом о прохождении курса:</p>
                     <a class="diploma" href="../image/diploma.png" download="">Скачать диплом</a>
                 </div>
             </div>

@@ -125,6 +125,9 @@
     flex-direction: column;
     width: 100%;
 }
+.greeting__paragraph{
+    text-align: center;
+}
 .diploma{
     margin-top: 30px;
     display: flex;
@@ -147,14 +150,4 @@
     color: #000;
     box-shadow: 0 10px 10px black;
 }
-
-/* для адаптива для мобилки */
-/* .diploma:active{
-    transform: scale(1.06);
-    background: #6f51e6;
-    color: #000;
-    box-shadow: 0 10px 10px black;
-} */
-/*для адаптива для мобилки */
-
 /* end final page */
