@@ -10,6 +10,29 @@
     .main{
         flex-basis: 100%;
     }
+    .button-learn-more__link:hover{
+        transform: none;
+        background: black;
+        color: white;
+    }
+    .buttons-theme__link:hover{
+        transform: none;
+        background: black;
+        color: white;
+    }
+    .diploma:hover{
+        transform: none;
+        background: black;
+        color: white;
+    }
+    .svg-image-footer-vk:hover{
+        background-image: none;
+        transform: none;
+    }
+    .svg-image-footer-telegram:hover{
+        background-image: none;
+        transform: none;
+    }
 }
 @media (max-width:550px){
     .header__nav-logo{
