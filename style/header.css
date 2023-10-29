@@ -52,42 +52,35 @@
 /* end about-the-school */
 
 /* adaptive menu */
-.header__toggle{
+.menu-container{
+    width: 45%;
     position: relative;
     display: none;
-    width: 45%;
 }
-.header__toggle-button{
+.header__nav-menu-button{
     width: 100%;
-    font-size: 20px;
-    font-weight: 600;
-    background: black;
-    color: white;
+    background: #000;
     border: none;
-    cursor: pointer;
+    color: white;
+    font-weight: 600;
 }
-.header__toggle-menu{
-    width: 100%;
-    overflow: auto;
-    height: 400px;
-    position: absolute;
-    display: none;
-    background: black;
-    border-radius: 15px;
-}
-.header__toggle-menu_small{
-    height: auto;
-}
-.header__toggle-menu-link{
+.header__nav-menu-list{
+    padding: 0;
     text-align: center;
-    text-decoration: none;
-    color: black;
-    background: #6f51e6;
-    padding: 15px 5px;
-    display: block;
+    width: 100%;
+    position: absolute;
+    background: #000;
+    border-radius: 0 0 15px 15px;
+    overflow: auto;
 }
-.header__toggle:hover .header__toggle-menu{
-    display: block;
-    box-shadow: 0 15px 15px black;
+.disp{
+    display: none ;
+}
+.header__nav-menu-list-item{
+    padding: 15px 10px;
+}
+.header__nav-menu-list-item-link{
+    color: white;
+    text-decoration: none;
 }
 /* end adaptive menu */

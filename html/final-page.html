@@ -19,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <script src="../js/header.js" defer></script>
 </head>
 <body id="up-button" class="color-outside-the-boundaries">
 <!---------------------------------------- HEADER ---------------------------------------->
@@ -32,30 +33,19 @@
                 <div class="header__nav-item"><a class="link" href="block-model.html">Блочная модель</a></div>
                 <div class="header__nav-item"><a class="link" href="flexbox.html">Flexbox</a></div>
 
-                <!-- adaptiv -->
-                <div class="header__toggle">
-                    <button class="header__toggle-button">Меню
-                    </button>
-                    <div class="header__toggle-menu header__toggle-menu_small">
-                        <a class="header__toggle-menu-link header__toggle-menu-link_first" href="html/about-the-school.html">О школе</a>
-                        <a class="header__toggle-menu-link" href="html/HTML.html">HTML</a>
-                        <a class="header__toggle-menu-link" href="html/CSS.html">CSS</a>
-                        <a class="header__toggle-menu-link" href="html/block-model.html">Блочная модель</a>
-                        <a class="header__toggle-menu-link" href="html/flexbox.html">Flexbox</a>
-                    </div>
-                </div>
-                <div class="header__toggle">
-                    <button class="header__toggle-button">Навигация
-                    </button>
-                    <div class="header__toggle-menu">
-                        <a class="header__toggle-menu-link" href="#button-up">Наверх</a>
-                        <a class="header__toggle-menu-link" href="#first-question">актуальна ли web-разработка?</a>
-                        <a class="header__toggle-menu-link" href="#second-question">сколько зарабатывают Web-разработчики?</a>
-                        <a class="header__toggle-menu-link" href="#third-question">где учиться web-разработке?</a>
-                        <a class="header__toggle-menu-link" href="#button-down">Вниз</a>
-                    </div>
+                <!-- adaptive -->
+                <div class="menu-container">
+                    <button class="header__nav-menu-button" id="menuButton">Меню</button>
+                    <ul class="header__nav-menu-list disp" id="menu">
+                        <li class="header__nav-menu-list-item"><a class="header__nav-menu-list-item-link" href="html/about-the-school.html">О школе</a></li>
+                        <li  class="header__nav-menu-list-item"><a class="header__nav-menu-list-item-link" href="html/HTML.html">HTML</a></li>
+                        <li  class="header__nav-menu-list-item"><a class="header__nav-menu-list-item-link"  href="html/CSS.html">CSS</a></li>
+                        <li class="header__nav-menu-list-item"><a class="header__nav-menu-list-item-link" href="html/block-model.html">Блочная модель</a></li>
+                        <li class="header__nav-menu-list-item"><a class="header__nav-menu-list-item-link" href="html/flexbox.html">Flexbox</a></li>
+                    </ul>
                 </div>
                 <!-- adaptive -->
+
             </div>
         </div>
     </header>
