@@ -78,6 +78,7 @@
 }
 .header__nav-menu-list-item{
     padding: 15px 10px;
+    list-style: none;
 }
 .header__nav-menu-list-item-link{
     color: white;
