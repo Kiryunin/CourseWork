@@ -86,7 +86,7 @@
     padding: 15px 5px;
     display: block;
 }
-.header__toggle:focus .header__toggle-menu{
+.header__toggle:hover .header__toggle-menu{
     display: block;
     box-shadow: 0 15px 15px black;
 }

@@ -129,5 +129,17 @@
         </div>
     </footer>
 <!---------------------------------------- END FOOTER ---------------------------------------->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const toggleButtons = document.querySelectorAll(".header__toggle-button");
+      const toggleMenus = document.querySelectorAll(".header__toggle-menu");
+  
+      toggleButtons.forEach(function(button, index) {
+        button.addEventListener("click", function() {
+          toggleMenus[index].classList.toggle("show-menu");
+        });
+      });
+    });
+  </script>
 </body>
 </html>
