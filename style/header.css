@@ -73,13 +73,14 @@
     list-style-type: none;
     padding: 0;
     text-align: center;
-    height: 275px;
+    height: 300px;
     width: 100%;
     position: absolute;
     background: #000;
-    border-radius: 0 0 15px 15px;
+    border-radius: 15px;
     overflow: auto;
-    box-shadow: 0 30px 50px black;
+    box-shadow: 0 30px 40px black;
+    border: 1px solid white;
 }
 .disp{
     display: none ;
