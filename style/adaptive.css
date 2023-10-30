@@ -35,6 +35,9 @@
     }
 }
 @media (max-width:550px){
+    .wrapper-final-page{
+        height: 84.5vh;
+    }
     .header__nav-logo{
         display: none;
     }
@@ -55,9 +58,13 @@
 }
 @media (max-width:480px){
     .header{
+        padding: 0 15px 0 15px;
         position: sticky;
         top: 0;
         height: 60px;
+    }
+    .wrapper-final-page{
+        height: 84vh;
     }
     .menu-container{
         display: block;
@@ -70,5 +77,54 @@
     }
     .buttons-theme__link, .button-learn-more__link, .diploma{
         font-size: 16px;
+    }
+}
+@media (max-width:400px){
+    p, .header__nav-menu-list-item, .buttons-theme__link, .footer__paragraph{
+        font-size: 14px;
+    }
+    .info-title{
+        font-size: 16px;
+    }
+    .info-block_code-html, .info-block_code-css{
+        margin: 8px 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+@media (max-width:300px){
+    .wrapper-final-page{
+        height: 81vh;
+    }
+    .footer-wrapper{
+        display: none;
+    }
+    .footer-wrapper_small-size{
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__paragraph{
+        padding: 5px 0 0 0;
+    }
+    .images-container-footer{
+        justify-content: center;
+    }
+    .svg-image-footer-telegram{
+        margin: 0 10px 0 10px;
+        height: 40px;
+        width: 40px;
+        background-size: cover;
+    }
+    .svg-image-footer-vk{
+        margin: 0 10px 0 10px;
+        height: 40px;
+        width: 40px;
+        background-size: cover;
+    }
+}
+@media (max-width:237px){
+    .wrapper-final-page{
+        height: 78vh;
     }
 }

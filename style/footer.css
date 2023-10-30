@@ -1,22 +1,23 @@
 /* index.html */
 .footer{
-    margin: 0 15px 0 15px;
-    height: 75px;
+    padding: 0 15px 0 15px;
+    height: 10%;
     display: flex;
     align-items: center;
     color: white;
 }
 .footer-wrapper{
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.footer__paragraph{
+    text-align: center;
+}
 .images-container-footer{
     display: flex;
     justify-content: space-between;
-}
-.footer__paragraph{
-    text-align: center;
 }
 .svg-image-footer-telegram{
     margin-right: 10px;
@@ -42,3 +43,9 @@
     transform: scale(1.1);
 }
 /* end index.html */
+
+/* final-page */
+.footer-wrapper_small-size{
+    display: none;
+}
+/* end final-page */

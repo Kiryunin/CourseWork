@@ -16,7 +16,7 @@
     padding: 0 0 40px 0;
 }
 .sidebar__list{
-    padding: 0 15px 0 30px;
+    padding: 0 15px 0 15px;
     border-top: 15px solid black;
     border-bottom: 15px solid black;
     display: flex;
@@ -34,6 +34,8 @@
     font-weight: 400;
     font-size: 16px;
     color: white;
+    list-style-type: none;
+    text-align: center;
 }
 .navigation-buttons{
     margin-top: 15px;
