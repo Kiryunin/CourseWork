@@ -63,13 +63,18 @@
         top: 0;
         height: 60px;
     }
+    .header__nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
     .wrapper-final-page{
         height: 84vh;
     }
     .menu-container{
         display: block;
     }
-    .header__nav-item{
+    .header__link, .header__nav-logo{
         display: none;
     }
     .header__nav_centering{
