@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     position: sticky;
-    top: 20%;
+    top: 15%;
 }
 .sidebar__title{
     text-align: center;
