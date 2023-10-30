@@ -63,6 +63,7 @@
     display: none;
 }
 .header__nav-menu-button{
+    height: 28px;
     width: 100%;
     background: #000;
     border: none;
