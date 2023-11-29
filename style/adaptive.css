@@ -66,19 +66,19 @@
     .header__nav{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
     }
     .wrapper-final-page{
         height: 84vh;
     }
-    .menu-container{
-        display: block;
+    .adaptive__text-logo{
+        display: flex;
     }
+    .adaptive__burger{
+        display: flex;
+    }
+
     .header__link, .header__nav-logo{
         display: none;
-    }
-    .header__nav_centering{
-        justify-content: center;
     }
     .buttons-theme__link, .button-learn-more__link, .diploma{
         font-size: 16px;
