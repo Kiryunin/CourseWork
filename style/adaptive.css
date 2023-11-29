@@ -33,6 +33,21 @@
         background-image: none;
         transform: none;
     }
+    .go-top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 5%;
+        top: 90%;
+        width: 50px;
+        height: 50px;
+        background: #E7E7E7;
+        color:black;
+        border-radius: 30px;
+        font-size: 20px;
+        cursor: pointer ;
+    }
 }
 @media (max-width:550px){
     .wrapper-final-page{
@@ -82,6 +97,21 @@
     }
     .buttons-theme__link, .button-learn-more__link, .diploma{
         font-size: 16px;
+    }
+}
+@media (max-height:550px){
+    .go-top{
+        top: 85%;
+    }
+}
+@media (max-height:350px){
+    .go-top{
+        top: 80%;
+    }
+}
+@media (max-height:300px){
+    .go-top{
+        display: none;
     }
 }
 @media (max-width:400px){
