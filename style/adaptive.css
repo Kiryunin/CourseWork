@@ -162,4 +162,9 @@
     .wrapper-final-page{
         height: 78vh;
     }
+    .go-top{
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
 }
