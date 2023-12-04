@@ -39,3 +39,6 @@ b{
 .line{
     width: 50%;
 }
+.go-top{
+    display: none;
+}
