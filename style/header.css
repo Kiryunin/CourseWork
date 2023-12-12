@@ -57,6 +57,10 @@
 /* end about-the-school */
 
 /* adaptive menu */
+.adaptive__link-header{
+    color: white;
+    text-decoration: none;
+}
 .adaptive__text-logo{
     display: none;
 }
