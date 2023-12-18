@@ -30,8 +30,8 @@
     transform: scale(1.2);
 }
 .header__nav-item{
-    line-height: 42px;
-    height: 42px;
+    line-height: 30px;
+    height: 30px;
     transition: .4s ease;
 }
 .header__nav-item:hover{
@@ -52,17 +52,29 @@
     transform: rotate(360deg) scale(1.2);
 }
 .active_page{
+    cursor: default;
     border-bottom: 2px solid white;
+    transition: none;
+}
+.active_page:hover{
+    transform: none;
 }
 /* end about-the-school */
 
 /* adaptive menu */
 .adaptive__link-header{
+    display: none;
     color: white;
     text-decoration: none;
 }
 .adaptive__text-logo{
     display: none;
+}
+.adaptive__title{
+    display: none;
+    justify-content: center;
+    text-transform:uppercase;
+    border-bottom: 2px solid white;
 }
 .adaptive__nav{
     flex-direction: column;
@@ -76,6 +88,11 @@
 }
 .disp{
     display: none ;
+}
+.adaptive_wrapper-burger{
+    display: none;
+    justify-content: flex-end;
+    width: 59.07px;
 }
 .adaptive__burger{
     display: none;

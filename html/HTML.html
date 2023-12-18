@@ -29,15 +29,16 @@
             <div class="header__nav">
                 <a class="header__nav-logo" href="../index.html"><div class="svg-image"></div></a>
                 <a class="header__link" href="about-the-school.html"><div class="header__nav-item">О школе</div></a>
-                <a class="header__link" href="HTML.html"><div class="header__nav-item active_page">HTML</div></a>
+                <div class="header__nav-item active_page">HTML</div>
                 <a class="header__link" href="CSS.html"><div class="header__nav-item">CSS</div></a>
                 <a class="header__link" href="block-model.html"><div class="header__nav-item">Блочная модель</div></a>
                 <a class="header__link" href="flexbox.html"><div class="header__nav-item">Flexbox</div></a>
 
                 <!-- adaptive -->
-                <div class="adaptive__text-logo"><a class="adaptive__link-header" href="../index.html">Kirunin</a></div>
+                <a class="adaptive__link-header" href="../index.html"><div class="adaptive__text-logo">KirWeb</div></a>
+                <div class="adaptive__text-logo adaptive__title">HTML</div>
                 <nav id="menu" class="adaptive__nav disp">
-                    <ul class="adaptive-list">Навигация по сайту:
+                    <ul class="adaptive-list"> Навигация по сайту:
                         <li><a class="adaptive-item" href="../index.html">Главная</a></li>
                         <li><a class="adaptive-item" href="about-the-school.html">О школе</a></li>
                         <li><a class="adaptive-current-item" href="HTML.html">HTML</a></li>
@@ -46,12 +47,14 @@
                         <li><a class="adaptive-item" href="flexbox.html">Flexbox</a></li>
                     </ul>
                 </nav>
+                <div class="adaptive_wrapper-burger">
                 <div id="menuButton" class="adaptive__burger">
-                    <span></span>
+                <span></span>
                 </div>
+                </div>
+            </div>
                 <!-- adaptive -->
 
-            </div>
         </div>
     </header>
 <!---------------------------------------- END HEADER ---------------------------------------->
@@ -212,19 +215,20 @@
                     <p>Давайте для примера сделаем таблицу с тремя рядами и тремя ячейками в каждом ряду:</p>
                     <div class="info-block_code-html">
                         &#60;table border="1"&#62;<br>
-                        <span class="info-html-text"> &#60;!--Это будет первый ряд таблицы:--&#62;</span><br>
+                        <span class="info-html-text disp-code"> &#60;!--Это будет первый ряд таблицы:--&#62;</span><br>
                         &#60;tr&#62;<br>
                         &#60;td&#62;<span class="info-html-text">cell 1</span>&#60;td&#62;<br>
                         &#60;td&#62;<span class="info-html-text">cell 2</span>&#60;td&#62;<br>
                         &#60;td&#62;<span class="info-html-text">cell 3</span>&#60;td&#62;<br>
                         &#60;tr&#62;<br>
-                        <span class="info-html-text"> &#60;!--Это будет второй ряд таблицы:--&#62;</span><br>
+                        <span class="info-html-text disp-code"> &#60;!--Это будет второй ряд таблицы:--&#62;</span>
+                        <br>
                         &#60;tr&#62;<br>
                         &#60;td&#62;<span class="info-html-text">cell 4</span>&#60;td&#62;<br>
                         &#60;td&#62;<span class="info-html-text">cell 5</span>&#60;td&#62;<br>
                         &#60;td&#62;<span class="info-html-text">cell 6</span>&#60;td&#62;<br>
                         &#60;tr&#62;<br>
-                        <span class="info-html-text"> &#60;!--Это будет третий ряд таблицы:--&#62;</span><br>
+                        <span class="info-html-text disp-code"> &#60;!--Это будет третий ряд таблицы:--&#62;</span><br>
                         &#60;tr&#62;<br>
                         &#60;td&#62;<span class="info-html-text">cell 7</span>&#60;td&#62;<br>
                         &#60;td&#62;<span class="info-html-text">cell 8</span>&#60;td&#62;<br>
