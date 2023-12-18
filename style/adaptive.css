@@ -7,6 +7,7 @@
     .header{
         position: sticky;
         top: 0;
+        box-shadow: 0 5px 10px black;
     }
     .sidebar{
         display: none;
@@ -42,7 +43,7 @@
         justify-content: center;
         align-items: center;
         position: fixed;
-        left: 80%;
+        left: 92%;
         top: 87.5%;
         width: 50px;
         height: 50px;
@@ -52,6 +53,25 @@
         border-radius: 30px;
         font-size: 20px;
         cursor: pointer ;
+    }
+}
+@media (max-width:800px){
+    .go-top{
+        left: 91%;
+    }
+}
+@media (max-width:700px){
+    .go-top{
+        left: 90%;
+    }
+}
+
+@media (max-width:600px), (max-height:600px){
+    .go-top{
+        left: 87.5%;
+    }
+    .go-top{
+        top: 85%;
     }
 }
 @media (max-width:550px){
@@ -68,12 +88,7 @@
         padding: 50px 15px;
     }
 }
-@media (max-width:500px){
-    .info-title{
-        font-size: 22px;
-    }
-}
-@media (max-width:550px), (max-height:700px){
+@media (max-width:550px){
     .header{
         padding: 0 15px 0 15px;
         position: sticky;
@@ -109,10 +124,26 @@
     .buttons-theme__link, .button-learn-more__link, .diploma{
         font-size: 16px;
     }
-}
-@media (max-height:550px){
     .go-top{
-        top: 85%;
+        left: 87%;
+    }
+}
+@media (max-height:500px){
+    .go-top{
+        top: 84%;
+    }
+}
+@media (max-width:500px){
+    .info-title{
+        font-size: 22px;
+    }
+    .go-top{
+        left: 82%;
+    }
+}
+@media (max-height:450px){
+    .go-top{
+        top: 83%;
     }
 }
 @media (max-width:400px){
@@ -126,14 +157,30 @@
         font-size: 14px;
     }
 }
-@media (max-height:350px){
+@media (max-height:375px){
     .go-top{
-        top: 80%;
+        top: 81%;
+    }
+}
+@media (max-width:350px){
+    .go-top{
+        width: 45px;
+        height: 45px;
     }
 }
 @media (max-width:330px){
     .disp-code{
     display: none;
+    }
+}
+@media (max-height:325px){
+    .go-top{
+        top: 80%;
+    }
+}
+@media (max-width:320px){
+    .adaptive__text-logo{
+        font-size: 14px;
     }
 }
 @media (max-height:300px){
@@ -172,9 +219,9 @@
         background-size: cover;
     }
 }
-@media (max-width:320px){
-    .adaptive__text-logo{
-        font-size: 14px;
+@media (max-width:300px){
+    .go-top{
+        left: 80%;
     }
 }
 @media (max-width:290px){
@@ -208,6 +255,11 @@
     }
     .buttons-theme__link{
         width: 60%;
+    }
+}
+@media (max-width:275px){
+    .go-top{
+        left: 77.5%;
     }
 }
 @media (max-width:210px){
