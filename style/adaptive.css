@@ -38,6 +38,12 @@
         background-image: none;
         transform: none;
     }
+    .header__theme-switch_sun:hover{
+        transform: none;
+    }
+    .header__theme-switch_night:hover{
+        transform: none;
+    }
     .go-top{
         justify-content: center;
         align-items: center;
@@ -116,7 +122,6 @@
     .adaptive__burger{
         display: flex;
     }
-
     .header__link, .header__nav-logo, .svg-image_index-page, .active_page{
         display: none;
     }
