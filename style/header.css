@@ -37,6 +37,30 @@
 .header__nav-item:hover{
     transform: scale(1.2);
 }
+/* переключатель темы на темную */
+.header__theme-switch_sun{
+    background-image: url(../image/sun.png);
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    transition: .7s ease;
+}
+.header__theme-switch_sun:hover{
+    background-image: url(../image/night.png);
+    transform: rotate(360deg) scale(1.2);
+}
+.header__theme-switch_night{
+    display: none;
+    background-image: url(../image/night.png);
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    transition: .7s ease;
+}
+.header__theme-switch_night:hover{
+    background-image: url(../image/sun.png);
+    transform: rotate(360deg) scale(1.2);
+}
 /* end index.html */
 
 /* about-the-school */
@@ -62,14 +86,6 @@
 /* end about-the-school */
 
 /* adaptive menu */
-.adaptive__link-header{
-    display: none;
-    color: white;
-    text-decoration: none;
-}
-.adaptive__text-logo{
-    display: none;
-}
 .adaptive__title{
     display: none;
     justify-content: center;
