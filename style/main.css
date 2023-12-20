@@ -39,8 +39,6 @@
 }
 .button-learn-more__link:hover{
     transform: scale(1.06);
-    background: #6f51e6;
-    color: #000;
     box-shadow: 0 10px 15px black;
 }
 /* end index.html */
@@ -69,18 +67,20 @@
 }
 .buttons-theme__link:hover{
     transform: scale(1.06);
-    background: #6f51e6;
-    color: #000;
     box-shadow: 0 10px 10px black;
 }
 /* end about-the-school */
 
-/* HTML */
+/* HTML #db57ad */
 .info-paragraph_code-html{
     color: #9F2340;
     background: #E7E7E7;
     border-radius: 10px;
     padding: 4px 8px 4px 8px;
+}
+.info-paragraph_code-html_dark-theme{
+    color: #db57ad;
+    background: #000000;
 }
 .info-block_code-html{
     margin: 16px 0;
@@ -89,17 +89,28 @@
     background: #E7E7E7;
     border-radius: 10px;
 }
+.info-block_code-html_dark-theme{
+    color: #db57ad;
+    background: #000000;
+}
 .info-html-text{
     color: black;
 }
+.info-html-text_dark-theme{
+    color: white;
+}
 /* end HTML */
 
-/* CSS */
+/* CSS #9883ee */
 .info-paragraph_code-css{
     color: #6f51e6;
     background: #E7E7E7;
     border-radius: 10px;
     padding: 4px 8px 4px 8px;
+}
+.info-paragraph_code-css_dark-theme{
+    color: #9883ee;
+    background: #000000;
 }
 .info-block_code-css{
     margin: 16px 0;
@@ -107,6 +118,10 @@
     color: #6f51e6;
     background: #E7E7E7;
     border-radius: 10px;
+}
+.info-block_code-css_dark-theme{
+    color: #9883ee;
+    background: #000000;
 }
 /* end CSS */
 
