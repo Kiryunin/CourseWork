@@ -71,7 +71,7 @@
 }
 /* end about-the-school */
 
-/* HTML #db57ad */
+/* HTML */
 .info-paragraph_code-html{
     color: #9F2340;
     background: #E7E7E7;
@@ -101,7 +101,7 @@
 }
 /* end HTML */
 
-/* CSS #9883ee */
+/* CSS */
 .info-paragraph_code-css{
     color: #6f51e6;
     background: #E7E7E7;
@@ -131,7 +131,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 82.5vh;
 }
 .greeting{
     display: flex;
@@ -166,3 +166,14 @@
     box-shadow: 0 10px 10px black;
 }
 /* end final page */
+
+/* JS */
+
+.JS{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* end JS */

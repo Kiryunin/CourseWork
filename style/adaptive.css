@@ -73,7 +73,6 @@
         left: 90%;
     }
 }
-
 @media (max-width:600px), (max-height:600px){
     .go-top{
         top: 85%;
@@ -93,7 +92,7 @@
         padding: 50px 15px;
     }
 }
-@media (max-width:700px){
+@media (max-width:700px), (max-height:500px){
     .header{
         padding: 0 15px 0 15px;
         position: sticky;
@@ -110,9 +109,6 @@
     .adaptive__link-header{
         display: flex;
     }
-    .adaptive__text-logo{
-        display: flex;
-    }
     .adaptive__title{
         display: flex;
     }
@@ -122,7 +118,7 @@
     .adaptive__burger{
         display: flex;
     }
-    .header__link, .header__nav-logo, .svg-image_index-page, .active_page{
+    .header__link, .header__nav-logo, .svg-image_index-page, .dropdown-menu, .dropdown-current-btn{
         display: none;
     }
     .buttons-theme__link, .button-learn-more__link, .diploma{

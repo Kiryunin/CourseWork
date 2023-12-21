@@ -14,4 +14,14 @@ menuButton.addEventListener('click', () => {
     }
 })
 
+// const dropdownButton = document.querySelector('.dropdown-btn');
+// const dropdownMenu = document.querySelector('.dropdown-list');
+
+// dropdownButton.addEventListener('click', () => {
+//     if (dropdownMenu.classList.contains ('disp-dropdown') == true){
+//         dropdownMenu.classList.remove('disp-dropdown');
+//     } else {
+//         dropdownMenu.classList.add ('disp-dropdown');
+//     }
+// })
 

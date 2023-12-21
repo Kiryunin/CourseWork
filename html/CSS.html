@@ -29,24 +29,47 @@
         <div class="container">
             <div class="header__nav">
                 <a class="header__nav-logo" href="../index.html"><div class="svg-image"></div></a>
-                <a class="header__link" href="about-the-school.html"><div class="header__nav-item">О школе</div></a>
-                <a class="header__link" href="HTML.html"><div class="header__nav-item">HTML</div></a>
-                <div class="header__nav-item active_page">CSS</div>
-                <a class="header__link" href="block-model.html"><div class="header__nav-item">Блочная модель</div></a>
-                <a class="header__link" href="flexbox.html"><div class="header__nav-item">Flexbox</div></a>
+                
+                <a class="header__link" href="about-the-school.html">О школе</a>
+
+                <div class="dropdown-menu">
+                    <button class="dropdown-btn dropdown-current-btn">Курс Layout</button>
+                    <div class="dropdown-list">
+                        <a class="dropdown-item" href="HTML.html">HTML</a>
+                        <hr class="line line-drowdown">
+                        <a class="dropdown-item dropdown-current-item" href="CSS.html">CSS</a>
+                        <hr class="line line-drowdown">
+                        <a class="dropdown-item" href="block-model.html">Block model
+                        </a>
+                        <hr class="line line-drowdown">
+                        <a class="dropdown-item dropdown-item_last-child" href="flexbox.html">Flexbox</a>
+                    </div>
+                  </div>
+
+                <div class="dropdown-menu">
+                <button class="dropdown-btn">Курс JavaScript</button>
+                <div class="dropdown-list">
+                    <a class="dropdown-item dropdown-item_last-child" href="1pageJS.html">В разработке:)</a>
+                </div>
+                </div>
+
                 <div class="header__theme-switch_sun"></div>
                 <div class="header__theme-switch_night"></div>
 
                 <!-- adaptive -->
                 <div class="adaptive__title">CSS</div>
                 <nav id="menu" class="adaptive__nav disp">
-                    <ul class="adaptive-list"> Навигация по сайту:
+                    <ul class="adaptive-list">
+                        <li class="adaptive-item-title_main">Навигация по сайту:</li>
                         <li><a class="adaptive-item" href="../index.html">Главная</a></li>
-                        <li><a class="adaptive-item" href="about-the-school.html">О школе</a></li>
+                        <li><a class="adaptive-item">О школе</a></li>
+                        <li class="adaptive-item-title">Курс Layout:</li>
                         <li><a class="adaptive-item" href="HTML.html">HTML</a></li>
                         <li><a class="adaptive-current-item" href="CSS.html">CSS</a></li>
                         <li><a class="adaptive-item" href="block-model.html">Блочная модель</a></li>
                         <li><a class="adaptive-item" href="flexbox.html">Flexbox</a></li>
+                        <li class="adaptive-item-title">Курс JavaScript:</li>
+                        <li><a class="adaptive-item" href="1pageJS.html">JavaScript</a></li>
                     </ul>
                 </nav>
                 <div class="adaptive_wrapper-burger">

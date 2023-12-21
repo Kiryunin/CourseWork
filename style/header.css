@@ -15,8 +15,86 @@
     justify-content: space-between;
     align-items: center;
 }
-.header__link{
+
+/* открывающееся меню */
+
+.dropdown-menu{
+    display: inline-block;
+    flex-direction: column;
+    position: relative;
+}
+.dropdown-btn{
+    padding: 0;
+    height: 42px;
+    cursor: pointer;
+    background: black;
+    color: #9d9d9d;;
+    border: none;
+    transition: .3s ease;
+}
+.dropdown-current-btn{
+    color: white;
+    font-weight: bold;
+}
+.dropdown-list{
+    padding: 0;
+    margin: 0;
+    width: 180px;
+    display: none;
+    position: absolute;
+    background: #000;
+    z-index: 1;
+    flex-direction: column;
+    border-radius: 15px;   
+    left: 50%;    
+    transform: translate( -50%);
+}
+.dropdown-item{
+    height: 42px;
+    padding: 22.5px 0;
+    background: #000;
+    color: #9d9d9d;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
+}
+.dropdown-current-item{
+    color: white;
+    font-weight: bold;
+    cursor: default;
+}
+.dropdown-item:hover{
+    color: white;
+}
+.dropdown-item_last-child{
+    border-radius: 0 0 15px 15px;
+}
+.line-drowdown{
+    margin: 0 auto;
+}
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+}
+.dropdown-btn:hover{
+    color: white;
+}
+.dropdown-menu:hover .dropdown-btn{
+    color: white;
+} 
+/* the end открывающееся меню */
+
+.header__link{
+    width: 80px;
+    line-height: 42px;
+    text-decoration: none;
+    color: #9d9d9d;
+    transition: .3s ease;
+    text-align: center;
+    
+}
+.header__link:hover{
     color: white;
 }
 .svg-image_index-page{
@@ -27,14 +105,6 @@
     transition: .7s ease;
 }
 .svg-image_index-page:hover{
-    transform: scale(1.2);
-}
-.header__nav-item{
-    line-height: 30px;
-    height: 30px;
-    transition: .4s ease;
-}
-.header__nav-item:hover{
     transform: scale(1.2);
 }
 /* переключатель темы на темную */
@@ -75,14 +145,6 @@
     background-image: url(../image/logo\ home\ page.svg);
     transform: rotate(360deg) scale(1.2);
 }
-.active_page{
-    cursor: default;
-    border-bottom: 2px solid white;
-    transition: none;
-}
-.active_page:hover{
-    transform: none;
-}
 /* end about-the-school */
 
 /* adaptive menu */
@@ -98,7 +160,7 @@
     top: 0; bottom: 0; left: 0; right: 0;
     z-index: 50;
     overflow-y: scroll;
-    padding: 50px 40px;
+    padding: 50px 0;
     background: #000;
 }
 .disp{
@@ -157,17 +219,33 @@
     flex-direction: column;
     justify-content: center;
     row-gap: 30px;
-    font-weight: bold;
-    font-size: 25px;
 }
 .adaptive-item{
     text-decoration: none;
     color: #9d9d9d;
     font-size: 20px;
+    background: #000;
+    padding: 0 0 0 30px;
+}
+.adaptive-item-title{
+    font-size: 27px;
+    padding: 35px 45px 0 45px;
+}
+.adaptive-item-title_main{
+    padding: 0 0 35px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
 }
 .adaptive-current-item{
     text-decoration: none;
-    font-size: 25px;
+    font-size: 22.5px;
     color: white;
+    padding: 0 0 0 30px;
+}
+.adaptive-menu-line{
+    margin: 0;
+    color: #9d9d9d;
+    padding: 0 20px;
 }
 /* end adaptive menu */
