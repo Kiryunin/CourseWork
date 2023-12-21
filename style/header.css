@@ -47,7 +47,7 @@
 }
 .header__theme-switch_sun:hover{
     background-image: url(../image/night.png);
-    transform: rotate(360deg) scale(1.2);
+    transform: rotate(360deg);
 }
 .header__theme-switch_night{
     display: none;
@@ -59,7 +59,7 @@
 }
 .header__theme-switch_night:hover{
     background-image: url(../image/sun.png);
-    transform: rotate(360deg) scale(1.2);
+    transform: rotate(360deg);
 }
 /* end index.html */
 

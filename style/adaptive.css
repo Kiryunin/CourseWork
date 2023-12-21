@@ -30,6 +30,9 @@
         background: black;
         color: white;
     }
+    .svg-image:hover{
+        transform: none;
+    }
     .svg-image-footer-vk:hover{
         background-image: none;
         transform: none;
@@ -72,9 +75,6 @@
 }
 
 @media (max-width:600px), (max-height:600px){
-    .go-top{
-        left: 87.5%;
-    }
     .go-top{
         top: 85%;
     }
