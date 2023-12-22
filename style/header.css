@@ -194,7 +194,6 @@
     background: white;
     transition: all 0.3s ease 0s;
 }
-
 .adaptive__burger::before{
     top: 0;
 }
@@ -230,7 +229,7 @@
 }
 .adaptive-item-title{
     font-size: 27px;
-    padding: 35px 45px 0 45px;
+    padding: 0 45px 0 45px;
 }
 .adaptive-item-title_main{
     padding: 0 0 35px 0;
