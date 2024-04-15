@@ -34,11 +34,15 @@
         transform: none;
     }
     .svg-image-footer-vk:hover{
-        background-image: none;
+        /* background-image: none; 
+        удалить?*/
+        
         transform: none;
     }
     .svg-image-footer-telegram:hover{
-        background-image: none;
+        /* background-image: none; 
+        удалить?*/
+        
         transform: none;
     }
     .header__theme-switch_sun:hover{
