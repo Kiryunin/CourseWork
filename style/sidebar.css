@@ -26,9 +26,10 @@
     overflow: auto;
     height: 420px;
 }
-.sidebar__list_small{
+ .sidebar__list_small{
     height: auto;
-}
+} 
+/* ЗАЧЕМ? */
 .sidebar__list-item{
     padding: 20px 0;
     font-weight: 400;

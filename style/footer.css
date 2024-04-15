@@ -28,7 +28,6 @@
     transition: .5s ease;
 }
 .svg-image-footer-telegram:hover{
-    background-image: url(../image/telegram_hover.svg);
     transform: scale(1.1);
 }
 .svg-image-footer-vk{
@@ -39,7 +38,6 @@
     transition: .5s ease;
 }
 .svg-image-footer-vk:hover{
-    background-image: url(../image/vk_hover.svg);
     transform: scale(1.1);
 }
 /* end index.html */

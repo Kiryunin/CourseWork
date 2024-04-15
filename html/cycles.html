@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Циклы</title>
+
+    <link rel="shortcut icon" href="../image/logo.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="stylesheet" href="../style/common-styles.css">
+    <link rel="stylesheet" href="../style/container.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/sidebar.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/adaptive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    
+    <script src="../js/header.js" defer></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body id="up-button" class="color-outside-the-boundaries">
+<!---------------------------------------- HEADER ---------------------------------------->
+    <header class="header">
+        <div class="container">
+            <div class="header__nav header__nav_centering">
+                <a class="header__nav-logo" href="../index.html"><div class="svg-image"></div></a>
+                <a class="header__link" href="about-the-school.html">О школе</a>
+
+                <div class="dropdown-menu">
+                    <button class="dropdown-btn">Курс Layout</button>
+                    <div class="dropdown-list">
+                        <a class="dropdown-item" href="HTML.html">HTML</a>
+                        <hr class="line line-drowdown">
+                        <a class="dropdown-item" href="CSS.html">CSS</a>
+                        <hr class="line line-drowdown">
+                        <a class="dropdown-item" href="block-model.html">Block model
+                        </a>
+                        <hr class="line line-drowdown">
+                        <a class="dropdown-item dropdown-item_last-child" href="flexbox.html">Flexbox</a>
+                    </div>
+                  </div>
+
+                <div class="dropdown-menu">
+                <button class="dropdown-btn dropdown-current-btn">Курс JavaScript</button>
+                <div class="dropdown-list">
+                    <a class="dropdown-item dropdown-item_last-child" href="basicsJS.html">Основы</a>
+                    <hr class="line line-drowdown">
+                    <a class="dropdown-item dropdown-item_last-child" href="arrays.html">Массивы</a>
+                    <hr class="line line-drowdown">
+                    <a class="dropdown-item dropdown-item_last-child" href="objects.html">Объекты</a>
+                    <hr class="line line-drowdown">
+                    <a class="dropdown-item dropdown-item_last-child dropdown-current-item" href="">Циклы</a>
+                </div>
+                </div>
+
+                <div class="header__theme-switch_sun"></div>
+                <div class="header__theme-switch_night"></div>
+
+                <!-- adaptive -->
+                <div class="adaptive__title">Циклы</div>
+                <nav id="menu" class="adaptive__nav disp">
+                    <ul class="adaptive-list">
+                        <li class="adaptive-item-title_main">Навигация по сайту:</li>
+                        <li><a class="adaptive-item" href="../index.html">Главная</a></li>
+                        <li><a class="adaptive-item">О школе</a></li>
+                        <li class="adaptive-item-title">Курс Layout:</li>
+                        <li><a class="adaptive-item" href="HTML.html">HTML</a></li>
+                        <li><a class="adaptive-item" href="CSS.html">CSS</a></li>
+                        <li><a class="adaptive-item" href="block-model.html">Блочная модель</a></li>
+                        <li><a class="adaptive-item" href="flexbox.html">Flexbox</a></li>
+                        <li class="adaptive-item-title">Курс JavaScript:</li>
+                        <li><a class="adaptive-item" href="basicsJS.html">Основы</a></li>
+                        <li><a class="adaptive-item" href="arrays.html">Массивы</a></li>
+                        <li><a class="adaptive-item" href="objects.html">Объекты</a></li>
+                        <li><a class="adaptive-current-item" href="cycles.html">Циклы</a></li>
+                    </ul>
+                </nav>
+                <div class="adaptive_wrapper-burger">
+                <div id="menuButton" class="adaptive__burger">
+                <span></span>
+                </div>
+                </div>
+            </div>
+                <!-- adaptive -->
+
+        </div>
+    </header>
+<!---------------------------------------- END HEADER ---------------------------------------->
+
+<!---------------------------------------- MAIN ---------------------------------------->
+    <div class="wrapper-background">
+        <div class="container">
+            <div class="wrapper-sidebar-and-main">
+                <aside class="sidebar">
+                    <div class="sidebar__sticky-wrapper">
+                        <div class="sidebar__title">НАВИГАЦИЯ:</div>
+                        <ul class="sidebar__list">
+                            <a class="link" href="#introduction-to-cycles"><li class="sidebar__list-item">Введение в циклы</li></a>
+                            <hr class="line">
+                            <a class="link" href="#for-of"><li class="sidebar__list-item">Перебор массива циклом for-of</li></a>
+                            <hr class="line">
+                            <a class="link" href="#for-in"><li class="sidebar__list-item">Перебор массива циклом for-in</li></a>
+                            <hr class="line">
+                            <a class="link" href="#while"><li class="sidebar__list-item">Цикл while</li></a>
+                            <hr class="line">
+                            <a class="link" href="#for"><li class="sidebar__list-item">Цикл for</li></a>
+                            <hr class="line">
+                            <a class="link" href="#break"><li class="sidebar__list-item">Инструкция break</li></a>
+                            <hr class="line">
+                            <a class="link" href="#continue"><li class="sidebar__list-item">Инструкция continue</li></a>
+                        </ul>
+                        <div class="navigation-buttons">
+                            <a class="navigation-button__link" href="#up-button">&#9650;</a>
+                            <a class="navigation-button__link" href="#button-down">&#9660;</a>
+                        </div>
+                    </div>
+                </aside>
+                        <!---------------------------------------- END SIDEBAR ---------------------------------------->
+        
+                        <!---------------------------------------- MAIN ---------------------------------------->
+
+                <section class="main">
+                    <h2 id="introduction-to-cycles" class="info-title info-title_first-paragraph">Введение в циклы</h2>
+                    <p>В данном уроке мы начнем изучение циклов. Циклы используются для того, чтобы некоторый участок кода выполнился несколько раз подряд.</p>
+                    <p>Зачем это нужно - представьте, что вам нужно возвести в квадрат 100 элементов массива. Если обращаться к каждому элементу отдельно по его ключу - это займет 100 строчек кода, и для того, чтобы написать этот код, нужно будет потратить довольно много времени.</p>
+                    <p>Но это не нужно - у нас есть возможность сделать так, чтобы JavaScript за нас выполнил некоторую операцию нужное количество раз. Например, возвел все элементы массива в квадрат. Это и делается с помощью циклов.</p>
+                    <p>Циклы могут повторять некоторый код заданное количество раз. Каждый такой проход цикла называется итерацией цикла.</p>
+                    <p>В циклах часто используются специальные переменные, которые каждую итерацию увеличивают свое значение на единицу. Такие переменные называются счетчиками циклов. Счетчики используются для того, чтобы подсчитывать, сколько раз выполнился цикл. Для счетчиков принято использовать буквы i, j и k.</p>
+                    <h2 id="for-of" class="info-title">Перебор массива циклом for-of</h2>
+                    <p>Цикл for-of позволяет последовательно перебирать элементы массивов. Он имеет следующий синтаксис:</p>
+                    <div class="info-js-block">
+                        for (let переменная для элемента of массив) <br> {<br>
+                            <span class="info-js-text">
+                                /*
+                                    В переменную для элемента по очереди <br>
+                                    будут попадать элементы перебираемого массива.
+                                */ <br>
+                            </span>
+                        }
+                    </div>
+                    <p>Давайте посмотрим на примере. Пусть дан следующий массив:</p>
+                    <div class="info-js-block">
+                        let arr = [1, 2, 3, 4, 5];
+                    </div>
+                    <p>Переберем этот массив циклом и выведем его элементы в консоль:</p>
+                    <div class="info-js-block">
+                        for (let elem of arr) <br> {<br>
+                            console.log(elem);<br>
+                        }                        
+                    </div>
+                    <h2 id="for-in" class="info-title">Перебор объекта циклом for-in</h2>
+                    <p>Для перебора объектов предназначен цикл for-in. Он имеет следующий синтаксис:</p>
+                    <div class="info-js-block">
+                        for (let переменнаяДляКлюча in объект) {
+	
+                        }                        
+                    </div>
+                    <p>В переменнуюДляКлюча по очереди будут попадать ключи перебираемого объекта. Давайте попробуем на каком-нибудь примере. Пусть у нас есть вот такой объект:</p>
+                    <div class="info-js-block">
+                        let obj = {a: 1, b: 2, c: 3};
+                    </div>
+                    <p>Давайте с помощью цикла for-in выведем ключи этого объекта:</p>
+                    <div class="info-js-block">
+                        for (let key in obj) <br> { <br>
+                            console.log(key); <span class="info-js-text">// выведет 'a', 'b', 'c' </span><br>
+                        }
+                    </div>
+                    <p>А теперь выведем элементы:</p>
+                    <div class="info-js-block">
+                        for (let key in obj) <br> { <br>
+                            console.log(obj[key]); <span class="info-js-text">// выведет 1, 2, 3</span> <br>
+                        }
+                    </div>
+                    <h2 id="while" class="info-title">Цикл while</h2>
+                    <p>Цикл while будет выполняться до тех пор, пока истинно выражение, переданное ему параметром. Он позволяет выполнять произвольное количество итераций. Вот его синтаксис:</p>
+                    <div class="info-js-block">
+                        while ( пока выражение истинно ) <br> { <br>
+                            <span class="info-js-text">
+                                выполняем этот код циклически; <br>
+                                в начале каждого цикла проверяем выражение в круглых скобках
+                            </span> <br>
+                        }
+                    </div>
+                    <p>Цикл закончится, когда выражение перестанет быть истинным. Если оно было ложным изначально - то он не выполнится ни разу.</p>
+                    <p>Давайте для примера последовательно выведем с помощью цикла while числа от одного до пяти:</p>
+                    <div class="info-js-block">
+                        let i = 1;<br>
+                        <br>
+                        while (i <= 5) <br> { <br>
+                            console.log(i); <br>
+                            i++;<br>
+                        }
+                    </div>
+                    <p>А теперь будем делить заданное число на 2 столько раз, пока результат не станет меньше 10:</p>
+                    <div class="info-js-block">
+                        let num = 500;<br>
+                        <br>
+                        while (num > 10) <br> { <br>
+                            num = num / 2; <br>
+                        } <br>
+
+                        console.log(num); <span class="info-js-text">// результат</spanc>
+                    </div>
+                    <h2 id="for" class="info-title">Цикл for</h2>
+                    <p>Цикл for позволяет повторить некоторый код заданное количество раз. Вот его синтаксис:</p>
+                    <div class="info-js-block">
+                        for ( начальные команды; условие окончания; команды после прохода ) <br> { <br>
+                            <span class="info-js-text">тело цикла</span> <br>
+                        }                        
+                    </div>
+                    <p>Начальные команды - это то, что выполнится перед стартом цикла. Они выполнятся только один раз. Обычно там размещают начальные значения счетчиков, например: i = 0.</p>
+                    <p>Условие окончания цикла - это условие, при котором цикл будет крутится, пока оно истинное, например: i <= 10.</p>
+                    <p>Команды после прохода цикла - это команды, которые будут выполнятся каждый раз при окончании прохода цикла. Обычно там увеличивают счетчики, например: i++.</p>
+                    <p>Давайте с помощью цикла for выведем последовательно числа от 1 до 9:</p>
+                    <div class="info-js-block">
+                        for (let i = 1; i <= 9; i++) <br> { <br>
+                            console.log(i); <span class="info-js-text">// выведет 1, 2... 9</span> <br>
+                        }
+                    </div>
+                    <p>А теперь будем увеличивать счетчик не на 1, а на 2:</p>
+                    <div class="info-js-block">
+                        for (let i = 1; i <= 9; i += 2) <br> { <br>
+                            console.log(i); <span class="info-js-text">// выведет 1, 3, 5...</span> <br>
+                        }
+                    </div>
+                    <p>Можно выполнить обратный отсчет:</p>
+                    <div class="info-js-block">
+                        for (let i = 10; i > 0; i--) <br> { <br>
+                            console.log(i); <span class="info-js-text">// выведет 10, 9, 8...</span> <br>
+                        }
+                    </div>
+                    <h2 id="break" class="info-title">Инструкция break</h2>
+                    <p>Инструкция break позволяет досрочно завершать цикл. Давайте посмотрим, когда такое может пригодиться. Пусть у нас есть цикл, выводящий в консоль элементы массива:</p>
+                    <div class="info-js-block">
+                        let arr = [1, 2, 3, 4, 5]; <br>
+                        <br>
+                        for (let elem of arr) <br> { <br>
+                            console.log(elem); <br>
+                        }
+                    </div>
+                    <p>Пусть перед нами стоит задача определить, есть ли в массиве число 3. Если есть - выведем в консоль слово 'есть' (а если нет - ничего не будем делать).</p>
+                    <p>Решим нашу задачу:</p>
+                    <div class="info-js-block">
+                        let arr = [1, 2, 3, 4, 5]; <br>
+                        <br>
+                        for (let elem of arr) <br> { <br>
+                            if (elem === 3) { <br>
+                                console.log('есть'); <br>
+                            }
+                        }
+                    </div>
+                    <p>Задача решена, однако, есть проблема: после того, как число 3 уже найдено, массив все равно продолжает бессмысленно перебираться дальше, тратя ценные ресурсы процессора и замедляя работу нашего скрипта.</p>
+                    <p>Оптимальнее было бы сразу после нахождения числа завершить работу нашего цикла. Это можно сделать с помощью специально инструкции break, позволяющей досрочно завершить работу цикла.</p>
+                    <p>Итак, давай завершим цикл, как только нам встретится число 3:</p>
+                    <div class="info-js-block">
+                        let arr = [1, 2, 3, 4, 5];<br>
+                        <br>
+                        for (let elem of arr) <br> { <br>
+                            if (elem == 3) { <br>
+                                console.log('есть'); <br>
+                                break; <span class="info-js-text">// выйдем из цикла</span cl> <br>
+                            }
+                        }
+                    </div>
+                    <p>Инструкция break может завершать любые циклы: обычный for, while и так далее.</p>
+                    <h2 id="continue" class="info-title">Инструкция continue</h2>
+                    <p>Существует также инструкция continue, запускающая новую итерацию цикла. Данная инструкция иногда может быть полезна для упрощения кода, хотя практически всегда задачу можно решить и без нее. Давайте посмотрим на практическом примере.</p>
+                    <p>Пусть у нас дан массив с числами. Давайте переберем его циклом и числа, которые делятся на 2, возведем в квадрат и выведем в консоль, а числа, которые делятся на 3, возведем в куб и выведем в консоль. Вот решение описанной задачи:</p>
+                    <div class="info-js-block">
+                        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];<br>
+                        <br>
+                        for (let elem of arr) <br> { <br>
+                            let result; <br>
+                            
+                            if (elem % 2 === 0) { <br>
+                                result = elem * elem; <br>
+                                console.log(result);} <br> <br> 
+                                else if (elem % 3 === 0) { <br>
+                                result = elem * elem * elem; <br>
+                                console.log(result); <br>
+                                
+                            }
+                        }
+                    </div>
+                    <p>Как вы видите, строчка console.log(result) повторяется два раза. Давайте вынесем ее за if, вот так:</p>
+                    <div class="info-js-block">
+                        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]; <br>
+
+                        for (let elem of arr) <br> { <br>
+                            let result;<br>
+                            
+                            if (elem % 2 === 0) { <br>
+                                result = elem * elem;} <br> <br>
+                            else if (elem % 3 === 0) { <br>
+                                result = elem * elem * elem;} <br>
+                            <br>
+                            
+                            console.log(result); <span class="info-js-text">// вынесли вывод за условие</span>
+}
+                    </div>
+                    <p>Теперь наш скрипт, однако, работает немного не так: получится, что и для обычных элементов, не обработанных через наш if будет выполнятся вывод переменной result в консоль, что по условию нашей задачи нам не нужно.</p>
+                    <p>Поправим проблему, добавив к нашему if еще условие else, которое будет срабатывать для элементов, не делящихся на 2 и 3, и вызовем там инструкцию continue, которая сразу же будет перебрасывать нас на новую итерацию цикла:</p>
+                    <div class="info-js-block">
+                        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+                        for (let elem of arr) <br> { <br>
+                            let result; <br>
+                            
+                            if (elem % 2 == 0) { <br>
+                                result = elem * elem;} <br> <br>
+                            else if (elem % 3 == 0) { <br>
+                                result = elem * elem * elem;} <br> <br>
+                            else { <br>
+                                continue; <span class="info-js-text">// перейдем на новую итерацию цикла</span> <br>
+                            } <br>
+                            
+                            console.log(result); <span class="info-js-text">// выполнится, если делится на 2 или 3</span> <br>
+                        }
+                    </div>
+                    <div class="buttons-theme">
+                        <a class="buttons-theme__link" href="objects.html">Объекты</a>
+                        <a class="buttons-theme__link" href="final-page-two.html">Закончить</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+<!---------------------------------------- END MAIN ---------------------------------------->
+
+<!---------------------------------------- FOOTER ---------------------------------------->
+    <footer id="button-down" class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer__paragraph">Кирюнин Кирилл © 2023</div>
+                <div class="images-container-footer">
+                    <a href="https://t.me/cirios" target="_blank"><div class="svg-image-footer-telegram"></div></a>
+                    <a href="https://vk.com/kirunin1" target="_blank"><div class="svg-image-footer-vk"></div></a>
+                </div>
+            </div>
+            <div class="footer-wrapper_small-size">
+                <div class="images-container-footer">
+                    <a href="https://t.me/cirios" target="_blank"><div class="svg-image-footer-telegram"></div></a>
+                    <a href="https://vk.com/kirunin1" target="_blank"><div class="svg-image-footer-vk"></div></a>
+                </div>
+                <div class="footer__paragraph">Кирюнин Кирилл © 2024</div>
+            </div>
+        </div>
+    </footer>
+<!---------------------------------------- END FOOTER ---------------------------------------->
+</body>
+</html>

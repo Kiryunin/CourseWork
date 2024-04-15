@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Массивы</title>
+
+    <link rel="shortcut icon" href="../image/logo.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="stylesheet" href="../style/common-styles.css">
+    <link rel="stylesheet" href="../style/container.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/sidebar.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/adaptive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    
+    <script src="../js/header.js" defer></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body id="up-button" class="color-outside-the-boundaries">
+<!---------------------------------------- HEADER ---------------------------------------->
+    <header class="header">
+        <div class="container">
+            <div class="header__nav header__nav_centering">
+                <a class="header__nav-logo" href="../index.html"><div class="svg-image"></div></a>
+                <a class="header__link" href="about-the-school.html">О школе</a>
+
+                <div class="dropdown-menu">
+                    <button class="dropdown-btn">Курс Layout</button>
+                    <div class="dropdown-list">
+                        <a class="dropdown-item" href="HTML.html">HTML</a>
+                        <hr class="line line-drowdown">
+                        <a class="dropdown-item" href="CSS.html">CSS</a>
+                        <hr class="line line-drowdown">
+                        <a class="dropdown-item" href="block-model.html">Block model
+                        </a>
+                        <hr class="line line-drowdown">
+                        <a class="dropdown-item dropdown-item_last-child" href="flexbox.html">Flexbox</a>
+                    </div>
+                  </div>
+
+                <div class="dropdown-menu">
+                <button class="dropdown-btn dropdown-current-btn">Курс JavaScript</button>
+                <div class="dropdown-list">
+                    <a class="dropdown-item dropdown-item_last-child" href="basicsJS.html">Основы</a>
+                    <hr class="line line-drowdown">
+                    <a class="dropdown-item dropdown-item_last-child dropdown-current-item" href="">Массивы</a>
+                    <hr class="line line-drowdown">
+                    <a class="dropdown-item dropdown-item_last-child" href="objects.html">Объекты</a>
+                    <hr class="line line-drowdown">
+                    <a class="dropdown-item dropdown-item_last-child" href="cycles.html">Циклы</a>
+                </div>
+                </div>
+
+                <div class="header__theme-switch_sun"></div>
+                <div class="header__theme-switch_night"></div>
+
+                <!-- adaptive -->
+                <div class="adaptive__title">Массивы</div>
+                <nav id="menu" class="adaptive__nav disp">
+                    <ul class="adaptive-list">
+                        <li class="adaptive-item-title_main">Навигация по сайту:</li>
+                        <li><a class="adaptive-item" href="../index.html">Главная</a></li>
+                        <li><a class="adaptive-item">О школе</a></li>
+                        <li class="adaptive-item-title">Курс Layout:</li>
+                        <li><a class="adaptive-item" href="HTML.html">HTML</a></li>
+                        <li><a class="adaptive-item" href="CSS.html">CSS</a></li>
+                        <li><a class="adaptive-item" href="block-model.html">Блочная модель</a></li>
+                        <li><a class="adaptive-item" href="flexbox.html">Flexbox</a></li>
+                        <li class="adaptive-item-title">Курс JavaScript:</li>
+                        <li><a class="adaptive-item" href="basicsJS.html">Основы</a></li>
+                        <li><a class="adaptive-current-item" href="arrays.html">Массивы</a></li>
+                        <li><a class="adaptive-item" href="objects.html">Объекты</a></li>
+                        <li><a class="adaptive-item" href="cycles.html">Циклы</a></li>
+                    </ul>
+                </nav>
+                <div class="adaptive_wrapper-burger">
+                <div id="menuButton" class="adaptive__burger">
+                <span></span>
+                </div>
+                </div>
+            </div>
+                <!-- adaptive -->
+
+        </div>
+    </header>
+<!---------------------------------------- END HEADER ---------------------------------------->
+
+<!---------------------------------------- MAIN ---------------------------------------->
+    <div class="wrapper-background">
+        <div class="container">
+            <div class="wrapper-sidebar-and-main">
+                <aside class="sidebar">
+                    <div class="sidebar__sticky-wrapper">
+                        <div class="sidebar__title">НАВИГАЦИЯ:</div>
+                        <ul class="sidebar__list">
+                            <a class="link" href="#arrays"><li class="sidebar__list-item">Массивы</li></a>
+                            <hr class="line">
+                            <a class="link" href="#lenght"><li class="sidebar__list-item">Длина массива</li></a>
+                            <hr class="line">
+                            <a class="link" href="#overwriting"><li class="sidebar__list-item">Перезапись элементов массива</li></a>
+                            <hr class="line">
+                            <a class="link" href="#addition"><li class="sidebar__list-item">Добавление элементов по ключам</li></a>
+                            <hr class="line">
+                            <a class="link" href="#keys"><li class="sidebar__list-item">Ключи массивов из переменных</li></a>
+                        </ul>
+                        <div class="navigation-buttons">
+                            <a class="navigation-button__link" href="#up-button">&#9650;</a>
+                            <a class="navigation-button__link" href="#button-down">&#9660;</a>
+                        </div>
+                    </div>
+                </aside>
+                        <!---------------------------------------- END SIDEBAR ---------------------------------------->
+        
+                        <!---------------------------------------- MAIN ---------------------------------------->
+
+                <section class="main">
+                    <h2 id="arrays" class="info-title info-title_first-paragraph">Массивы</h2>
+                    <p>Сейчас мы начнем изучать специальный тип данных, который называется массив. Массив представляет собой переменную, в которой в упорядоченном виде можно хранить целый набор каких-то значений.</p>
+                    <p>Значения, которые хранит массив, называются элементами. Элементы разделяются между собой запятой. После этой запятой принято ставить пробелы.</p>
+                    <p>Для создания массива используются квадратные скобки:</p>
+                    <div class="info-js-block">
+                        let arr = [];
+                    </div>
+                    <p>Давайте заполним наш массив строками:</p>
+                    <div class="info-js-block">
+                        let arr = ['a', 'b', 'c'];
+                    </div>
+                    <p>А теперь заполним массив числами:</p>
+                    <div class="info-js-block">
+                        let arr = [1, 2, 3];
+                    </div>
+                    <p>Кроме строк и чисел в массиве можно хранить все допустимые типы данных, а также смешивать их между собой в одном массиве, пример:</p>
+                    <div class="info-js-block">
+                        let arr = [1, 2, 'a', 'b', null, true, false];
+                    </div>
+                    <h2 id="lenght" class="info-title">Длина массива</h2>
+                    <p>Длина массива находится с помощью свойства length:</p>
+                    <div class="info-js-block">
+                        let arr = ['a', 'b', 'c'];<br>
+                        console.log(arr.length) <span class="info-js-text">// выведет 3</span>
+                    </div>
+                    <p>Зная длину массива, можно получить его последний элемент:</p>
+                    <div class="info-js-block">
+                        let arr = ['a', 'b', 'c'];<br>
+                        console.log(arr[arr.length - 1]) <span class="info-js-text">// выведет 'c'</span>
+                    </div>
+                    <h2 id="overwriting" class="info-title">Перезапись элементов массива</h2>
+                    <p>Можно также прочитывать текущее значение элемента, выполнять с ним какие-то операции и записывать измененное значение обратно в этот элемент:</p>
+                    <div class="info-js-block">
+                        let arr = ['a', 'b', 'c'];<br><br>
+                        arr[0] = arr[0] + '!';<br>
+                        arr[1] = arr[1] + '!';<br>
+                        arr[2] = arr[2] + '!';<br><br>
+                        console.log(arr); <span class="info-js-text">// выведет ['a!', 'b!', 'c!']</span>
+                    </div>
+                    <p>Предыдущий код можно переписать через оператор +=:</p>
+                    <div class="info-js-block">
+                        let arr = ['a', 'b', 'c'];<br><br>
+                        arr[0] += '!';<br>
+                        arr[1] += '!';<br>
+                        arr[2] += '!';<br><br>
+                        console.log(arr); <span class="info-js-text">// выведет ['a!', 'b!', 'c!']</span>
+                    </div>
+                    <h2 id="addition" class="info-title">Добавление элементов по ключам</h2>
+                    <p>Элементы в массив не обязательно добавлять сразу в момент объявления этого массива. Можно вначале объявить этот массив, а затем добавить в него необходимые элементы, вот так:</p>
+                    <div class="info-js-block">
+                        let arr = [];<br><br>
+                        arr[0] = 'a';<br>
+                        arr[1] = 'b';<br>
+                        arr[2] = 'c';<br><br>
+                        console.log(arr); <span class="info-js-text">// выведет ['a', 'b', 'c']</span>
+                    </div>
+                    <p>Можно также добавлять элементы в массив, уже заполненный данными:</p>
+                    <div class="info-js-block">
+                        let arr = ['a', 'b', 'c'];<br>
+                        arr[3] = 'd';<br>
+                        console.log(arr); <span class="info-js-text">// выведет ['a', 'b', 'c', 'd']</span>
+                    </div>
+                    <h2 id="keys" class="info-title">Ключи массивов из переменных</h2>
+                    <p>Пусть у нас дан вот такой массив:</p>
+                    <div class="info-js-block">
+                        let arr = ['a', 'b', 'c'];
+                    </div>
+                    <p>Выведем на экран элемент с ключом 0:</p>
+                    <div class="info-js-block">
+                        let arr = ['a', 'b', 'c'];<br>
+                        console.log(arr[0]); <span class="info-js-text">// выведет 'a'</span>
+                    </div>
+                    <p>Давайте теперь ключ выводимого элемента не будем писать непосредственно в квадратных скобках, а запишем его в переменную:</p>
+                    <div class="info-js-block">
+                        let arr = ['a', 'b', 'c'];<br>
+                        let key = 0; <span class="info-js-text">// запишем ключ в переменную</span>
+                    </div>
+                    <p>Используем теперь нашу переменную для вывода соответствующего элемента:</p>
+                    <div class="info-js-block">
+                        let arr = ['a', 'b', 'c'];<br>
+                        let key = 0; <span class="info-js-text">// запишем ключ в переменную</span><br>
+                        <br><br>
+                        console.log(arr[key]); <span class="info-js-text">// выведет 'a'</span>
+                    </div>
+                    <div class="buttons-theme">
+                        <a class="buttons-theme__link" href="basicsJS.html">Основы</a>
+                        <a class="buttons-theme__link" href="objects.html">Объекты</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+<!---------------------------------------- END MAIN ---------------------------------------->
+
+<!---------------------------------------- FOOTER ---------------------------------------->
+    <footer id="button-down" class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer__paragraph">Кирюнин Кирилл © 2024</div>
+                <div class="images-container-footer">
+                    <a href="https://t.me/cirios" target="_blank"><div class="svg-image-footer-telegram"></div></a>
+                    <a href="https://vk.com/kirunin1" target="_blank"><div class="svg-image-footer-vk"></div></a>
+                </div>
+            </div>
+            <div class="footer-wrapper_small-size">
+                <div class="images-container-footer">
+                    <a href="https://t.me/cirios" target="_blank"><div class="svg-image-footer-telegram"></div></a>
+                    <a href="https://vk.com/kirunin1" target="_blank"><div class="svg-image-footer-vk"></div></a>
+                </div>
+                <div class="footer__paragraph">Кирюнин Кирилл © 2024</div>
+            </div>
+        </div>
+    </footer>
+<!---------------------------------------- END FOOTER ---------------------------------------->
+</body>
+</html>

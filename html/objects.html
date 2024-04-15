@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Объекты</title>
+
+    <link rel="shortcut icon" href="../image/logo.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="stylesheet" href="../style/common-styles.css">
+    <link rel="stylesheet" href="../style/container.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/sidebar.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/adaptive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    
+    <script src="../js/header.js" defer></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body id="up-button" class="color-outside-the-boundaries">
+<!---------------------------------------- HEADER ---------------------------------------->
+    <header class="header">
+        <div class="container">
+            <div class="header__nav header__nav_centering">
+                <a class="header__nav-logo" href="../index.html"><div class="svg-image"></div></a>
+                <a class="header__link" href="about-the-school.html">О школе</a>
+
+                <div class="dropdown-menu">
+                    <button class="dropdown-btn">Курс Layout</button>
+                    <div class="dropdown-list">
+                        <a class="dropdown-item" href="HTML.html">HTML</a>
+                        <hr class="line line-drowdown">
+                        <a class="dropdown-item" href="CSS.html">CSS</a>
+                        <hr class="line line-drowdown">
+                        <a class="dropdown-item" href="block-model.html">Block model
+                        </a>
+                        <hr class="line line-drowdown">
+                        <a class="dropdown-item dropdown-item_last-child" href="flexbox.html">Flexbox</a>
+                    </div>
+                  </div>
+
+                <div class="dropdown-menu">
+                <button class="dropdown-btn dropdown-current-btn">Курс JavaScript</button>
+                <div class="dropdown-list">
+                    <a class="dropdown-item dropdown-item_last-child" href="basicsJS.html">Основы</a>
+                    <hr class="line line-drowdown">
+                    <a class="dropdown-item dropdown-item_last-child" href="arrays.html">Массивы</a>
+                    <hr class="line line-drowdown">
+                    <a class="dropdown-item dropdown-item_last-child dropdown-current-item" href="">Объекты</a>
+                    <hr class="line line-drowdown">
+                    <a class="dropdown-item dropdown-item_last-child" href="cycles.html">Циклы</a>
+                </div>
+                </div>
+
+                <div class="header__theme-switch_sun"></div>
+                <div class="header__theme-switch_night"></div>
+
+                <!-- adaptive -->
+                <div class="adaptive__title">Объекты</div>
+                <nav id="menu" class="adaptive__nav disp">
+                    <ul class="adaptive-list">
+                        <li class="adaptive-item-title_main">Навигация по сайту:</li>
+                        <li><a class="adaptive-item" href="../index.html">Главная</a></li>
+                        <li><a class="adaptive-item">О школе</a></li>
+                        <li class="adaptive-item-title">Курс Layout:</li>
+                        <li><a class="adaptive-item" href="HTML.html">HTML</a></li>
+                        <li><a class="adaptive-item" href="CSS.html">CSS</a></li>
+                        <li><a class="adaptive-item" href="block-model.html">Блочная модель</a></li>
+                        <li><a class="adaptive-item" href="flexbox.html">Flexbox</a></li>
+                        <li class="adaptive-item-title">Курс JavaScript:</li>
+                        <li><a class="adaptive-item" href="basicsJS.html">Основы</a></li>
+                        <li><a class="adaptive-item" href="arrays.html">Массивы</a></li>
+                        <li><a class="adaptive-current-item" href="objects.html">Объекты</a></li>
+                        <li><a class="adaptive-item" href="cycles.html">Циклы</a></li>
+                    </ul>
+                </nav>
+                <div class="adaptive_wrapper-burger">
+                <div id="menuButton" class="adaptive__burger">
+                <span></span>
+                </div>
+                </div>
+            </div>
+                <!-- adaptive -->
+
+        </div>
+    </header>
+<!---------------------------------------- END HEADER ---------------------------------------->
+
+<!---------------------------------------- MAIN ---------------------------------------->
+    <div class="wrapper-background">
+        <div class="container">
+            <div class="wrapper-sidebar-and-main">
+                <aside class="sidebar">
+                    <div class="sidebar__sticky-wrapper">
+                        <div class="sidebar__title">НАВИГАЦИЯ:</div>
+                        <ul class="sidebar__list">
+                            <a class="link" href="#objects"><li class="sidebar__list-item">Объекты</li></a>
+                            <hr class="line">
+                            <a class="link" href="#string-keys"><li class="sidebar__list-item">Строковые ключи объектов</li></a>
+                            <hr class="line">
+                            <a class="link" href="#adding-items"><li class="sidebar__list-item">Добавление элементов в объекты</li></a>
+                            <hr class="line">
+                            <a class="link" href="#object-keys"><li class="sidebar__list-item">Ключи объектов из переменных</li></a>
+                            <hr class="line">
+                            <a class="link" href="#computable-properties"><li class="sidebar__list-item">Вычисляемые свойства</li></a>
+                            <hr class="line">
+                            <a class="link" href="#transfer-of-objects"><li class="sidebar__list-item">Передача объектов по ссылке</li></a>
+                            <hr class="line">
+                            <a class="link" href="#constants-with-arrays-or-objects"><li class="sidebar__list-item">Константы с массивами или объектами</li></a>
+                        </ul>
+                        <div class="navigation-buttons">
+                            <a class="navigation-button__link" href="#up-button">&#9650;</a>
+                            <a class="navigation-button__link" href="#button-down">&#9660;</a>
+                        </div>
+                    </div>
+                </aside>
+                        <!---------------------------------------- END SIDEBAR ---------------------------------------->
+        
+                        <!---------------------------------------- MAIN ---------------------------------------->
+
+                <section class="main">
+                    <h2 id="objects" class="info-title info-title_first-paragraph">Объекты</h2>
+                    <p>В JavaScript есть специальные структуры данных, которые называются объектами (в других языках программирования они называются ассоциативными массивами или хешами).</p>
+                    <p>Объекты создаются с помощью фигурных скобок { }, внутри которых пишутся элементы этого объекта в формате ключ: <i>значение</i>.</p>
+                    <p>Давайте создадим пустой объект:</p>
+                    <div class="info-js-block">
+                        let obj = {};
+                    </div>
+                    <p>А теперь создадим объект с данными:</p>
+                    <div class="info-js-block">
+                        let obj = {1: 'a', 2: 'b', 3: 'c'};
+                    </div>
+                    <p>Выведем элемент объекта по его ключу:</p>
+                    <div class="info-js-block">
+                        console.log(obj[1]); <span class="info-js-text">// выведет 'a'</span>
+                    </div>
+                    <h2 id="string-keys" class="info-title">Строковые ключи объектов в JavaScript</h2>
+                    <p>Ключами объектов могут быть строки:</p>
+                    <div class="info-js-block">
+                        let obj = {'a': 1, 'b': 2, 'c': 3};
+                    </div>
+                    <p>При этом ключи-строки принято в кавычки не брать:</p>
+                    <div class="info-js-block">
+                        let obj = {a: 1, b: 2, c: 3};
+                    </div>
+                    <p>Давайте выведем элемент нашего объекта по ключу:</p>
+                    <div class="info-js-block">
+                        console.log(obj['a']); <span class="info-js-text">// выведет 1</span>
+                    </div>
+                    <h2 id="adding-items" class="info-title">Добавление элементов в объекты</h2>
+                    <p>В объекты можно добавлять новые элементы, записывая их в нужные ключи. Давайте посмотрим, как это делается. Пусть у нас есть следующий объект:</p>
+                    <div class="info-js-block">
+                        let obj = {};
+                    </div>
+                    <p>Добавим в него новые элементы:</p>
+                    <div class="info-js-block">
+                        obj['a'] = 1;<br>
+                        obj['b'] = 2;<br>
+                        obj['c'] = 3;
+                    </div>
+                    <p>Можно воспользоваться альтернативным синтаксисом:</p>
+                    <div class="info-js-block">
+                        obj.a = 1;<br>
+                        obj.b = 2;<br>
+                        obj.c = 3;
+                    </div>
+                    <p>Проверим содержимое объекта:</p>
+                    <div class="info-js-block">
+                        console.log(obj);
+                    </div>
+                    <h2 id="object-keys" class="info-title">Ключи объектов из переменных</h2>
+                    <p>Ключи объектов могут храниться в переменных. Посмотрим на примере. Пусть у нас есть следующий объект:</p>
+                    <div class="info-js-block">
+                        let obj = {a: 1, b: 2, c: 3};
+                    </div>
+                    <p>Пусть в переменной хранится ключ:</p>
+                    <div class="info-js-block">
+                        let key = 'a';
+                    </div>
+                    <p>Выведем элемент объекта по ключу:</p>
+                    <div class="info-js-block">
+                        console.log(obj[key]); <span class="info-js-text">// выведет 1</span>
+                    </div>
+                    <h2 id="computable-properties" class="info-title">Вычисляемые свойства</h2>
+                    <p>При объявлении объекта имена его свойств могут браться из переменных. Такие свойства называются <i>вычисляемыми</i>. Давайте посмотрим, как это делается. Пусть у нас есть следующий объект:</p>
+                    <div class="info-js-block">
+                        let obj = {<br>
+                            a: 1,<br>
+                            b: 2,<br>
+                            c: 3 <br>
+                        };                        
+                    </div>
+                    <p>Пусть имя некоторого свойства хранится в переменной:</p>
+                    <div class="info-js-block">
+                        let key = 'a';
+                    </div>
+                    <p>Давайте сделаем так, чтобы вместо имени свойства взялось значение из нашей переменной. Для этого переменную следует взять в квадратные скобки:</p>
+                    <div class="info-js-block">
+                        let obj = {<br>
+                            [key]: 1,<br>
+                            b: 2,<br>
+                            c: 3 <br>
+                        };
+                    </div>
+                    <p>При объявлении вычисляемых свойств можно выполнять некоторый код. Пример:</p>
+                    <div class="info-js-block">
+                        let obj = {<br>
+                            [key + '1']: 1,<br>
+                            [key + '2']: 2,<br>
+                            [key + '3']: 3 <br>
+                        };
+                    </div>
+                    <h2 id="transfer-of-objects" class="info-title">Передача объектов по ссылке</h2>
+                    <p>Массивы и объекты несколько отличаются от остальных примитивных типов данных. Отличие в том, что переменная, хранящая массив, на самом деле не содержит его, а просто ссылается на него</p>
+                    <p>На практике это означает, что при записи объекта в другую переменную, обе переменных будут ссылаться на один и тот же объект. Давайте попробуем на практике. Пусть у нас есть следующий объект:</p>
+                    <div class="info-js-block">
+                        let obj1 = {a: 1, b: 2, c: 3};
+                    </div>
+                    <p>Присвоим его из одной переменной в другую:</p>
+                    <div class="info-js-block">
+                        let obj2 = obj1;
+                    </div>
+                    <p>Изменим одну из переменных:</p>
+                    <div class="info-js-block">
+                        obj2.a = '!';
+                    </div>
+                    <p>В результате изменения будут видны и в другой переменной:</p>
+                    <div class="info-js-block">
+                        console.log(obj1); <span class="info-js-text">// {a: '!', b: 2, c: 3}</span>
+                    </div>
+                    <h2 id="constants-with-arrays-or-objects" class="info-title">Константы с массивами или объектами</h2>
+                    <p>Константы, содержащие массивы и объекты, работают интересным образом. JavaScript не разрешает изменять значения этих констант, но изменять свойства объектов и значения элементов массивов - можно.</p>
+                    <p>Давайте посмотрим на примерах. Пусть у нас дан вот такой объект:</p>
+                    <div class="info-js-block">
+                        const obj = {a: 1, b: 2, c: 3};
+                    </div>
+                    <p>Давайте попробуем записать в него что-то другое:</p>
+                    <div class="info-js-block">
+                        obj = 123; <span class="info-js-text">// ошибка</span>
+                    </div>
+                    <p>Давайте попробуем записать в константу другой объект:</p>
+                    <div class="info-js-block">
+                        obj = {x: 1, y: 2, z: 3}; <span class="info-js-text">// ошибка</span>
+                    </div>
+                    <p>Однако, если мы попробуем изменить свойство объекта, то это сработает:</p>
+                    <div class="info-js-block">
+                        obj.a = '+'; <span class="info-js-text">// работает!</span>
+                    </div>
+                    <div class="buttons-theme">
+                        <a class="buttons-theme__link" href="arrays.html">Массивы</a>
+                        <a class="buttons-theme__link" href="cycles.html">Циклы</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+<!---------------------------------------- END MAIN ---------------------------------------->
+
+<!---------------------------------------- FOOTER ---------------------------------------->
+    <footer id="button-down" class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer__paragraph">Кирюнин Кирилл © 2023</div>
+                <div class="images-container-footer">
+                    <a href="https://t.me/cirios" target="_blank"><div class="svg-image-footer-telegram"></div></a>
+                    <a href="https://vk.com/kirunin1" target="_blank"><div class="svg-image-footer-vk"></div></a>
+                </div>
+            </div>
+            <div class="footer-wrapper_small-size">
+                <div class="images-container-footer">
+                    <a href="https://t.me/cirios" target="_blank"><div class="svg-image-footer-telegram"></div></a>
+                    <a href="https://vk.com/kirunin1" target="_blank"><div class="svg-image-footer-vk"></div></a>
+                </div>
+                <div class="footer__paragraph">Кирюнин Кирилл © 2024</div>
+            </div>
+        </div>
+    </footer>
+<!---------------------------------------- END FOOTER ---------------------------------------->
+</body>
+</html>

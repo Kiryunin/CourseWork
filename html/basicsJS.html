@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы JS</title>
+
+    <link rel="shortcut icon" href="../image/logo.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="stylesheet" href="../style/common-styles.css">
+    <link rel="stylesheet" href="../style/container.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/sidebar.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/adaptive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    
+    <script src="../js/header.js" defer></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body id="button-up" class="color-outside-the-boundaries">
+<!---------------------------------------- HEADER ---------------------------------------->
+    <header class="header">
+        <div class="container">
+            <div class="header__nav header__nav_centering">
+                <a class="header__nav-logo" href="../index.html"><div class="svg-image"></div></a>
+                <a class="header__link" href="about-the-school.html">О школе</a>
+
+                <div class="dropdown-menu">
+                    <button class="dropdown-btn">Курс Layout</button>
+                    <div class="dropdown-list">
+                        <a class="dropdown-item" href="HTML.html">HTML</a>
+                        <hr class="line line-drowdown">
+                        <a class="dropdown-item" href="CSS.html">CSS</a>
+                        <hr class="line line-drowdown">
+                        <a class="dropdown-item" href="block-model.html">Block model
+                        </a>
+                        <hr class="line line-drowdown">
+                        <a class="dropdown-item dropdown-item_last-child" href="flexbox.html">Flexbox</a>
+                    </div>
+                  </div>
+
+                <div class="dropdown-menu">
+                <button class="dropdown-btn dropdown-current-btn">Курс JavaScript</button>
+                <div class="dropdown-list">
+                    <a class="dropdown-item dropdown-item_last-child dropdown-current-item" href="">Основы</a>
+                    <hr class="line line-drowdown">
+                    <a class="dropdown-item dropdown-item_last-child" href="arrays.html">Массивы</a>
+                    <hr class="line line-drowdown">
+                    <a class="dropdown-item dropdown-item_last-child" href="objects.html">Объекты</a>
+                    <hr class="line line-drowdown">
+                    <a class="dropdown-item dropdown-item_last-child" href="cycles.html">Циклы</a>
+                </div>
+                </div>
+
+                <div class="header__theme-switch_sun"></div>
+                <div class="header__theme-switch_night"></div>
+
+                <!-- adaptive -->
+                <div class="adaptive__title">Основы JS</div>
+                <nav id="menu" class="adaptive__nav disp">
+                    <ul class="adaptive-list">
+                        <li class="adaptive-item-title_main">Навигация по сайту:</li>
+                        <li><a class="adaptive-item" href="../index.html">Главная</a></li>
+                        <li><a class="adaptive-item">О школе</a></li>
+                        <li class="adaptive-item-title">Курс Layout:</li>
+                        <li><a class="adaptive-item" href="HTML.html">HTML</a></li>
+                        <li><a class="adaptive-item" href="CSS.html">CSS</a></li>
+                        <li><a class="adaptive-item" href="block-model.html">Блочная модель</a></li>
+                        <li><a class="adaptive-item" href="flexbox.html">Flexbox</a></li>
+                        <li class="adaptive-item-title">Курс JavaScript:</li>
+                        <li><a class="adaptive-current-item" href="basicsJS.html">Основы</a></li>
+                        <li><a class="adaptive-item" href="arrays.html">Массивы</a></li>
+                        <li><a class="adaptive-item" href="objects.html">Объекты</a></li>
+                        <li><a class="adaptive-item" href="cycles.html">Циклы</a></li>
+                    </ul>
+                </nav>
+                <div class="adaptive_wrapper-burger">
+                <div id="menuButton" class="adaptive__burger">
+                <span></span>
+                </div>
+                </div>
+            </div>
+                <!-- adaptive -->
+
+        </div>
+    </header>
+<!---------------------------------------- END HEADER ---------------------------------------->
+
+<!---------------------------------------- MAIN ---------------------------------------->
+    <div class="wrapper-background">
+        <div class="container">
+            <div class="wrapper-sidebar-and-main">
+                <aside class="sidebar">
+                    <div class="sidebar__sticky-wrapper">
+                        <div class="sidebar__title">НАВИГАЦИЯ:</div>
+                        <ul class="sidebar__list">
+                            <a class="link" href="#launch"><li class="sidebar__list-item">Запуск JavaScript</li></a>
+                            <hr class="line">
+                            <a class="link" href="#first-programm"><li class="sidebar__list-item">Первая программа на JavaScript</li></a>
+                            <hr class="line">
+                            <a class="link" href="#features-script"><li class="sidebar__list-item">Особенности тега script</li></a>
+                            <hr class="line">
+                            <a class="link" href="#caching"><li class="sidebar__list-item">Кеширование JavaScript файлов браузером</li></a>
+                            <hr class="line">
+                            <a class="link" href="#strict-regime"><li class="sidebar__list-item">Строгий режим в JavaScript</li></a>
+                            <hr class="line">
+                            <a class="link" href="#variables"><li class="sidebar__list-item">Переменные в JavaScript</li></a>
+                            <hr class="line">
+                            <a class="link" href="#lines"><li class="sidebar__list-item">Строки в JavaScript</li></a>
+                            <hr class="line">
+                            <a class="link" href="#operation"><li class="sidebar__list-item">Операции инкремента и декремента в JavaScript</li></a>
+                            <hr class="line">
+                            <a class="link" href="#pre-and-post"><li class="sidebar__list-item">Префиксный и постфиксный тип в JavaScript</li></a>
+                        </ul>
+                        <div class="navigation-buttons">
+                            <a class="navigation-button__link" href="#button-up">&#9650;</a>
+                            <a class="navigation-button__link" href="#button-down">&#9660;</a>
+                        </div>
+                    </div>
+                </aside>
+                        <!---------------------------------------- END SIDEBAR ---------------------------------------->
+        
+                        <!---------------------------------------- MAIN ---------------------------------------->
+
+                <section class="main">
+                    <h2 id="launch" class="info-title info-title_first-paragraph">Запуск JavaScript</h2>
+                        <p><span class="info-paragraph_code-html">JavaScript</span> код пишется прямо на <span class="info-paragraph_code-html">HTML</span> странице внутри тега <span class="info-paragraph_code-js">script</span>. Этот тег можно размещать в любом месте страницы. Смотрите пример:</p>
+                        <div class="info-block_code-html">
+                            &#60;!DOCTYPE html&#62;<br>
+                            &#60;html&#62;<br>
+                            &#60;head&#62;<br>
+                            &#60;meta charset="utf-8"&#62;<br>
+                            &#60;title&#62;<span class="info-html-text">This is the title</span>&#60;title&#62;<br>
+                            &#60;script&#62;<span class="info-html-text">здесь пишем JavaScript код</span>&#60;script&#62;<br>
+                            &#60;/head&#62;<br>
+                            &#60;body&#62; <span class="info-html-text">This is the main content of the page.</span> &#60;/body&#62;<br>
+                            &#60;/html&#62;<br>
+                        </div>
+                    <h2 id="first-programm" class="info-title">Первая программа на JavaScript</h2>
+                        <p>Давайте напишем нашу первую программу на <span class="info-paragraph_code-js">JavaScript</span class="info-paragraph_code-js">. Вот она:</p>
+                        <div class="info-block_code-html">
+                            &#60;!DOCTYPE html&#62;<br>
+                            &#60;html&#62;<br>
+                            &#60;head&#62;<br>
+                            &#60;meta charset="utf-8"&#62;<br>
+                            &#60;title&#62;<span class="info-html-text">This is the title</span>&#60;title&#62;<br>
+                            &#60;script&#62;<span class="info-html-text"><span class="info-js-block-text">alert ('<span class="info-js-text">Привет, мир!</span>');</span></span>&#60;script&#62;<br>
+                            &#60;/head&#62;<br>
+                            &#60;body&#62; <span class="info-html-text">This is the main content of the page.</span> &#60;/body&#62;<br>
+                            &#60;/html&#62;<br>
+                        </div>
+                        <p>Скопируйте этот код и разместите в <span class="info-paragraph_code-html">HTML</span> файле. Затем откройте этот файл в браузере - и вы увидите диалоговое окошко с текстом.</p>
+                    <h2 id="features-script" class="info-title">Особенности тега script в JavaScript</h2>
+                    <p>Учтите, что в теге script можно либо писать код, либо подключить файл. Попытка сделать это одновременно не будет работать. Поэтому следующий код не рабочий:</p>
+                    <div class="info-block_code-html">
+                        &#60;!DOCTYPE html&#62;<br>
+                        &#60;html&#62;<br>
+                        &#60;head&#62;<br>
+                        &#60;meta charset="utf-8"&#62;<br>
+                        &#60;title&#62;<span class="info-html-text">This is the title</span>&#60;title&#62;<br>
+                        &#60;script src="script.js"&#62;<span class="info-html-text"><span class="info-js-block-text">alert('<span class="info-js-text">Привет, мир!</span>');</span></span>&#60;script&#62;<br>
+                        &#60;/head&#62;<br>
+                        &#60;body&#62; <span class="info-html-text">This is the main content of the page.</span> &#60;/body&#62;<br>
+                        &#60;/html&#62;<br>
+                    </div>
+                    <h2 id="caching" class="info-title">Кеширование JavaScript файлов браузером</h2>
+                    <p>Браузер может кешировать подключенные JavaScript файлы. Это значит, что он сохраняет их у себя для повышения скорости загрузки сайта.</p>
+                    <p>На практике это ведет к тому, что в какой-то момент при редактировании кода браузер будет применять предыдущую версию кода, а не вашу текущую.</p>
+                    <p>Для борьбы с таким поведением можно чистить кеш браузера, либо использовать хитрый прием. Его суть заключается в том, что мы при подключении скрипта после имени файла ставим вопрос, знак равно и номер версии вашего скрипта. Когда браузер кеширует файл, вам просто нужно будет увеличить номер на единицу.</p>
+                    <p>Смотрите пример:</p>
+                    <div class="info-block_code-html">
+                        &#60;!DOCTYPE html&#62;<br>
+                        &#60;html&#62;<br>
+                        &#60;head&#62;<br>
+                        &#60;meta charset="utf-8"&#62;<br>
+                        &#60;title&#62;<span class="info-html-text">This is the title</span>&#60;title&#62;<br>
+                        &#60;script src="script.js?v=1"&#62;<span class="info-html-text"><span class="info-js-text"></span></span>&#60;script&#62;<br>
+                        &#60;/head&#62;<br>
+                        &#60;body&#62; <span class="info-html-text">This is the main content of the page.</span> &#60;/body&#62;<br>
+                        &#60;/html&#62;<br>
+                    </div>
+                    <h2 id="strict-regime" class="info-title">Строгий режим в JavaScript</h2>
+                    <p>В современном JavaScript при написании кода первой строчкой нужно включать так называемый строгий режим. Этот режим заставляет браузер использовать все современные возможности языка.</p>
+                    <p>Для включения строго режима первой строчкой скрипта необходимо поставить команду "use strict". Давайте перепишем наш код в строгом режиме:</p>
+                    <div class="info-js-block">
+                        "use strict";<br>
+                        alert('<span class="info-js-text">text</span>');
+                    </div>
+                    <h2 id="variables" class="info-title">Переменные в JavaScript</h2>
+                    <p>Основным понятием любого языка программирования является переменная. Переменная представляет собой контейнер, в котором мы можем хранить какие-либо данные, например, строки или числа.</p>
+                    <p>Каждая переменная должна иметь имя, которое может состоять из латинских букв, чисел, символов $ и знаков подчеркивания. При этом первый символ имени переменной не должен быть цифрой. Примеры названий переменных: <span class="info-js-block-text">str, my_str, myStr, a1, $, $a, $$a.</span class="info-js-block-text"></p>
+                    <h2 id="lines" class="info-title">Строки в JavaScript</h2>
+                    <p>Как уже упоминалось ранее, данные могут иметь различный тип. Один из типов - числа, мы уже немного изучили. Давайте теперь перейдем к строкам.</p>
+                    <p>Строки создаются с помощью кавычек:</p>
+                    <div class="info-js-block">
+                        let str = 'abc';<br>
+                        alert(str); <span class="info-js-text">// выведет 'abc'</span>
+                    </div>
+                    <p>Кавычки могут быть не только одинарными, но и двойными:</p>
+                    <div class="info-js-block">
+                        let str = "abc";<br>
+                        alert(str); <span class="info-js-text">// выведет 'abc'</span>
+                    </div>
+                    <p>Между одинарными и двойными кавычками в JavaScript нет никакой разницы. Их использование зависит от ваших предпочтений. Я предпочитаю использовать одинарные кавычки, поэтому везде далее в учебнике будут стоять именно они.</p>
+                    <p>Здесь и далее, если результат вывода - строка, то я беру его в кавычки, чтобы показать, что это именно строка, вот так: выведет 'abc'. При выводе строки через alert никаких кавычек появляться не будет (то есть на экран выведется то, что у меня написано внутри кавычек).</p>
+                    <h2 id="operation" class="info-title">Операции инкремента и декремента в JavaScript</h2>
+                    <p>Рассмотрим следующий код:</p>
+                    <div class="info-js-block">
+                        let num = 0;<br>
+                        num = num + 1; <span class="info-js-text">// прибавляем к переменной num число 1</span><br>
+                        alert(num);    <span class="info-js-text">// выведет 1</span><br>
+                    </div>
+                    <p>Как вы уже знаете, этот код можно переписать в сокращенном виде через оператор +=:</p>
+                    <div class="info-js-block">
+                        let num = 0;<br>
+                        num += 1; <span class="info-js-text">// прибавляем к переменной num число 1</span><br>
+                        alert(num); <span class="info-js-text">// выведет 1</span><br>
+                    </div>
+                    <p>На самом деле прибавление единицы в программировании встречается так часто, что для этой операции придуман еще более сокращенный синтаксис - специальный оператор инкремент ++, увеличивающий значение переменной на 1.</p>
+                    <p>Перепишем наш код с его помощью:</p>
+                    <div class="info-js-block">
+                        let num = 0;<br>
+                        num++; <span class="info-js-text">// прибавляем к переменной a число 1</span><br>
+                        alert(num); <span class="info-js-text">// выведет 1</span>
+                    </div>
+                    <p>Есть также операция декремент --, уменьшающая значение переменной на 1. Смотрите пример:</p>
+                    <div class="info-js-block">
+                        let num = 0;<br>
+                        num--; <span class="info-js-text">// отнимаем от переменной num число 1</span><br>   
+                        alert(num);   <span class="info-js-text">// выведет -1</span>
+                    </div>
+                    <h2 id="pre-and-post" class="info-title">Префиксный и постфиксный тип в JavaScript</h2>
+                    <p>На самом деле операции инкремента и декремента можно записывать двумя способами. Давайте рассмотрим эти способы на примере ++, а для -- все будет аналогично.</p>
+                    <p>В первом способе операция записывается после имени переменной, вот так: a++, а во втором способе - перед именем переменной, вот так: ++a.</p>
+                    <p>Первая форма называется постфиксной, а вторая - префиксной. Давайте посмотрим, в каких случаях проявляется разница между этими двумя формами.</p>
+                    <p>Пусть у нас есть код alert(a++) и код alert(++a).</p>
+                    <p>В случае alert(a++) переменная сначала выведется, а потом увеличится на единицу, а в случае alert(++a) переменная сначала увеличится на единицу, а потом выведется.</p>
+                    <p>В следующем примере первый alert выведет 0, так как вначале сработает вывод на экран, а уже затем переменная увеличится:</p>
+                    <div class="info-js-block">
+                        let num = 0;<br>
+                        alert(num++); <span class="info-js-text">// выведет 0</span><br>
+                        alert(num);   <span class="info-js-text">// выведет 1</span>
+                    </div>
+                    <p>А теперь переменная вначале увеличится, а уже затем будет вывод на экран:</p>
+                    <div class="info-js-block">
+                        let num = 0;<br>
+                        alert(num++); <span class="info-js-text">// выведет 1 - переменная увеличилась сразу</span>
+                    </div>
+                    <p>Такое поведение справедливо не только для вывода на экран, но и для присваивания:</p>
+                    <div class="info-js-block">
+                        let num1 = 0;<br>
+                        let num2 = num1++; <span class="info-js-text">// в переменную num2 запишется 0</span><br>
+                        alert(num2); <span class="info-js-text">// выведет 0</span><br>
+                        alert(num1); <span class="info-js-text">// выведет 1 - переменная num1 поменялась после записи в num2</span>
+                    </div>
+                    <p>А теперь поменяем постфиксную форму на префиксную:</p>
+                    <div class="info-js-block">
+                        let num1 = 0;<br>
+                        let num2 = ++num1; <span class="info-js-text">// в переменную num2 запишется 1</span><br>
+                        alert(num2); <span class="info-js-text">// выведет 1</span>
+                    </div>
+                    <p>Если наша операция выполняется на отдельной строке, то разницы между префиксной и постфиксной формами нет:</p>
+                    <div class="info-js-block">
+                        let num = 0;<br>
+                        ++num;<br>
+                        num++;<br>
+                        alert(num); <span class="info-js-text">// выведет 2</span>
+                    </div>
+                    <div class="buttons-theme">
+                        <a class="buttons-theme__link" href="HTML.html">Курс Layout</a>
+                        <a class="buttons-theme__link" href="arrays.html">Массивы</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+<!---------------------------------------- END MAIN ---------------------------------------->
+
+<!---------------------------------------- FOOTER ---------------------------------------->
+    <footer id="button-down" class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer__paragraph">Кирюнин Кирилл © 2024</div>
+                <div class="images-container-footer">
+                    <a href="https://t.me/cirios" target="_blank"><div class="svg-image-footer-telegram"></div></a>
+                    <a href="https://vk.com/kirunin1" target="_blank"><div class="svg-image-footer-vk"></div></a>
+                </div>
+            </div>
+            <div class="footer-wrapper_small-size">
+                <div class="images-container-footer">
+                    <a href="https://t.me/cirios" target="_blank"><div class="svg-image-footer-telegram"></div></a>
+                    <a href="https://vk.com/kirunin1" target="_blank"><div class="svg-image-footer-vk"></div></a>
+                </div>
+                <div class="footer__paragraph">Кирюнин Кирилл © 2024</div>
+            </div>
+        </div>
+    </footer>
+<!---------------------------------------- END FOOTER ---------------------------------------->
+</body>
+</html>
