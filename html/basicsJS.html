@@ -130,7 +130,7 @@
 
                 <section class="main">
                     <h2 id="launch" class="info-title info-title_first-paragraph">Запуск JavaScript</h2>
-                        <p><span class="info-paragraph_code-html">JavaScript</span> код пишется прямо на <span class="info-paragraph_code-html">HTML</span> странице внутри тега <span class="info-paragraph_code-js">script</span>. Этот тег можно размещать в любом месте страницы. Смотрите пример:</p>
+                        <p><span class="info-paragraph_code-js">JavaScript</span> код пишется прямо на <span class="info-paragraph_code-html">HTML</span> странице внутри тега <span class="info-paragraph_code-js">script</span>. Этот тег можно размещать в любом месте страницы. Смотрите пример:</p>
                         <div class="info-block_code-html">
                             &#60;!DOCTYPE html&#62;<br>
                             &#60;html&#62;<br>
@@ -150,27 +150,27 @@
                             &#60;head&#62;<br>
                             &#60;meta charset="utf-8"&#62;<br>
                             &#60;title&#62;<span class="info-html-text">This is the title</span>&#60;title&#62;<br>
-                            &#60;script&#62;<span class="info-html-text"><span class="info-js-block-text">alert ('<span class="info-js-text">Привет, мир!</span>');</span></span>&#60;script&#62;<br>
+                            &#60;script&#62;<span class="info-html-text"><span class="info-js-block-text">alert ('Привет, мир!');</span></span>&#60;script&#62;<br>
                             &#60;/head&#62;<br>
                             &#60;body&#62; <span class="info-html-text">This is the main content of the page.</span> &#60;/body&#62;<br>
                             &#60;/html&#62;<br>
                         </div>
                         <p>Скопируйте этот код и разместите в <span class="info-paragraph_code-html">HTML</span> файле. Затем откройте этот файл в браузере - и вы увидите диалоговое окошко с текстом.</p>
                     <h2 id="features-script" class="info-title">Особенности тега script в JavaScript</h2>
-                    <p>Учтите, что в теге script можно либо писать код, либо подключить файл. Попытка сделать это одновременно не будет работать. Поэтому следующий код не рабочий:</p>
+                    <p>Учтите, что в теге <span class="info-paragraph_code-js">script</span> можно либо писать код, либо подключить файл. Попытка сделать это одновременно не будет работать. Поэтому следующий код не рабочий:</p>
                     <div class="info-block_code-html">
                         &#60;!DOCTYPE html&#62;<br>
                         &#60;html&#62;<br>
                         &#60;head&#62;<br>
                         &#60;meta charset="utf-8"&#62;<br>
                         &#60;title&#62;<span class="info-html-text">This is the title</span>&#60;title&#62;<br>
-                        &#60;script src="script.js"&#62;<span class="info-html-text"><span class="info-js-block-text">alert('<span class="info-js-text">Привет, мир!</span>');</span></span>&#60;script&#62;<br>
+                        &#60;script src="script.js"&#62;<span class="info-html-text"><span class="info-js-block-text">alert('Привет, мир!');</span></span>&#60;script&#62;<br>
                         &#60;/head&#62;<br>
                         &#60;body&#62; <span class="info-html-text">This is the main content of the page.</span> &#60;/body&#62;<br>
                         &#60;/html&#62;<br>
                     </div>
                     <h2 id="caching" class="info-title">Кеширование JavaScript файлов браузером</h2>
-                    <p>Браузер может кешировать подключенные JavaScript файлы. Это значит, что он сохраняет их у себя для повышения скорости загрузки сайта.</p>
+                    <p>Браузер может кешировать подключенные <span class="info-paragraph_code-js">JavaScript</span> файлы. Это значит, что он сохраняет их у себя для повышения скорости загрузки сайта.</p>
                     <p>На практике это ведет к тому, что в какой-то момент при редактировании кода браузер будет применять предыдущую версию кода, а не вашу текущую.</p>
                     <p>Для борьбы с таким поведением можно чистить кеш браузера, либо использовать хитрый прием. Его суть заключается в том, что мы при подключении скрипта после имени файла ставим вопрос, знак равно и номер версии вашего скрипта. Когда браузер кеширует файл, вам просто нужно будет увеличить номер на единицу.</p>
                     <p>Смотрите пример:</p>
@@ -186,15 +186,15 @@
                         &#60;/html&#62;<br>
                     </div>
                     <h2 id="strict-regime" class="info-title">Строгий режим в JavaScript</h2>
-                    <p>В современном JavaScript при написании кода первой строчкой нужно включать так называемый строгий режим. Этот режим заставляет браузер использовать все современные возможности языка.</p>
-                    <p>Для включения строго режима первой строчкой скрипта необходимо поставить команду "use strict". Давайте перепишем наш код в строгом режиме:</p>
+                    <p>В современном <span class="info-paragraph_code-js">JavaScript</span> при написании кода первой строчкой нужно включать так называемый строгий режим. Этот режим заставляет браузер использовать все современные возможности языка.</p>
+                    <p>Для включения строго режима первой строчкой скрипта необходимо и обязательно поставить команду <span class="info-paragraph_code-js">"use strict"</span>. Давайте перепишем наш код в строгом режиме:</p>
                     <div class="info-js-block">
                         "use strict";<br>
                         alert('<span class="info-js-text">text</span>');
                     </div>
                     <h2 id="variables" class="info-title">Переменные в JavaScript</h2>
                     <p>Основным понятием любого языка программирования является переменная. Переменная представляет собой контейнер, в котором мы можем хранить какие-либо данные, например, строки или числа.</p>
-                    <p>Каждая переменная должна иметь имя, которое может состоять из латинских букв, чисел, символов $ и знаков подчеркивания. При этом первый символ имени переменной не должен быть цифрой. Примеры названий переменных: <span class="info-js-block-text">str, my_str, myStr, a1, $, $a, $$a.</span class="info-js-block-text"></p>
+                    <p>Каждая переменная должна иметь имя, которое может состоять из латинских букв, чисел, символов $ и знаков подчеркивания. При этом первый символ имени переменной не должен быть цифрой. Примеры названий переменных: <span class="info-paragraph_code-js">str</span>, <span class="info-paragraph_code-js">my_str</span>, <span class="info-paragraph_code-js">myStr</span>, <span class="info-paragraph_code-js">a1</span>, <span class="info-paragraph_code-js">$</span>, <span class="info-paragraph_code-js">$a</span>, <span class="info-paragraph_code-js">$$a</span>.</p>
                     <h2 id="lines" class="info-title">Строки в JavaScript</h2>
                     <p>Как уже упоминалось ранее, данные могут иметь различный тип. Один из типов - числа, мы уже немного изучили. Давайте теперь перейдем к строкам.</p>
                     <p>Строки создаются с помощью кавычек:</p>
@@ -207,8 +207,8 @@
                         let str = "abc";<br>
                         alert(str); <span class="info-js-text">// выведет 'abc'</span>
                     </div>
-                    <p>Между одинарными и двойными кавычками в JavaScript нет никакой разницы. Их использование зависит от ваших предпочтений. Я предпочитаю использовать одинарные кавычки, поэтому везде далее в учебнике будут стоять именно они.</p>
-                    <p>Здесь и далее, если результат вывода - строка, то я беру его в кавычки, чтобы показать, что это именно строка, вот так: выведет 'abc'. При выводе строки через alert никаких кавычек появляться не будет (то есть на экран выведется то, что у меня написано внутри кавычек).</p>
+                    <p>Между одинарными и двойными кавычками в <span class="info-paragraph_code-js">JavaScript</span> нет никакой разницы. Их использование зависит от ваших предпочтений. Я предпочитаю использовать одинарные кавычки, поэтому везде далее в курсе будут стоять именно они.</p>
+                    <p>Здесь и далее, если результат вывода - строка, то я беру его в кавычки, чтобы показать, что это именно строка, вот так: выведет 'abc'. При выводе строки через <span class="info-paragraph_code-js">alert</span> никаких кавычек появляться не будет (то есть на экран выведется то, что у меня написано внутри кавычек).</p>
                     <h2 id="operation" class="info-title">Операции инкремента и декремента в JavaScript</h2>
                     <p>Рассмотрим следующий код:</p>
                     <div class="info-js-block">
@@ -216,32 +216,32 @@
                         num = num + 1; <span class="info-js-text">// прибавляем к переменной num число 1</span><br>
                         alert(num);    <span class="info-js-text">// выведет 1</span><br>
                     </div>
-                    <p>Как вы уже знаете, этот код можно переписать в сокращенном виде через оператор +=:</p>
+                    <p>Как вы уже знаете, этот код можно переписать в сокращенном виде через оператор <span class="info-paragraph_code-js">+=</span>:</p>
                     <div class="info-js-block">
                         let num = 0;<br>
                         num += 1; <span class="info-js-text">// прибавляем к переменной num число 1</span><br>
                         alert(num); <span class="info-js-text">// выведет 1</span><br>
                     </div>
-                    <p>На самом деле прибавление единицы в программировании встречается так часто, что для этой операции придуман еще более сокращенный синтаксис - специальный оператор инкремент ++, увеличивающий значение переменной на 1.</p>
+                    <p>На самом деле прибавление единицы в программировании встречается так часто, что для этой операции придуман еще более сокращенный синтаксис - специальный оператор инкремент <span class="info-paragraph_code-js">++</span>, увеличивающий значение переменной на 1.</p>
                     <p>Перепишем наш код с его помощью:</p>
                     <div class="info-js-block">
                         let num = 0;<br>
                         num++; <span class="info-js-text">// прибавляем к переменной a число 1</span><br>
                         alert(num); <span class="info-js-text">// выведет 1</span>
                     </div>
-                    <p>Есть также операция декремент --, уменьшающая значение переменной на 1. Смотрите пример:</p>
+                    <p>Есть также операция декремент <span class="info-paragraph_code-js">--</span>, уменьшающая значение переменной на 1. Смотрите пример:</p>
                     <div class="info-js-block">
                         let num = 0;<br>
                         num--; <span class="info-js-text">// отнимаем от переменной num число 1</span><br>   
                         alert(num);   <span class="info-js-text">// выведет -1</span>
                     </div>
                     <h2 id="pre-and-post" class="info-title">Префиксный и постфиксный тип в JavaScript</h2>
-                    <p>На самом деле операции инкремента и декремента можно записывать двумя способами. Давайте рассмотрим эти способы на примере ++, а для -- все будет аналогично.</p>
-                    <p>В первом способе операция записывается после имени переменной, вот так: a++, а во втором способе - перед именем переменной, вот так: ++a.</p>
+                    <p>На самом деле операции инкремента и декремента можно записывать двумя способами. Давайте рассмотрим эти способы на примере <span class="info-paragraph_code-js">++</span>, а для <span class="info-paragraph_code-js">--</span> все будет аналогично.</p>
+                    <p>В первом способе операция записывается после имени переменной, вот так: <span class="info-paragraph_code-js">a++</span>, а во втором способе - перед именем переменной, вот так: <span class="info-paragraph_code-js">++a</span>.</p>
                     <p>Первая форма называется постфиксной, а вторая - префиксной. Давайте посмотрим, в каких случаях проявляется разница между этими двумя формами.</p>
-                    <p>Пусть у нас есть код alert(a++) и код alert(++a).</p>
-                    <p>В случае alert(a++) переменная сначала выведется, а потом увеличится на единицу, а в случае alert(++a) переменная сначала увеличится на единицу, а потом выведется.</p>
-                    <p>В следующем примере первый alert выведет 0, так как вначале сработает вывод на экран, а уже затем переменная увеличится:</p>
+                    <p>Пусть у нас есть код <span class="info-paragraph_code-js">alert(a++)</span> и код <span class="info-paragraph_code-js">alert(++a)</span>.</p>
+                    <p>В случае <span class="info-paragraph_code-js">alert(a++)</span> переменная сначала выведется, а потом увеличится на единицу, а в случае <span class="info-paragraph_code-js">alert(++a)</span> переменная сначала увеличится на единицу, а потом выведется.</p>
+                    <p>В следующем примере первый <span class="info-paragraph_code-js">alert</span> выведет 0, так как вначале сработает вывод на экран, а уже затем переменная увеличится:</p>
                     <div class="info-js-block">
                         let num = 0;<br>
                         alert(num++); <span class="info-js-text">// выведет 0</span><br>
