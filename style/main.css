@@ -167,23 +167,38 @@
 
 /* basics js */
 .info-paragraph_code-js{
-    color: rgb(254, 254, 2);
-    background: #a4a3a3;
+    color: rgb(201, 122, 18);
+    background: #E7E7E7;
     border-radius: 10px;
     padding: 4px 8px 4px 8px;
 }
 .info-js-block-text{
-    color: rgb(254, 254, 2);
+    color: rgb(201, 122, 18);
 }
 .info-js-block{
     margin: 16px 0;
     padding: 20px;
-    color: rgb(254, 254, 2);
-    background: #a4a3a3;
+    color: rgb(201, 122, 18);
+    background: #E7E7E7;
     border-radius: 10px;
 }
 .info-js-text{
-    color: black;
+    color: white;
 }
 
 /* end basics js */
+
+/* dark theme js */
+.info-block_code-js_dark-theme{
+    color: rgb(255, 119, 0);
+    background: #000000;
+}
+.info-paragraph_code-js_dark-theme{
+    color: rgb(255, 119, 0);
+    background: #000000;
+}
+.info-js-block-text_dark-theme{
+    color: rgb(255, 119, 0);
+    background: #000000;
+}
+/* end dark theme js */

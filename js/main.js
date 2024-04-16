@@ -46,8 +46,11 @@ document.querySelector('.header__theme-switch_night').addEventListener('click', 
 function updateCodeBlockStyles(isDarkMode) {
     const codeHtmlParagraphSelectors = ['.info-paragraph_code-html'];
     const codeCssParagraphSelectors = ['.info-paragraph_code-css'];
+    const codeJsParagraphSelectors = ['.info-paragraph_code-js'];
     const codeHtmlBlockSelectors = ['.info-block_code-html'];
+    const codeJsBlockSelectors = ['.info-block_code-js'];
     const codeCssBlockSelectors = ['.info-block_code-css'];
+    const codeJsBlockTextSelectors = ['.info-js-block-text'];
     const codeTextHtmlSelectors = ['.info-html-text_dark-theme'];
 
 // Обновление стилей для кода CSS
@@ -61,6 +64,11 @@ codeCssParagraphSelectors.forEach(selector => {
         element.classList.toggle('info-paragraph_code-css_dark-theme', isDarkMode);
     });
 });
+codeJsParagraphSelectors.forEach(selector => {
+    document.querySelectorAll(selector).forEach(element => {
+        element.classList.toggle('info-paragraph_code-js_dark-theme', isDarkMode);
+    });
+});
 codeHtmlBlockSelectors.forEach(selector => {
     document.querySelectorAll(selector).forEach(element => {
         element.classList.toggle('info-block_code-html_dark-theme', isDarkMode);
@@ -71,16 +79,31 @@ codeCssBlockSelectors.forEach(selector => {
         element.classList.toggle('info-block_code-css_dark-theme', isDarkMode);
     });
 });
+codeJsBlockSelectors.forEach(selector => {
+    document.querySelectorAll(selector).forEach(element => {
+        element.classList.toggle('info-block_code-js_dark-theme', isDarkMode);
+    });
+});
+codeJsBlockTextSelectors.forEach(selector => {
+    document.querySelectorAll(selector).forEach(element => {
+        element.classList.toggle('info-js-block-text_dark-theme', isDarkMode);
+    });
+});
 codeTextHtmlSelectors.forEach(selector => {
     document.querySelectorAll(selector).forEach(element => {
         element.classList.toggle('info-html-text_dark-theme', isDarkMode);
     });
 });
 
+
+
 const htmlParagraphSelectors = ['.info-paragraph_code-html'];
 const htmlBlockSelectors = ['.info-block_code-html'];
 const cssParagraphSelectors = ['.info-paragraph_code-css'];
 const cssBlockSelectors = ['.info-block_code-css'];
+const jsParagraphSelectors = ['.info-paragraph_code-js'];
+const jsBlockSelectors = ['.info-js-block'];
+const jsTextSelectors = ['.info-js-block-text'];
 const textHtmlSelectors = ['.info-html-text'];
 
 // Обновление стилей для кода HTML
@@ -105,6 +128,24 @@ cssParagraphSelectors.forEach(selector => {
 cssBlockSelectors.forEach(selector => {
     document.querySelectorAll(selector).forEach(element => {
         element.classList.toggle('info-block_code-css_dark-theme', isDarkMode);
+    });
+});
+
+jsParagraphSelectors.forEach(selector => {
+    document.querySelectorAll(selector).forEach(element => {
+        element.classList.toggle('info-paragraph_code-js_dark-theme', isDarkMode);
+    });
+});
+
+jsBlockSelectors.forEach(selector => {
+    document.querySelectorAll(selector).forEach(element => {
+        element.classList.toggle('info-block_code-js_dark-theme', isDarkMode);
+    });
+});
+
+jsTextSelectors.forEach(selector => {
+    document.querySelectorAll(selector).forEach(element => {
+        element.classList.toggle('info-js-block-text_dark-theme', isDarkMode);
     });
 });
 
