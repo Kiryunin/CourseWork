@@ -183,7 +183,7 @@
     border-radius: 10px;
 }
 .info-js-text{
-    color: white;
+    color: black;
 }
 
 /* end basics js */
@@ -200,5 +200,8 @@
 .info-js-block-text_dark-theme{
     color: rgb(255, 119, 0);
     background: #000000;
+}
+.info-js-text-dark-theme{
+    color: white;
 }
 /* end dark theme js */

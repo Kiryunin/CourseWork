@@ -51,7 +51,9 @@ function updateCodeBlockStyles(isDarkMode) {
     const codeJsBlockSelectors = ['.info-block_code-js'];
     const codeCssBlockSelectors = ['.info-block_code-css'];
     const codeJsBlockTextSelectors = ['.info-js-block-text'];
+    const codeJsBlockInfoTextSelectors = ['.info-js-text'];
     const codeTextHtmlSelectors = ['.info-html-text_dark-theme'];
+    
 
 // Обновление стилей для кода CSS
 codeHtmlParagraphSelectors.forEach(selector => {
@@ -89,6 +91,11 @@ codeJsBlockTextSelectors.forEach(selector => {
         element.classList.toggle('info-js-block-text_dark-theme', isDarkMode);
     });
 });
+codeJsBlockInfoTextSelectors.forEach(selector => {
+    document.querySelectorAll(selector).forEach(element => {
+        element.classList.toggle('info-js-text-dark-theme', isDarkMode);
+    });
+});
 codeTextHtmlSelectors.forEach(selector => {
     document.querySelectorAll(selector).forEach(element => {
         element.classList.toggle('info-html-text_dark-theme', isDarkMode);
@@ -104,6 +111,7 @@ const cssBlockSelectors = ['.info-block_code-css'];
 const jsParagraphSelectors = ['.info-paragraph_code-js'];
 const jsBlockSelectors = ['.info-js-block'];
 const jsTextSelectors = ['.info-js-block-text'];
+const jsTextInfoSelectors = ['.info-js-text'];
 const textHtmlSelectors = ['.info-html-text'];
 
 // Обновление стилей для кода HTML
@@ -146,6 +154,12 @@ jsBlockSelectors.forEach(selector => {
 jsTextSelectors.forEach(selector => {
     document.querySelectorAll(selector).forEach(element => {
         element.classList.toggle('info-js-block-text_dark-theme', isDarkMode);
+    });
+});
+
+jsTextInfoSelectors.forEach(selector => {
+    document.querySelectorAll(selector).forEach(element => {
+        element.classList.toggle('info-js-text-dark-theme', isDarkMode);
     });
 });
 
